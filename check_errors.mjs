@@ -1,0 +1,14 @@
+import puppeteer from 'puppeteer';
+const browser = await puppeteer.launch({ args: ['--no-sandbox','--disable-setuid-sandbox'], headless: true });
+const page = await browser.newPage();
+await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 2 });
+const errors = [];
+page.on('pageerror', e => errors.push(e.message));
+await page.goto('http://localhost:3001', { waitUntil: 'networkidle0', timeout: 15000 });
+const root = await page.evaluate(() => document.getElementById('root')?.innerHTML.slice(0,200) || 'EMPTY');
+const bgColor = await page.evaluate(() => getComputedStyle(document.body).backgroundColor);
+console.log('ROOT:', root);
+console.log('BG COLOR:', bgColor);
+console.log('ERRORS:', errors);
+await page.screenshot({ path: '/tmp/prod_test.png' });
+await browser.close();
