@@ -367,11 +367,85 @@ export const APP_DATA: Category[] = [
                         ]
                       }
                     ]
+                  },
+                  {
+                    id: "posturas-6-9",
+                    title: "Posturas: tumbado, sentado, de pie, de lado, a gatas",
+                    content: [
+                      {
+                        title: "Si el bebé no adopta alguna de estas posturas, incitarle a que se coloque en ellas.",
+                        items: [
+                          "Tumbado boca abajo. Desde esta postura se arrastra hacia atrás, se sienta, gira sobre sí mismo, etc.",
+                          "Tumbado boca arriba. Sobre todo, cuando algo le llama mucho la atención.",
+                          "Sentado. Permanece en esta posición al final del trimestre sin perder el equilibrio.",
+                          "De pie. Al final de este trimestre intentan ponerse de pie cuando tienen cerca objetos o personas que se lo permiten.",
+                          "Gateo. Se inicia el gateo. Con este ejercicio se ejercitan los dos hemisferios del cerebro."
+                        ]
+                      }
+                    ]
                   }
                 ]
               },
-              [AreaType.FINE_MOTOR]:  { title: "Motricidad Fina",          subSections: [] },
-              [AreaType.LANGUAGE]:    { title: "Lenguaje",                 subSections: [] },
+              [AreaType.FINE_MOTOR]: {
+                title: "Motricidad Fina",
+                subSections: [
+                  {
+                    id: "prension-6-9",
+                    title: "Prensión",
+                    content: [
+                      {
+                        title: "Si el bebé no hace estas acciones, incitarle a que las realice.",
+                        items: [
+                          "Le gusta coger objetos y soltarlos.",
+                          "Diferencia unos materiales de otros.",
+                          "Utiliza el índice y el pulgar para coger objetos."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "manos-6-9",
+                    title: "Manos",
+                    content: [
+                      {
+                        title: "Si el bebé no hace estas acciones, incitarle a que las realice.",
+                        items: [
+                          "Señala con el índice, aplaude. Da palmadas, da golpes, tira objetos lejos.",
+                          "Le gusta manipular objetos con ambas manos.",
+                          "Empieza a utilizar la pinza pulgar índice para coger objetos más con una mano que con otra."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              [AreaType.LANGUAGE]: {
+                title: "Lenguaje",
+                subSections: [
+                  {
+                    id: "lenguaje-6-9",
+                    title: "Desarrollo del lenguaje",
+                    content: [
+                      {
+                        title: "Si el bebé no hace estas acciones, incitarle a que las realice.",
+                        items: [
+                          "En este trimestre aparece su primera palabra, en unos niños ocurre antes, en otros más tarde.",
+                          "A partir del 8º mes al niño le gusta mucho imitar.",
+                          "Es normal ver al niño con la lengua fuera. Es importante activar este músculo para el habla. Todo lo que hagamos juegos o sonidos enseñándoles la lengua, le gustarán mucho.",
+                          "Empieza a comprender preguntas como ¿dónde está el chupete? ¿Dónde está mamá? ¡No toques eso!",
+                          "Utiliza el grito para mostrar su enfado.",
+                          "Emite mucha cantidad de sonidos ante personas conocidas.",
+                          "Utiliza el índice para señalar, como forma primitiva de preguntar.",
+                          "Le gusta que le hablen, que le canten, la música, suele bailar al oírla.",
+                          "Empezar a enseñarle a decir \"adiós\".",
+                          "Dar nombre a las cosas.",
+                          "Tirar besos y soplar."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
               [AreaType.SOCIAL]:      { title: "Área Social",              subSections: [] },
               [AreaType.PERCEPTION]:  { title: "Percepción y Cognición",   subSections: [] },
             }
