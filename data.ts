@@ -205,8 +205,88 @@ export const APP_DATA: Category[] = [
                   }
                 ]
               },
-              [AreaType.FINE_MOTOR]:  { title: "Motricidad Fina",          subSections: [] },
-              [AreaType.LANGUAGE]:    { title: "Lenguaje",                 subSections: [] },
+              [AreaType.FINE_MOTOR]: {
+                title: "Motricidad Fina",
+                subSections: [
+                  {
+                    id: "ejercicios-manos-dedos",
+                    title: "Ejercicios de manos y dedos",
+                    content: [
+                      {
+                        title: "Ejercicios de manos y dedos",
+                        items: [
+                          "a) Masaje en cada dedo de la mano.",
+                          "b) Movimientos de rotación de muñeca.",
+                          "c) Flexión de dedos.",
+                          "d) Extensión y flexión de los dedos del pie."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "coordinacion-mano-cabeza",
+                    title: "Coordinación mano-cabeza",
+                    content: [
+                      {
+                        title: "Coordinación mano-cabeza",
+                        items: [
+                          "Cogemos las manos del bebé y se las juntamos, cantándole alguna canción como \"Palmas, palmitas\" o \"los lobitos\"."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "presion-voluntaria",
+                    title: "Prensión voluntaria",
+                    content: [
+                      {
+                        title: "Coger objetos que se le ofrecen",
+                        items: [
+                          "Le acercamos objetos para que intente cogerlos.",
+                          "Ofrecerle objetos de distintos tamaños. Los grandes para que tenga que cogerlos con toda la mano, y los pequeños para que le entren en su palma y los agarre.",
+                          "Jugar a darle juguetes y luego a quitárselos.",
+                          "Tumbado, le tapamos la cara con un pañuelo; esperamos a que se lo quite. Si no lo consigue, se lo quitamos nosotros."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              [AreaType.LANGUAGE]: {
+                title: "Lenguaje",
+                subSections: [
+                  {
+                    id: "emision-sonidos",
+                    title: "Emisión de sonidos",
+                    content: [
+                      {
+                        title: "Al final de los 6 meses",
+                        items: [
+                          "Al final de los 6 meses tiene una buena fonación; realiza sonidos para llamar la atención, para entretenerse o para expresar sus necesidades. Ejercicios del adulto hacia el niño.",
+                          "Le nombramos los objetos que le damos.",
+                          "Le contamos cuentos mientras le tenemos en brazos. Le cantamos canciones.",
+                          "Jugamos a emitir sonidos un par de minutos al día.",
+                          "Jugamos a emitir cadenas de vocales: oooo, aaa, iiii... Cadenas consonánticas: babababa, mamamama, papapa.",
+                          "Hacemos ruidos con los labios juntos como si tirásemos besos.",
+                          "Gritamos."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "risas-gritos",
+                    title: "Risas y gritos de alegría",
+                    content: [
+                      {
+                        title: "Risas y gritos de alegría",
+                        items: [
+                          "Dejamos que el bebé emita sonidos sin interrumpirle. Al parar le mostramos nuestra satisfacción."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
               [AreaType.SOCIAL]:      { title: "Área Social",              subSections: [] },
               [AreaType.PERCEPTION]:  { title: "Percepción y Cognición",   subSections: [] },
             }
