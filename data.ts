@@ -3,10 +3,17 @@ import { CategoryId, Category, AreaType } from './types';
 export const APP_DATA: Category[] = [
   {
     id: CategoryId.A,
-    title: "Estimulación Temprana (0 - 3 años)",
+    title: "Estimulación temprana (0 - 3 años)",
     colorClass: "bg-orange-500",
     bgClass: "bg-orange-50",
     textClass: "text-orange-600",
+    areaConfigs: [
+      { type: AreaType.GROSS_MOTOR,  title: "Motricidad Gruesa",        colorBase: "bg-orange-500" },
+      { type: AreaType.FINE_MOTOR,   title: "Motricidad Fina",          colorBase: "bg-rose-500" },
+      { type: AreaType.LANGUAGE,     title: "Lenguaje",                 colorBase: "bg-sky-500" },
+      { type: AreaType.SOCIAL,       title: "Área Social",              colorBase: "bg-emerald-500" },
+      { type: AreaType.PERCEPTION,   title: "Percepción y Cognición",   colorBase: "bg-violet-500" },
+    ],
     ageGroups: [
       {
         id: "0-1",
@@ -35,6 +42,10 @@ export const APP_DATA: Category[] = [
                 ]
               }
             ]
+          },
+          [AreaType.PERCEPTION]: {
+            title: "Percepción y Cognición",
+            subSections: []
           }
         }
       },
@@ -48,7 +59,7 @@ export const APP_DATA: Category[] = [
         ],
         areas: {
           [AreaType.LANGUAGE]: {
-            title: "Lenguaje y Cognición",
+            title: "Lenguaje",
             subSections: [
               {
                 id: "group-objects",
@@ -190,6 +201,10 @@ export const APP_DATA: Category[] = [
                 ]
               }
             ]
+          },
+          [AreaType.PERCEPTION]: {
+            title: "Percepción y Cognición",
+            subSections: []
           }
         }
       },
@@ -203,7 +218,7 @@ export const APP_DATA: Category[] = [
         ],
         areas: {
           [AreaType.SOCIAL]: {
-            title: "Social y Afectivo",
+            title: "Área Social",
             subSections: [
               {
                 id: "emotions",
@@ -220,6 +235,10 @@ export const APP_DATA: Category[] = [
                 ]
               }
             ]
+          },
+          [AreaType.PERCEPTION]: {
+            title: "Percepción y Cognición",
+            subSections: []
           }
         }
       }
@@ -231,7 +250,47 @@ export const APP_DATA: Category[] = [
     colorClass: "bg-pink-600",
     bgClass: "bg-pink-50",
     textClass: "text-pink-600",
-    ageGroups: []
+    areaConfigs: [
+      { type: AreaType.BASIC_CONCEPTS, title: "Conceptos Básicos",      colorBase: "bg-teal-500" },
+      { type: AreaType.ORAL_LANGUAGE,  title: "Lenguaje Oral",          colorBase: "bg-sky-500" },
+      { type: AreaType.SOCIAL,         title: "Área Social",            colorBase: "bg-emerald-500" },
+      { type: AreaType.PERCEPTION,     title: "Percepción y Cognición", colorBase: "bg-violet-500" },
+    ],
+    ageGroups: [
+      {
+        id: "3-4",
+        label: "3 – 4 años",
+        introText: [],
+        areas: {
+          [AreaType.BASIC_CONCEPTS]: { title: "Conceptos Básicos",      subSections: [] },
+          [AreaType.ORAL_LANGUAGE]:  { title: "Lenguaje Oral",          subSections: [] },
+          [AreaType.SOCIAL]:         { title: "Área Social",            subSections: [] },
+          [AreaType.PERCEPTION]:     { title: "Percepción y Cognición", subSections: [] },
+        }
+      },
+      {
+        id: "4-5",
+        label: "4 – 5 años",
+        introText: [],
+        areas: {
+          [AreaType.BASIC_CONCEPTS]: { title: "Conceptos Básicos",      subSections: [] },
+          [AreaType.ORAL_LANGUAGE]:  { title: "Lenguaje Oral",          subSections: [] },
+          [AreaType.SOCIAL]:         { title: "Área Social",            subSections: [] },
+          [AreaType.PERCEPTION]:     { title: "Percepción y Cognición", subSections: [] },
+        }
+      },
+      {
+        id: "5-6",
+        label: "5 – 6 años",
+        introText: [],
+        areas: {
+          [AreaType.BASIC_CONCEPTS]: { title: "Conceptos Básicos",      subSections: [] },
+          [AreaType.ORAL_LANGUAGE]:  { title: "Lenguaje Oral",          subSections: [] },
+          [AreaType.SOCIAL]:         { title: "Área Social",            subSections: [] },
+          [AreaType.PERCEPTION]:     { title: "Percepción y Cognición", subSections: [] },
+        }
+      }
+    ]
   },
   {
     id: CategoryId.C,
@@ -239,14 +298,67 @@ export const APP_DATA: Category[] = [
     colorClass: "bg-blue-600",
     bgClass: "bg-blue-50",
     textClass: "text-blue-600",
-    ageGroups: []
+    areaConfigs: [
+      { type: AreaType.VERBAL_REASONING,    title: "Razonamiento Verbal",              colorBase: "bg-indigo-500" },
+      { type: AreaType.LOGICAL_REASONING,   title: "Razonamiento Lógico",             colorBase: "bg-violet-500" },
+      { type: AreaType.NUMERICAL_REASONING, title: "Razonamiento Numérico",           colorBase: "bg-cyan-500" },
+      { type: AreaType.SPATIAL_TEMPORAL,    title: "Estructuración Espacio-Temporal", colorBase: "bg-amber-500" },
+    ],
+    ageGroups: [
+      {
+        id: "6-8",
+        label: "6 – 8 años",
+        introText: [],
+        areas: {
+          [AreaType.VERBAL_REASONING]:    { title: "Razonamiento Verbal",              subSections: [] },
+          [AreaType.LOGICAL_REASONING]:   { title: "Razonamiento Lógico",             subSections: [] },
+          [AreaType.NUMERICAL_REASONING]: { title: "Razonamiento Numérico",           subSections: [] },
+          [AreaType.SPATIAL_TEMPORAL]:    { title: "Estructuración Espacio-Temporal", subSections: [] },
+        }
+      },
+      {
+        id: "8-10",
+        label: "8 – 10 años",
+        introText: [],
+        areas: {
+          [AreaType.VERBAL_REASONING]:    { title: "Razonamiento Verbal",              subSections: [] },
+          [AreaType.LOGICAL_REASONING]:   { title: "Razonamiento Lógico",             subSections: [] },
+          [AreaType.NUMERICAL_REASONING]: { title: "Razonamiento Numérico",           subSections: [] },
+          [AreaType.SPATIAL_TEMPORAL]:    { title: "Estructuración Espacio-Temporal", subSections: [] },
+        }
+      },
+      {
+        id: "10-12",
+        label: "10 – 12 años",
+        introText: [],
+        areas: {
+          [AreaType.VERBAL_REASONING]:    { title: "Razonamiento Verbal",              subSections: [] },
+          [AreaType.LOGICAL_REASONING]:   { title: "Razonamiento Lógico",             subSections: [] },
+          [AreaType.NUMERICAL_REASONING]: { title: "Razonamiento Numérico",           subSections: [] },
+          [AreaType.SPATIAL_TEMPORAL]:    { title: "Estructuración Espacio-Temporal", subSections: [] },
+        }
+      }
+    ]
   },
   {
     id: CategoryId.D,
-    title: "Diversidad",
-    colorClass: "bg-purple-600",
-    bgClass: "bg-purple-50",
-    textClass: "text-purple-600",
-    ageGroups: []
+    title: "Atención a la diversidad",
+    colorClass: "bg-green-600",
+    bgClass: "bg-green-50",
+    textClass: "text-green-600",
+    areaConfigs: [
+      { type: AreaType.GROSS_MOTOR,  title: "Motricidad Gruesa",        colorBase: "bg-orange-500" },
+      { type: AreaType.FINE_MOTOR,   title: "Motricidad Fina",          colorBase: "bg-rose-500" },
+      { type: AreaType.LANGUAGE,     title: "Lenguaje",                 colorBase: "bg-sky-500" },
+      { type: AreaType.SOCIAL,       title: "Área Social",              colorBase: "bg-emerald-500" },
+      { type: AreaType.PERCEPTION,   title: "Percepción y Cognición",   colorBase: "bg-violet-500" },
+    ],
+    ageGroups: [
+      { id: "sindrome-down",  label: "Síndrome Down",  introText: [], areas: {} },
+      { id: "dislexia",       label: "Dislexia",       introText: [], areas: {} },
+      { id: "tda",            label: "TDA",            introText: [], areas: {} },
+      { id: "tea",            label: "TEA",            introText: [], areas: {} },
+      { id: "lenguaje-oral",  label: "Lenguaje oral",  introText: [], areas: {} },
+    ]
   }
 ];
