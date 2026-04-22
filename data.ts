@@ -1462,10 +1462,141 @@ export const APP_DATA: Category[] = [
                         ]
                       }
                     ]
+                  },
+                  {
+                    id: "control-esfinteres",
+                    title: "Control de esfínteres",
+                    content: [
+                      {
+                        title: "Control de esfínteres",
+                        items: [
+                          "Cuando tenga pis o caca, le diremos que nos ayude a cambiarle. Le haremos buscar el pañal y las toallitas. Le enseñamos el pañal sucio y le diremos ¡Como huele! y lo tiramos.",
+                          "Podemos alternar pañal y no pañal si nos parece oportuno, para que se dé cuenta cuando se moja que es incómodo.",
+                          "Lo acostumbramos a sentarse en el orinal y que vaya pidiendo pis y caca."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "vestirse-desvestirse",
+                    title: "Vestirse y desvestirse",
+                    content: [
+                      {
+                        title: "Vestirse y desvestirse",
+                        items: [
+                          "Le ayudamos a buscar en una prenda de ropa la parte delantera y la de atrás. También el derecho y el revés.",
+                          "Le enseñamos a quitarse la ropa. Empezamos con prendas sencillas, calcetines, pantalón, abrigo... Le explicamos como tirar de ellos, antes sacamos un poco la prenda para facilitarle la labor.",
+                          "Jugamos a bajar pantalones y faldas.",
+                          "Con el abrigo, chaqueta, pantalón etc. puesto, le ayudamos a subir la cremallera y a bajarla.",
+                          "Jugamos a vestir y desvestir a los muñecos."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "lavarse-18-24",
+                    title: "Lavarse",
+                    content: [
+                      {
+                        title: "Lavarse",
+                        items: [
+                          "Le enseñamos a cepillarse los dientes después de las comidas, le permitimos que lo haga con el dedo o que utilice un cepillo de dientes para niños con pasta.",
+                          "Le enseñamos a lavarse después de las comidas.",
+                          "Le enseñamos como le cortamos las uñas y para qué."
+                        ]
+                      }
+                    ]
                   }
                 ]
               },
-              [AreaType.PERCEPTION]: { title: "Percepción y Cognición", subSections: [] },
+              [AreaType.PERCEPTION]: {
+                title: "Percepción y Cognición",
+                subSections: [
+                  {
+                    id: "obs-18-24",
+                    title: "Ejercicios de observación",
+                    content: [
+                      {
+                        title: "Ejercicios de observación",
+                        items: [
+                          "A través de libros con imágenes, tarjetas.",
+                          "En la casa, paseamos observando y diciendo el nombre de las cosas, las señalamos. Por la ventana, observamos lo que vemos y lo comentamos."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "atencion-18-24",
+                    title: "Ejercicios de atención",
+                    content: [
+                      {
+                        title: "Ejercicios de atención",
+                        items: [
+                          "Damos dos palmadas encima de la mesa. Le explicamos que al levantar las manos, él debe dar también dos palmadas. Lo mismo dando dos patadas con los pies.",
+                          "Le contamos un cuento, le decimos que esté atento y le pedimos que nos señale los personajes conforme van saliendo.",
+                          "Le damos instrucciones cortas para que las realice. Por ejemplo.: trae los cubos de la mesa."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "memoria-18-24",
+                    title: "Ejercicios de memoria",
+                    content: [
+                      {
+                        title: "Construir torres",
+                        items: [
+                          "La hacemos primero nosotros, la tiramos y le pedimos que la haga luego."
+                        ]
+                      },
+                      {
+                        title: "Comparaciones",
+                        items: [
+                          "Grande/pequeño. Lo podemos hacer con juguetes, láminas... le pedimos que nos señale o traiga el grande o el pequeño, según lo que queramos.",
+                          "Pesado/ligero. Por ejemplo, con un papel y una bolsa con cosas que pesen.",
+                          "Lleno/vacío. Con una caja vacía y otra con juguetes, un vaso vacío y otro con líquido.",
+                          "Largo/corto. Con hilos largos y cortos, con líneas largas y cortas, con calcetines largos y cortos, ..."
+                        ]
+                      },
+                      {
+                        title: "Colores",
+                        items: [
+                          "Ponemos encima los que sean del mismo color. No tiene que saber el nombre de los colores. Ej.: Juntamos papeles del mismo color, juntamos juguetes del mismo color, juntamos ropa del mismo color."
+                        ]
+                      },
+                      {
+                        title: "Rompecabezas sencillos",
+                        items: [
+                          "Tableros con 3 piezas de animales.",
+                          "Partimos las figuras básicas de círculo, triángulo y cuadrado en dos mitades. Le enseñamos la figura montada, la desmontamos y le pedimos que la monte.",
+                          "Partimos una hoja de papel delante de él en dos, le enseñamos como se juntan y vuelve a ser una.",
+                          "Con una naranja, mandarina, manzana, plátano, ..."
+                        ]
+                      },
+                      {
+                        title: "Concepto de tiempo: Día / Noche",
+                        items: [
+                          "Aprovechamos la luz solar para explicarle que es de día y a la hora de acostarse cuando está a oscuras que es de noche.",
+                          "Le enseñamos dibujos que se vean las estrellas y la luna, es de noche. Dibujos donde se vea el sol, es de día."
+                        ]
+                      },
+                      {
+                        title: "Jugamos a contar: Uno",
+                        items: [
+                          "Le decimos que nos traiga un juguete, enseñándole a la vez 1 dedo.",
+                          "Le enseñamos objetos de uno en uno, mientras decimos \"uno\"."
+                        ]
+                      },
+                      {
+                        title: "Juegos simbólicos",
+                        items: [
+                          "Con una caja, hacemos como que es un coche, conducimos, pitamos..."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
             }
           }
         ]
