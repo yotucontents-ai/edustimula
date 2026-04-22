@@ -48,13 +48,89 @@ export const APP_DATA: Category[] = [
                         ]
                       }
                     ]
+                  },
+                  {
+                    id: "tono-muscular",
+                    title: "Tono muscular",
+                    content: [
+                      {
+                        title: "Con sumo cuidado movilizamos al bebé",
+                        items: [
+                          "a) Extendemos brazos arriba.",
+                          "b) Brazos cruzados sobre el pecho.",
+                          "c) Un brazo arriba, otro abajo.",
+                          "d) Extendemos piernas, se las flexionamos suavemente por la rodilla: primero una pierna, luego otra, las dos a la vez.",
+                          "e) Brazo y pierna cruzada."
+                        ]
+                      }
+                    ]
                   }
                 ]
               },
-              [AreaType.FINE_MOTOR]:  { title: "Motricidad Fina",          subSections: [] },
+              [AreaType.FINE_MOTOR]: {
+                title: "Motricidad Fina",
+                subSections: [
+                  {
+                    id: "estimulacion-tactil",
+                    title: "Estimulación táctil y manipulación",
+                    content: [
+                      {
+                        title: "Actividades",
+                        items: [
+                          "Con objetos de diferentes texturas se los pasamos suavemente por las manos y por los pies, por todo su cuerpo.",
+                          "Ofrécele juguetes para que los sujete; permítele que se los lleve a la boca si están limpios.",
+                          "Si no es capaz de coger un objeto, ayúdale poniendo sus dedos alrededor del mismo.",
+                          "Extiende sus puños; se acostumbrará a una mayor sensación que reciben sus palmas.",
+                          "Estira suavemente cada dedo de la mano.",
+                          "Recorre su cuerpo con una toalla pequeña o paño suave: manos, piernas, pies.",
+                          "Coge su mano y llévasela a su boca para que la chupe.",
+                          "Pasar su mano sobre la cara y pelo.",
+                          "Descubrir sus manos: llevar las manos a la altura de los ojos y unírselas."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
               [AreaType.LANGUAGE]:    { title: "Lenguaje",                 subSections: [] },
-              [AreaType.SOCIAL]:      { title: "Área Social",              subSections: [] },
-              [AreaType.PERCEPTION]:  { title: "Percepción y Cognición",   subSections: [] },
+              [AreaType.SOCIAL]: {
+                title: "Área Social",
+                subSections: [
+                  {
+                    id: "vinculo-afectivo",
+                    title: "Vínculo afectivo",
+                    content: [
+                      {
+                        title: "Actividades",
+                        items: [
+                          "Sonríele y háblale mientras lo atiendes.",
+                          "Distingue su llanto. Apóyalo contra tu pecho.",
+                          "Usa tono de voz dulce, acarícialo.",
+                          "Dale mucho cariño, besos y abrazos."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              [AreaType.PERCEPTION]: {
+                title: "Percepción y Cognición",
+                subSections: [
+                  {
+                    id: "estimulacion-visual",
+                    title: "Estimulación visual",
+                    content: [
+                      {
+                        title: "Estimulación visual",
+                        items: [
+                          "Mírale a la cara, atrae su mirada.",
+                          "Usamos objetos de colores con contrastes como blanco, negro, rojo, al mismo tiempo — por ejemplo cintas, tarjetas. Las llevamos de derecha a izquierda delante de la cara del bebé, de arriba abajo."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
             }
           },
           {
