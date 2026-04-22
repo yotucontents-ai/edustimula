@@ -1,16 +1,16 @@
 
 import React, { useState, useEffect } from 'react';
 import { APP_DATA } from './data';
-import { Category, AgeGroup, AreaType, CategoryId, SubSection, InteractiveGame } from './types';
-import { 
-  ChevronLeft, 
-  Baby, 
-  School, 
-  GraduationCap, 
-  HeartHandshake, 
-  Activity, 
-  Hand, 
-  MessageCircle, 
+import { Category, AgeGroup, AreaType, CategoryId, SubSection, InteractiveGame, AreaConfig } from './types';
+import {
+  ChevronLeft,
+  Baby,
+  School,
+  GraduationCap,
+  HeartHandshake,
+  Activity,
+  Hand,
+  MessageCircle,
   Users,
   GlassWater,
   Disc,
@@ -56,7 +56,10 @@ import {
   TrainFront,
   Search,
   Headphones,
-  Gamepad2
+  Gamepad2,
+  Brain,
+  Hash,
+  Compass
 } from 'lucide-react';
 
 // --- Icon Mapping ---
@@ -152,7 +155,7 @@ const Header = ({
 );
 
 const CategoryCard: React.FC<{ category: Category; onClick: () => void }> = ({ category, onClick }) => {
-  let Icon = Baby;
+  let Icon: any = Baby;
   if (category.id === CategoryId.B) Icon = School;
   if (category.id === CategoryId.C) Icon = GraduationCap;
   if (category.id === CategoryId.D) Icon = HeartHandshake;
@@ -184,20 +187,29 @@ const AgeGroupCard: React.FC<{ ageGroup: AgeGroup; colorClass: string; onClick: 
   </button>
 );
 
-const AreaCard = ({ type, title, onClick, colorBase }: { type: AreaType; title: string; onClick: () => void; colorBase: string }) => {
-  // Fixed: Explicitly typed Icon as any to prevent Lucide icon assignment issues
-  let Icon: any = Activity;
-  if (type === AreaType.FINE_MOTOR) Icon = Hand;
-  if (type === AreaType.LANGUAGE) Icon = MessageCircle;
-  if (type === AreaType.SOCIAL) Icon = Users;
+const AREA_ICONS: Record<AreaType, any> = {
+  [AreaType.GROSS_MOTOR]:         Activity,
+  [AreaType.FINE_MOTOR]:          Hand,
+  [AreaType.LANGUAGE]:            MessageCircle,
+  [AreaType.SOCIAL]:              Users,
+  [AreaType.PERCEPTION]:          Brain,
+  [AreaType.BASIC_CONCEPTS]:      BookOpen,
+  [AreaType.ORAL_LANGUAGE]:       Headphones,
+  [AreaType.VERBAL_REASONING]:    MessageCircle,
+  [AreaType.LOGICAL_REASONING]:   Search,
+  [AreaType.NUMERICAL_REASONING]: Hash,
+  [AreaType.SPATIAL_TEMPORAL]:    Compass,
+};
 
+const AreaCard = ({ config, onClick }: { config: AreaConfig; onClick: () => void }) => {
+  const Icon = AREA_ICONS[config.type] || Activity;
   return (
-    <button 
+    <button
       onClick={onClick}
-      className={`w-full p-6 rounded-2xl shadow-md text-white ${colorBase} flex flex-col items-center justify-center gap-3 aspect-square hover:opacity-90 transition-opacity`}
+      className={`w-full p-4 rounded-2xl shadow-md text-white ${config.colorBase} flex flex-col items-center justify-center gap-3 aspect-square hover:opacity-90 transition-opacity`}
     >
-      <Icon size={40} />
-      <span className="font-bold text-center">{title}</span>
+      <Icon size={36} />
+      <span className="font-bold text-center text-sm leading-tight">{config.title}</span>
     </button>
   );
 };
@@ -460,6 +472,7 @@ const ContentViewer = ({ areaTitle, subSections, colorTextClass }: { areaTitle: 
 export default function App() {
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
   const [selectedAgeGroup, setSelectedAgeGroup] = useState<AgeGroup | null>(null);
+  const [selectedSubGroup, setSelectedSubGroup] = useState<AgeGroup | null>(null);
   const [selectedAreaType, setSelectedAreaType] = useState<AreaType | null>(null);
 
   if (!selectedCategory) {
@@ -513,14 +526,53 @@ export default function App() {
     );
   }
 
-  if (!selectedAreaType) {
+  // Tramo selection screen (shown when age group has sub-groups)
+  if (selectedAgeGroup.subGroups?.length && !selectedSubGroup) {
     const hasIntro = selectedAgeGroup.introText && selectedAgeGroup.introText.length > 0;
     return (
       <div className={`min-h-screen ${selectedCategory.bgClass} flex flex-col`}>
-        <Header 
-          title={selectedAgeGroup.label} 
-          subtitle="Selecciona el área de desarrollo"
+        <Header
+          title={selectedAgeGroup.label}
+          subtitle="Selecciona el tramo"
           onBack={() => setSelectedAgeGroup(null)}
+          bgColorClass={selectedCategory.colorClass}
+          textColorClass="text-white"
+        />
+        <main className="flex-1 p-6 max-w-md mx-auto w-full space-y-4">
+          {hasIntro && (
+            <div className="bg-white p-4 rounded-xl shadow-sm mb-2 border-l-4 border-yellow-400">
+              <h3 className="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                <Info size={18} className="text-yellow-500"/> Antes de iniciar las actividades propuestas
+              </h3>
+              <ul className="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                {selectedAgeGroup.introText?.map((txt, i) => (
+                  <li key={i}>{txt}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {selectedAgeGroup.subGroups!.map((sub) => (
+            <AgeGroupCard
+              key={sub.id}
+              ageGroup={sub}
+              colorClass={selectedCategory.colorClass}
+              onClick={() => setSelectedSubGroup(sub)}
+            />
+          ))}
+        </main>
+      </div>
+    );
+  }
+
+  if (!selectedAreaType) {
+    const activeGroup = selectedSubGroup || selectedAgeGroup;
+    const hasIntro = !selectedSubGroup && activeGroup.introText && activeGroup.introText.length > 0;
+    return (
+      <div className={`min-h-screen ${selectedCategory.bgClass} flex flex-col`}>
+        <Header
+          title={activeGroup.label}
+          subtitle="Selecciona el área de desarrollo"
+          onBack={() => selectedSubGroup ? setSelectedSubGroup(null) : setSelectedAgeGroup(null)}
           bgColorClass={selectedCategory.colorClass}
           textColorClass="text-white"
         />
@@ -531,29 +583,33 @@ export default function App() {
                 <Info size={18} className="text-yellow-500"/> Recomendaciones
               </h3>
               <ul className="text-sm text-slate-600 space-y-1 list-disc list-inside">
-                {selectedAgeGroup.introText?.slice(0, 3).map((txt, i) => (
-                   <li key={i}>{txt}</li>
+                {activeGroup.introText?.map((txt, i) => (
+                  <li key={i}>{txt}</li>
                 ))}
               </ul>
             </div>
           )}
           <div className="grid grid-cols-2 gap-4">
-            <AreaCard type={AreaType.GROSS_MOTOR} title="Motricidad Gruesa" onClick={() => setSelectedAreaType(AreaType.GROSS_MOTOR)} colorBase="bg-orange-500" />
-            <AreaCard type={AreaType.FINE_MOTOR} title="Motricidad Fina" onClick={() => setSelectedAreaType(AreaType.FINE_MOTOR)} colorBase="bg-rose-500" />
-            <AreaCard type={AreaType.LANGUAGE} title="Lenguaje y Cognición" onClick={() => setSelectedAreaType(AreaType.LANGUAGE)} colorBase="bg-sky-500" />
-            <AreaCard type={AreaType.SOCIAL} title="Social y Afectivo" onClick={() => setSelectedAreaType(AreaType.SOCIAL)} colorBase="bg-emerald-500" />
+            {selectedCategory.areaConfigs.map((cfg) => (
+              <AreaCard
+                key={cfg.type}
+                config={cfg}
+                onClick={() => setSelectedAreaType(cfg.type)}
+              />
+            ))}
           </div>
         </main>
       </div>
     );
   }
 
-  const areaData = selectedAgeGroup.areas?.[selectedAreaType];
+  const activeGroup = selectedSubGroup || selectedAgeGroup;
+  const areaData = activeGroup.areas?.[selectedAreaType];
   return (
     <div className={`min-h-screen bg-slate-50 flex flex-col`}>
-      <Header 
-        title={areaData?.title || 'Área'} 
-        subtitle={selectedAgeGroup.label}
+      <Header
+        title={areaData?.title || 'Área'}
+        subtitle={activeGroup.label}
         onBack={() => setSelectedAreaType(null)}
         bgColorClass="bg-white"
         textColorClass={selectedCategory.textClass}
