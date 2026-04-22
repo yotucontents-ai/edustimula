@@ -707,11 +707,159 @@ export const APP_DATA: Category[] = [
                         ]
                       }
                     ]
+                  },
+                  {
+                    id: "lenguaje-comprensivo-9-12",
+                    title: "Lenguaje comprensivo",
+                    content: [
+                      {
+                        title: "Comprender una prohibición",
+                        items: [
+                          "\"NO\". Cuando el niño se acerque a algo que no queramos que toque, le decimos: NO. El niño se tiene que detener y mirarnos. Al cabo de unos segundos intentará volver a tocarlo, le apartamos enseñándole otro objeto. Repetimos la negación cada vez que realice una acción que no debe."
+                        ]
+                      },
+                      {
+                        title: "Responder adecuadamente cuando se le llama por su nombre",
+                        items: [
+                          "Cuando le llamemos debe mirarnos. Entonces debemos ofrecerle algún juguete, darle comida o salir de paseo."
+                        ]
+                      },
+                      {
+                        title: "Imitar ruidos",
+                        items: [
+                          "Por ejemplo, darle un coche y enseñarle a imitar su sonido: BRUM, BRUM, BRUM.",
+                          "Imitar sonidos de animales."
+                        ]
+                      },
+                      {
+                        title: "Jugamos con tarjetas, libros, juguetes: imitar sonidos",
+                        items: [
+                          "Le enseñamos imágenes de animales, niños, partes de la cara, juguetes y le vamos diciendo el nombre: \"gato\", \"tren\", \"pelota\", \"cara\", \"nariz\".",
+                          "Ponemos encima de la mesa tres juguetes, nos sentamos con el niño. Decimos el nombre de uno de los juguetes mientras lo señalamos, esperamos y repetimos su nombre, volvemos a esperar. Hay niños que intentan imitar sonidos, otros todavía no.",
+                          "Juegos con la punta de la lengua emitiendo sonidos.",
+                          "Imitamos sonidos que el niño produzca."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "lenguaje-atencion-9-12",
+                    title: "Lenguaje y atención",
+                    content: [
+                      {
+                        title: "Lenguaje y atención",
+                        items: [
+                          "Jugamos con él a contarle cuentos. Nos sentamos con él con uno de sus cuentos, lo abrimos esperando que él nos ayude y le contamos lo que vemos.",
+                          "Cogemos sus manos o sus brazos y le contamos lo que vemos: \"mira este dedito es el más pequeño...\""
+                        ]
+                      }
+                    ]
                   }
                 ]
               },
-              [AreaType.SOCIAL]:      { title: "Área Social",              subSections: [] },
-              [AreaType.PERCEPTION]:  { title: "Percepción y Cognición",   subSections: [] },
+              [AreaType.SOCIAL]: {
+                title: "Área Social",
+                subSections: [
+                  {
+                    id: "escondite-9-12",
+                    title: "Participar en juegos de escondite",
+                    content: [
+                      {
+                        title: "Participar en juegos de escondite",
+                        items: [
+                          "Jugar a esconderse con un pañuelo, trapo,…nos tapamos la cara y nos destapamos. Se lo hacemos a él."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "pelota-cooperativa-9-12",
+                    title: "Juego cooperativo con pelota",
+                    content: [
+                      {
+                        title: "Juego cooperativo con pelota",
+                        items: [
+                          "Nos sentamos frente al niño y le tiramos una pelota, esperamos a que él haga lo mismo.",
+                          "Le ofrecemos sus juguetes, cuando los coja, esperamos que él nos ofrezca alguno, si no lo hace, le decimos: ¿me lo das? Mientras se lo quitamos suavemente."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "esfinteres-9-12",
+                    title: "Control de esfínteres",
+                    content: [
+                      {
+                        title: "Control de esfínteres",
+                        items: [
+                          "Cuando le saquemos el pañal se lo acercamos un poco y le decimos: \"caca\", \"pis\" y lo tiramos.",
+                          "Le ponemos en el orinal a las horas que creamos más adecuadas, al menos una vez al día."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "colaborar-9-12",
+                    title: "Colaborar en comidas y en el baño",
+                    content: [
+                      {
+                        title: "Colaborar en comidas y en el baño",
+                        items: [
+                          "El niño debe colaborar cuando se le viste, facilitando la entrada de la prenda. Ya debe empezar a quitarse ropa fácil: gorro, guante, calcetín, zapato,...",
+                          "No tienen que lavarse, sí darse cuenta de lo que se está haciendo e intentar en algún momento imitarlo: lavar la cara con su manita, lavarse las dos manos,…"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              [AreaType.PERCEPTION]: {
+                title: "Percepción y Cognición",
+                subSections: [
+                  {
+                    id: "observacion-9-12",
+                    title: "Ejercicios de observación",
+                    content: [
+                      {
+                        title: "Ejercicios de observación",
+                        items: [
+                          "Con un pañuelo tapamos objetos, ya sea en su habitación, baño, comedor…y los destapamos. Esperamos a que lo haga él.",
+                          "Jugamos a esconder objetos y que el niño los encuentre. Le enseñamos un juguete, cuando lo vaya a coger, lo escondemos en nuestra mano, tiene que intentar abrirla. Un juguete más grande lo escondemos en distintos sitios, siempre que vea dónde... debe de tratar de cogerlo.",
+                          "Le cogemos en brazos y miramos por la ventana sin hablar. Al cabo de un rato le explicamos lo que vemos."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "eleccion-9-12",
+                    title: "Juegos de elección",
+                    content: [
+                      {
+                        title: "Juegos de elección",
+                        items: [
+                          "Darle varias láminas o tarjetas para que las mire, esperamos a que coja una y retiramos las otras. Cuando termine volvemos a hacer lo mismo.",
+                          "Ofrecerle dos juguetes, cuando se incline por uno, escondemos el otro y jugamos con el niño. Después volvemos a ofrecerle los dos. A veces se inclinan siempre por el mismo.",
+                          "Cuando le queramos dar un trozo de pan, galleta... le ofrecemos dos trozos, esperamos que elija uno. El otro no se lo damos."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "memoria-9-12",
+                    title: "Juegos de memoria",
+                    content: [
+                      {
+                        title: "Juegos de memoria",
+                        items: [
+                          "Le enseñamos un juego, cuando lo domine, nos olvidamos del juego uno o dos días. Lo repetimos después de ese tiempo y observamos si el bebé lo recuerda.",
+                          "Enseñarle el timbre de la casa y esperar que al regresar de la calle busque el mismo lugar.",
+                          "Guardar algunos juguetes siempre en un sitio determinado que él lo sepa, al pasar unos días irá directamente al sitio a buscarlos. Al cabo de días se los cambiamos de lugar sin advertírselo. Observamos si nos pide ayuda o se asombra. Se los damos y los volvemos al lugar de siempre."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
             }
           }
         ]
