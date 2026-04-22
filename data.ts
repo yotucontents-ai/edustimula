@@ -872,8 +872,103 @@ export const APP_DATA: Category[] = [
           "Celebra cada acierto con entusiasmo.",
           "Nombra los objetos en voz alta para reforzar el vocabulario cotidiano."
         ],
-        areas: {
-          [AreaType.LANGUAGE]: {
+        subGroups: [
+          {
+            id: "tramo-12-18",
+            label: "1er tramo (12 - 18 meses)",
+            areas: {
+              [AreaType.GROSS_MOTOR]: {
+                title: "Motricidad Gruesa",
+                subSections: [
+                  {
+                    id: "posturas-12-18",
+                    title: "Posturas dominantes",
+                    content: [
+                      {
+                        title: "Sentado",
+                        items: [
+                          "Su equilibrio es bueno, es capaz de reaccionar a movimientos que le hacen perder el equilibrio con otros movimientos compensatorios.",
+                          "Sentamos al niño en un taburete, de forma que los pies no toquen el suelo, le invitamos a bajar ofreciéndole las manos. A medida que domine el ejercicio vamos retirándole nuestras manos.",
+                          "Nos sentamos con el niño en el suelo y jugamos a tirarnos la pelota."
+                        ]
+                      },
+                      {
+                        title: "A gatas. Siempre que sea un juego.",
+                        items: [
+                          "Jugamos a subir escaleras gateando.",
+                          "Ponemos obstáculos en el suelo y nos ponemos a gatear sorteándolos."
+                        ]
+                      },
+                      {
+                        title: "De pie",
+                        items: [
+                          "Debe desplazarse sin dificultad. Y desde esta posición juega, anda, sube, baja, cambia de posición, …",
+                          "Camina solo o con ayuda de forma todavía insegura.",
+                          "Se agacha y coge juguetes que se le caen o que encuentra sin perder el equilibrio.",
+                          "Andar hacia atrás.",
+                          "Le ofrecemos juguetes con hilos o cuerdas para que pueda arrastrarlos.",
+                          "Hacer pequeñas carreras, a ver quién llega primero a la puerta... le cogemos de la mano y corremos, \"corre, corre que nos pillan\".",
+                          "Le damos las manos y jugamos a subir y a bajar.",
+                          "Jugamos a tirarnos la pelota de pie."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              [AreaType.FINE_MOTOR]: {
+                title: "Motricidad Fina",
+                subSections: [
+                  {
+                    id: "prension-12-18",
+                    title: "Prensión",
+                    content: [
+                      {
+                        title: "Prensión",
+                        items: [
+                          "Coger fideos gordos y guardarlos en una caja.",
+                          "Coger fideos finos.",
+                          "Sacar y meter cubos de una caja.",
+                          "Jugar a lanzar objetos."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "manos-12-18",
+                    title: "Manos",
+                    content: [
+                      {
+                        title: "Manos",
+                        items: [
+                          "Encajar aros en un palo. Primero le ofrecemos aros grandes y luego más pequeños.",
+                          "Le dejamos ceras gruesas y papel y le enseñamos a garabatear, una vez al día.",
+                          "En una cartulina hacemos 5 agujeros para poner los dedos. Introducimos por allí los dedos y se lo enseñamos. Retiramos nuestra mano y después le introducimos sus dedos.",
+                          "Manipulación y palpación de distintos materiales con diferente textura y dureza: frutas, verduras, telas..."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "dedos-12-18",
+                    title: "Dedos",
+                    content: [
+                      {
+                        title: "Dedos",
+                        items: [
+                          "Cogemos plastilina blanda y con el índice hacemos agujeros. Le enseñamos para que él haga lo mismo.",
+                          "Con una esponjita con color, que pinte en una cartulina.",
+                          "Le pintamos sus dedos, de un solo color, de varios colores, …",
+                          "Le atamos hilos de lana en sus dedos a modo de anillo para que se los saque.",
+                          "Le ofrecemos nuestra mano cerrada en forma de puño y vamos abriendo los dedos uno a uno. La volvemos a cerrar y le pedimos al niño que nos abra los dedos uno a uno.",
+                          "Señalar imágenes con el dedo índice."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              [AreaType.LANGUAGE]: {
             title: "Lenguaje",
             subSections: [
               {
@@ -1017,11 +1112,22 @@ export const APP_DATA: Category[] = [
               }
             ]
           },
-          [AreaType.PERCEPTION]: {
-            title: "Percepción y Cognición",
-            subSections: []
+              [AreaType.SOCIAL]: { title: "Área Social", subSections: [] },
+              [AreaType.PERCEPTION]: { title: "Percepción y Cognición", subSections: [] },
+            }
+          },
+          {
+            id: "tramo-18-24",
+            label: "2º tramo (18 - 24 meses)",
+            areas: {
+              [AreaType.GROSS_MOTOR]: { title: "Motricidad Gruesa", subSections: [] },
+              [AreaType.FINE_MOTOR]: { title: "Motricidad Fina", subSections: [] },
+              [AreaType.LANGUAGE]: { title: "Lenguaje", subSections: [] },
+              [AreaType.SOCIAL]: { title: "Área Social", subSections: [] },
+              [AreaType.PERCEPTION]: { title: "Percepción y Cognición", subSections: [] },
+            }
           }
-        }
+        ]
       },
       {
         id: "2-3",
