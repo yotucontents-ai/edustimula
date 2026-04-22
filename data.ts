@@ -284,18 +284,92 @@ export const APP_DATA: Category[] = [
                         ]
                       }
                     ]
+                  },
+                  {
+                    id: "lenguaje-gestual",
+                    title: "Lenguaje gestual",
+                    content: [
+                      {
+                        title: "Lenguaje gestual",
+                        items: [
+                          "Jugamos a poner cara de sorpresa, abrimos la boca y los ojos, levantamos las cejas.",
+                          "Le sacamos la lengua y nos ponemos las manos en las orejas moviéndolas.",
+                          "Ponemos cara de enfado, de tristeza, de llorar."
+                        ]
+                      }
+                    ]
                   }
                 ]
               },
-              [AreaType.SOCIAL]:      { title: "Área Social",              subSections: [] },
-              [AreaType.PERCEPTION]:  { title: "Percepción y Cognición",   subSections: [] },
+              [AreaType.SOCIAL]: {
+                title: "Área Social",
+                subSections: [
+                  {
+                    id: "socializacion-3-6",
+                    title: "Socialización",
+                    content: [
+                      {
+                        title: "Actividades sociales",
+                        items: [
+                          "Responde al sonido de su nombre.",
+                          "Iniciación de la toma de alimentos semisólidos con cuchara.",
+                          "Acostumbrarle a salir y a hablarle cuando se encuentre con personas en el parque o en la calle.",
+                          "No dejar que lo cojan bruscamente otras personas. Cuando lo hagan, nos acercamos a él y ponemos cara de satisfacción.",
+                          "No lo dejamos mucho tiempo en brazos de otras personas.",
+                          "Dejar que otras personas jueguen con él. Mostrarle nuestra alegría."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              [AreaType.PERCEPTION]: {
+                title: "Percepción y Cognición",
+                subSections: [
+                  {
+                    id: "percepcion-3-6",
+                    title: "Conceptos a desarrollar",
+                    content: [
+                      {
+                        title: "Conceptos (en desarrollo)",
+                        items: [
+                          "Fijación visual.",
+                          "Seguimiento visual de los objetos.",
+                          "Localización de sonidos.",
+                          "Juego de esconderse.",
+                          "Ejercicios de atención."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
             }
           },
           {
             id: "tramo-6-9",
-            label: "3er tramo (6 - 9 meses)",
+            label: "2º tramo (6 - 9 meses)",
             areas: {
-              [AreaType.GROSS_MOTOR]: { title: "Motricidad Gruesa",        subSections: [] },
+              [AreaType.GROSS_MOTOR]: {
+                title: "Motricidad Gruesa",
+                subSections: [
+                  {
+                    id: "tono-muscular-6-9",
+                    title: "Tono muscular",
+                    content: [
+                      {
+                        title: "Tono muscular",
+                        items: [
+                          "Ejercicios de relajación y respiración, como en el trimestre anterior con el balón de playa.",
+                          "Palpaciones con las yemas de los dedos por todo el cuerpo, ligeros golpes, ligeros masajes.",
+                          "Amasarle suavemente la espalda, las piernas y los brazos.",
+                          "Masajes faciales."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
               [AreaType.FINE_MOTOR]:  { title: "Motricidad Fina",          subSections: [] },
               [AreaType.LANGUAGE]:    { title: "Lenguaje",                 subSections: [] },
               [AreaType.SOCIAL]:      { title: "Área Social",              subSections: [] },
@@ -304,7 +378,7 @@ export const APP_DATA: Category[] = [
           },
           {
             id: "tramo-9-12",
-            label: "4º tramo (9 meses - 1 año)",
+            label: "3er tramo (9 meses - 1 año)",
             areas: {
               [AreaType.GROSS_MOTOR]: { title: "Motricidad Gruesa",        subSections: [] },
               [AreaType.FINE_MOTOR]:  { title: "Motricidad Fina",          subSections: [] },
