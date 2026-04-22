@@ -1315,9 +1315,156 @@ export const APP_DATA: Category[] = [
                   }
                 ]
               },
-              [AreaType.FINE_MOTOR]: { title: "Motricidad Fina", subSections: [] },
-              [AreaType.LANGUAGE]: { title: "Lenguaje", subSections: [] },
-              [AreaType.SOCIAL]: { title: "Área Social", subSections: [] },
+              [AreaType.FINE_MOTOR]: {
+                title: "Motricidad Fina",
+                subSections: [
+                  {
+                    id: "prension-18-24",
+                    title: "Prensión",
+                    content: [
+                      {
+                        title: "Prensión",
+                        items: [
+                          "Coger hilos de distinto grosor y que los meta en una caja.",
+                          "Pinchar palillos en plastilina blanda.",
+                          "Desenroscar tapones de rosca en botellas. Desenroscar tornillos grandes.",
+                          "Romper o rasgar papeles de revistas con las manos.",
+                          "Hacer torres con cubos, tacos, cajas.",
+                          "Abrir las manos para que nos las choque. Que él las ponga y le chocamos nosotros.",
+                          "Tiramos el balón con las dos manos: sentado o de pie."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "manos-18-24",
+                    title: "Manos",
+                    content: [
+                      {
+                        title: "Manos",
+                        items: [
+                          "Jugamos a dar palmadas. Ponemos una música con canción cortita, al final aplaudimos.",
+                          "Le enseñamos a abrir y cerrar los grifos.",
+                          "Introducir en botellas de cuello estrecho lentejas, guisantes, judías,...",
+                          "Deshacer lazos.",
+                          "Le acariciamos uno a uno los dedos. Se los pellizcamos a la vez que le cantamos alguna canción relacionada con ello.",
+                          "Le hacemos cosquillas en la palma de la mano.",
+                          "Quitar y poner gomets, cintas adhesivas, cello,...",
+                          "Desenvolver caramelos o pequeños paquetitos.",
+                          "Garabatear libremente con colores.",
+                          "Ensartar aros en una cuerda.",
+                          "Le enseñamos a subir y bajar cremalleras.",
+                          "Jugamos a verter agua, arena, juguetes....de un cubo a otro.",
+                          "Pasar las páginas de un cuento."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              [AreaType.LANGUAGE]: {
+                title: "Lenguaje",
+                subSections: [
+                  {
+                    id: "ejercicios-oido-18-24",
+                    title: "Ejercicios de oído",
+                    content: [
+                      {
+                        title: "Ejercicios de oído",
+                        items: [
+                          "Hablarle con distintas tonalidades, desde posiciones distintas.",
+                          "Le sentamos en una silla y le llamamos desde el lado derecho, desde el lado izquierdo, por detrás por su nombre, esperamos a que se gire y nos escondemos.",
+                          "Tocamos distintos instrumentos y se los ofrecemos para que los toque.",
+                          "Jugamos a dar palmadas fuertes y flojas.",
+                          "Jugamos a dar patadas fuertes u flojas, sentados en el suelo.",
+                          "Le susurramos en el oído derecho, luego en el izquierdo. Buscamos sonidos escondidos, para que se guíe por el sonido."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "ejercicios-labios-18-24",
+                    title: "Ejercicios de labios",
+                    content: [
+                      {
+                        title: "Ejercicios de labios",
+                        items: [
+                          "Hacer pequeños círculos alrededor de las comisuras de los labios."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "ejercicios-lengua-18-24",
+                    title: "Ejercicios de lengua",
+                    content: [
+                      {
+                        title: "Ejercicios de lengua",
+                        items: [
+                          "Sacar y meter la lengua despacio. Lo hacemos primero nosotros para que él intente hacer lo mismo.",
+                          "Tocar con la lengua el labio inferior y el superior.",
+                          "Sacar y meter la lengua rápido haciendo ruido.",
+                          "Jugamos a lamer sustancias esparcidas en platos, para imitar como comen o beben animales."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "soplar-18-24",
+                    title: "Soplar",
+                    content: [
+                      {
+                        title: "Soplar",
+                        items: [
+                          "Soplamos por soplar: pelotitas de algodón, bolas grandes de algodón, hojas secas.",
+                          "Jugamos a hacer burbujas con una pajita.",
+                          "Podemos soplar a apagar velitas."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "expresion-verbal-18-24",
+                    title: "Expresión verbal",
+                    content: [
+                      {
+                        title: "Expresión verbal",
+                        items: [
+                          "Jugamos a nombrar sus juguetes: Elegimos unos cuantos juguetes, le señalamos uno y le preguntamos ¿Qué es esto?, si no responde se lo decimos nosotros, esperamos unos segundos y hacemos lo mismo con otros juguetes. No es necesario que diga el nombre de los juguetes, es suficiente con que nos escuche y atienda.",
+                          "Jugar a terminar palabras. Elegimos palabras sencillas y le enseñamos a que las termine.",
+                          "Le enseñamos a decir sí y no.",
+                          "Le enseñamos a decir su nombre.",
+                          "Saludos: Decimos \"adiós\" con la mano y verbalmente cuando alguien se va. Cuando alguien llegue decimos \"hola\".",
+                          "Contamos cuentos.",
+                          "Le nombramos las acciones más importantes del día: Por la mañana \"hay que levantarse y desayunar\". Al mediodía \"es hora de comer\". Por la tarde \"a merendar\". Por la noche \"es hora de cenar\".",
+                          "Frases cortas con dos palabras sin nexos para expresar lo que necesita.",
+                          "Aparece la primera pregunta ¿qué es? Se interesa por todo lo que le rodea."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              [AreaType.SOCIAL]: {
+                title: "Área Social",
+                subSections: [
+                  {
+                    id: "habitos-18-24",
+                    title: "Hábitos",
+                    content: [
+                      {
+                        title: "Hábitos",
+                        items: [
+                          "Potenciar el encuentro con otros niños (guardería, parque, familiares...) dando juguetes a todos e iniciando algún juego: pelota, cochecitos, hacer torres....",
+                          "Le enseñamos a recoger los juguetes, con ayuda.",
+                          "Cuando alguien le ofrezca algo u él lo coja, le decimos que diga \"gracias\".",
+                          "Le enseñamos que hay cosas que se pueden hacer y otras que no, sin reñirle, pero advirtiéndole y enseñándole, por ejemplo, cuando toque cosas peligrosas como enchufes..."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
               [AreaType.PERCEPTION]: { title: "Percepción y Cognición", subSections: [] },
             }
           }
