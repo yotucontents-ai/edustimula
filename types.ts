@@ -55,6 +55,7 @@ export interface AgeGroup {
   id: string;
   label: string;
   introText?: string[];
+  subGroups?: AgeGroup[];
   areas?: {
     [key in AreaType]?: {
       title: string;

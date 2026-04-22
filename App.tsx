@@ -472,6 +472,7 @@ const ContentViewer = ({ areaTitle, subSections, colorTextClass }: { areaTitle: 
 export default function App() {
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
   const [selectedAgeGroup, setSelectedAgeGroup] = useState<AgeGroup | null>(null);
+  const [selectedSubGroup, setSelectedSubGroup] = useState<AgeGroup | null>(null);
   const [selectedAreaType, setSelectedAreaType] = useState<AreaType | null>(null);
 
   if (!selectedCategory) {
@@ -525,14 +526,53 @@ export default function App() {
     );
   }
 
-  if (!selectedAreaType) {
+  // Tramo selection screen (shown when age group has sub-groups)
+  if (selectedAgeGroup.subGroups?.length && !selectedSubGroup) {
     const hasIntro = selectedAgeGroup.introText && selectedAgeGroup.introText.length > 0;
     return (
       <div className={`min-h-screen ${selectedCategory.bgClass} flex flex-col`}>
         <Header
           title={selectedAgeGroup.label}
-          subtitle="Selecciona el área de desarrollo"
+          subtitle="Selecciona el tramo"
           onBack={() => setSelectedAgeGroup(null)}
+          bgColorClass={selectedCategory.colorClass}
+          textColorClass="text-white"
+        />
+        <main className="flex-1 p-6 max-w-md mx-auto w-full space-y-4">
+          {hasIntro && (
+            <div className="bg-white p-4 rounded-xl shadow-sm mb-2 border-l-4 border-yellow-400">
+              <h3 className="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                <Info size={18} className="text-yellow-500"/> Antes de iniciar las actividades propuestas
+              </h3>
+              <ul className="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                {selectedAgeGroup.introText?.map((txt, i) => (
+                  <li key={i}>{txt}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {selectedAgeGroup.subGroups!.map((sub) => (
+            <AgeGroupCard
+              key={sub.id}
+              ageGroup={sub}
+              colorClass={selectedCategory.colorClass}
+              onClick={() => setSelectedSubGroup(sub)}
+            />
+          ))}
+        </main>
+      </div>
+    );
+  }
+
+  if (!selectedAreaType) {
+    const activeGroup = selectedSubGroup || selectedAgeGroup;
+    const hasIntro = !selectedSubGroup && activeGroup.introText && activeGroup.introText.length > 0;
+    return (
+      <div className={`min-h-screen ${selectedCategory.bgClass} flex flex-col`}>
+        <Header
+          title={activeGroup.label}
+          subtitle="Selecciona el área de desarrollo"
+          onBack={() => selectedSubGroup ? setSelectedSubGroup(null) : setSelectedAgeGroup(null)}
           bgColorClass={selectedCategory.colorClass}
           textColorClass="text-white"
         />
@@ -543,7 +583,7 @@ export default function App() {
                 <Info size={18} className="text-yellow-500"/> Recomendaciones
               </h3>
               <ul className="text-sm text-slate-600 space-y-1 list-disc list-inside">
-                {selectedAgeGroup.introText?.slice(0, 3).map((txt, i) => (
+                {activeGroup.introText?.map((txt, i) => (
                   <li key={i}>{txt}</li>
                 ))}
               </ul>
@@ -563,12 +603,13 @@ export default function App() {
     );
   }
 
-  const areaData = selectedAgeGroup.areas?.[selectedAreaType];
+  const activeGroup = selectedSubGroup || selectedAgeGroup;
+  const areaData = activeGroup.areas?.[selectedAreaType];
   return (
     <div className={`min-h-screen bg-slate-50 flex flex-col`}>
-      <Header 
-        title={areaData?.title || 'Área'} 
-        subtitle={selectedAgeGroup.label}
+      <Header
+        title={areaData?.title || 'Área'}
+        subtitle={activeGroup.label}
         onBack={() => setSelectedAreaType(null)}
         bgColorClass="bg-white"
         textColorClass={selectedCategory.textClass}

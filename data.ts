@@ -20,34 +20,66 @@ export const APP_DATA: Category[] = [
         label: "0 – 1 año",
         introText: [
           "Háblale y cántale mientras le haces los ejercicios.",
-          "Nunca lo despiertes ni lo fuerces para hacerlos.",
-          "Espera 20 minutos después de comer para empezar.",
-          "Que sea el adulto el que visualice el contenido, no el bebé."
+          "Nunca lo despiertes ni lo fuerces.",
+          "Espera 20 minutos después de comer.",
+          "Trabaja en un lugar seguro y tranquilo.",
+          "Repite los ejercicios dos veces por semana.",
+          "No usar guantes, que tenga el contacto con la piel.",
+          "No usar tablets, pantallas."
         ],
-        areas: {
-          [AreaType.GROSS_MOTOR]: {
-            title: "Motricidad Gruesa",
-            subSections: [
-              {
-                id: "init-0-3",
-                title: "Iniciación (0-3 meses)",
-                content: [
+        subGroups: [
+          {
+            id: "tramo-0-3",
+            label: "1er tramo (0 - 3 meses)",
+            areas: {
+              [AreaType.GROSS_MOTOR]: {
+                title: "Motricidad Gruesa",
+                subSections: [
                   {
-                    title: "Fortalecimiento de cuello",
-                    items: [
-                      "Boca arriba: usa tres dedos para sujetar la nuca y llévalo hacia adelante.",
-                      "Boca abajo: pon objetos de colores delante para que levante la cabeza."
+                    id: "fortalecimiento-cuello",
+                    title: "Fortalecimiento de cuello y espalda",
+                    content: [
+                      {
+                        title: "Fortalecimiento de cuello y espalda",
+                        items: [
+                          "a) Utilizamos tres dedos para sujetar el cuello del bebé y hacer una especie de abdominales acostado, sentado.",
+                          "b) Entre 2-3 meses: dado la vuelta hacia abajo, podemos poner objetos de colores delante para que levante levemente la cabecita, para que intente levantar y girar la cabeza.",
+                          "c) Colocar al bebé en una superficie dura apoyando los antebrazos, acariciar su espalda o pasar los dedos por encima de su columna vertebral, bajando del cuello a la cadera, pero NO en sentido contrario."
+                        ]
+                      }
                     ]
                   }
                 ]
-              }
-            ]
+              },
+              [AreaType.FINE_MOTOR]:  { title: "Motricidad Fina",          subSections: [] },
+              [AreaType.LANGUAGE]:    { title: "Lenguaje",                 subSections: [] },
+              [AreaType.SOCIAL]:      { title: "Área Social",              subSections: [] },
+              [AreaType.PERCEPTION]:  { title: "Percepción y Cognición",   subSections: [] },
+            }
           },
-          [AreaType.PERCEPTION]: {
-            title: "Percepción y Cognición",
-            subSections: []
+          {
+            id: "tramo-3-9",
+            label: "2º tramo (3-6 / 6-9 meses)",
+            areas: {
+              [AreaType.GROSS_MOTOR]: { title: "Motricidad Gruesa",        subSections: [] },
+              [AreaType.FINE_MOTOR]:  { title: "Motricidad Fina",          subSections: [] },
+              [AreaType.LANGUAGE]:    { title: "Lenguaje",                 subSections: [] },
+              [AreaType.SOCIAL]:      { title: "Área Social",              subSections: [] },
+              [AreaType.PERCEPTION]:  { title: "Percepción y Cognición",   subSections: [] },
+            }
+          },
+          {
+            id: "tramo-9-12",
+            label: "3er tramo (9 meses - 1 año)",
+            areas: {
+              [AreaType.GROSS_MOTOR]: { title: "Motricidad Gruesa",        subSections: [] },
+              [AreaType.FINE_MOTOR]:  { title: "Motricidad Fina",          subSections: [] },
+              [AreaType.LANGUAGE]:    { title: "Lenguaje",                 subSections: [] },
+              [AreaType.SOCIAL]:      { title: "Área Social",              subSections: [] },
+              [AreaType.PERCEPTION]:  { title: "Percepción y Cognición",   subSections: [] },
+            }
           }
-        }
+        ]
       },
       {
         id: "1-2",
