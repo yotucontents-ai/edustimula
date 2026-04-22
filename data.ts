@@ -128,14 +128,92 @@ export const APP_DATA: Category[] = [
                         ]
                       }
                     ]
+                  },
+                  {
+                    id: "estimulacion-auditiva",
+                    title: "Estimulación auditiva",
+                    content: [
+                      {
+                        title: "Estimulación auditiva",
+                        items: [
+                          "Utilizamos objetos sonoros y también con nuestra voz. El bebé se inclinará ligeramente hacia el lado del sonido.",
+                          "Háblale para que empiece a fijar la mirada.",
+                          "Ponle música suave y de baja intensidad; estimula la sensibilidad auditiva y cerebral.",
+                          "Dale un sonajero y agítalo para que intente imitar el movimiento. Cuida que no se golpee.",
+                          "Háblale, llámale por su nombre."
+                        ]
+                      }
+                    ]
                   }
                 ]
               },
             }
           },
           {
-            id: "tramo-3-9",
-            label: "2º tramo (3-6 / 6-9 meses)",
+            id: "tramo-3-6",
+            label: "2º tramo (3 - 6 meses)",
+            areas: {
+              [AreaType.GROSS_MOTOR]: {
+                title: "Motricidad Gruesa",
+                subSections: [
+                  {
+                    id: "sentado-ayuda",
+                    title: "Mantenerse sentado con ayuda",
+                    content: [
+                      {
+                        title: "Mantenerse sentado, con ayuda y apoyo",
+                        items: [
+                          "a) Dejarlo sentado en su silla inclinado todo el tiempo que resista sin cansarse; progresivamente ir pasándolo a posición más vertical del respaldo. Sentarlo sobre almohadones duros en distintos lugares de la casa.",
+                          "b) Ponerlo sentado en una superficie dura con las piernas en forma de uve.",
+                          "c) Cogerlo verticalmente, su espalda contra nuestro pecho, sujetando con una mano sus rodillas y la otra su abdomen: inclinarlo hacia adelante.",
+                          "d) Apoyo sobre su cuerpo: estando descalzo, sostenerlo por las axilas, elevarlo y dejarlo caer suavemente sobre distintas superficies."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "volteos-dorsales",
+                    title: "Volteos y ejercicios dorsales",
+                    content: [
+                      {
+                        title: "Volteos",
+                        items: [
+                          "Pasar de boca arriba a de lado, animarlo ofreciéndole algún juguete.",
+                          "Pasar de boca arriba a boca abajo. Coger su pierna por debajo de la rodilla, flexionarla e iniciar el volteo."
+                        ]
+                      },
+                      {
+                        title: "Ejercicios dorsales",
+                        items: [
+                          "Al niño boca abajo, con una mano por las rodillas y la otra en el pecho, inclinarlo hacia un balón grande hasta que apoye las manos e inicie un esfuerzo para enderezarse. Reforzar sus intentos."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "reflejos",
+                    title: "Reflejos",
+                    content: [
+                      {
+                        title: "Reflejos",
+                        items: [
+                          "De Landau: coger al bebé por el tronco, elevarlo horizontalmente. El niño debe levantar su cabeza y flexionar las extremidades.",
+                          "Del paracaidista: cogemos al niño por el tronco y rápidamente lo acercamos al suelo. Observaremos que antes de que la cabeza llegue al suelo, el niño extiende sus brazos. Es una reacción de equilibrio que dura toda la vida."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              [AreaType.FINE_MOTOR]:  { title: "Motricidad Fina",          subSections: [] },
+              [AreaType.LANGUAGE]:    { title: "Lenguaje",                 subSections: [] },
+              [AreaType.SOCIAL]:      { title: "Área Social",              subSections: [] },
+              [AreaType.PERCEPTION]:  { title: "Percepción y Cognición",   subSections: [] },
+            }
+          },
+          {
+            id: "tramo-6-9",
+            label: "3er tramo (6 - 9 meses)",
             areas: {
               [AreaType.GROSS_MOTOR]: { title: "Motricidad Gruesa",        subSections: [] },
               [AreaType.FINE_MOTOR]:  { title: "Motricidad Fina",          subSections: [] },
@@ -146,7 +224,7 @@ export const APP_DATA: Category[] = [
           },
           {
             id: "tramo-9-12",
-            label: "3er tramo (9 meses - 1 año)",
+            label: "4º tramo (9 meses - 1 año)",
             areas: {
               [AreaType.GROSS_MOTOR]: { title: "Motricidad Gruesa",        subSections: [] },
               [AreaType.FINE_MOTOR]:  { title: "Motricidad Fina",          subSections: [] },
