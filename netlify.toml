@@ -1,10 +1,10 @@
 [build]
-  command = "npm run build"
+  base = "."
+  command = "npm run build && echo '=== DIST CONTENTS ===' && ls -la dist/ && ls -la dist/assets/"
   publish = "dist"
 
 [build.environment]
   NODE_VERSION = "20"
-  PUPPETEER_SKIP_DOWNLOAD = "true"
 
 [[redirects]]
   from = "/*"
