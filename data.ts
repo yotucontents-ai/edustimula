@@ -1109,18 +1109,212 @@ export const APP_DATA: Category[] = [
                   { id: "tren-1", title: "Juego del tren", game: { type: 'select-image', question: "¿Dónde está el tren?", successMessage: "¡Chucu-chucu! ¡Ahí está!", correctAnswer: "tren", options: [{ id: "tren", label: "Tren", icon: "TrainFront" }, { id: "bus", label: "Bus", icon: "Bus" }] } },
                   { id: "tren-vida-real", title: "Variación vida real", content: [{ title: "Actividad para padres", items: ["Escoge un objeto de la habitación.", "Pregúntale: ¿Dónde está el/la [objeto]?", "Fomenta que el niño lo busque o lo señale con el dedo."] }] }
                 ]
+              },
+              {
+                id: "ejercicios-lengua-labios-12-18",
+                title: "Ejercicios de lengua y de labios",
+                content: [
+                  {
+                    title: "Ejercicios de lengua y de labios",
+                    items: [
+                      "Hacemos ruido con la lengua, para que la mueva.",
+                      "Hacer chasquidos.",
+                      "Abrir y cerrar los labios.",
+                      "Sacar la lengua y meterla sin ruido y con ruido.",
+                      "Dar besos solo con los labios o tirándolos con la mano.",
+                      "Soplar para: Apagar cerillas, velas, volar algodones encima de una mesa, bolitas de papel...",
+                      "Soplarle su cara y que él nos sople la nuestra."
+                    ]
+                  }
+                ]
+              },
+              {
+                id: "señalar-objetos-12-18",
+                title: "Señalar objetos",
+                content: [
+                  {
+                    title: "Señalar objetos",
+                    items: [
+                      "Colocamos delante del niño objetos que conozca bien, le decimos el nombre señalándolo. Después repetimos el ejercicio sin señalarlo, esperamos que él lo haga.",
+                      "Repetimos con otros juguetes."
+                    ]
+                  }
+                ]
+              },
+              {
+                id: "libros-tarjetas-12-18",
+                title: "Libros, tarjetas, láminas",
+                content: [
+                  {
+                    title: "Libros, tarjetas, láminas",
+                    items: [
+                      "Cogemos un libro con imágenes grandes o pequeñas, esperamos que mire una y le decimos el nombre.",
+                      "Le enseñamos fotos suyas, decimos su nombre.",
+                      "Fotos de papá, de mamá, decimos su nombre, …",
+                      "Aprovechamos la hora de la comida para decirle el nombre de lo que va a utilizar: plato, vaso, cuchara, ...Lo mismo con la ropa de vestir."
+                    ]
+                  }
+                ]
+              },
+              {
+                id: "cantar-12-18",
+                title: "Cantar",
+                content: [
+                  {
+                    title: "Cantar",
+                    items: [
+                      "Cantarle una canción sencilla varias veces para que el niño a su manera intente seguir un trozo a su manera.",
+                      "Elegimos una palabra de un estribillo sencillo, para que él la termine. Por ejemplo: \"palmas, Palmi...\""
+                    ]
+                  }
+                ]
+              },
+              {
+                id: "contar-cuentos-12-18",
+                title: "Contar cuentos",
+                content: [
+                  {
+                    title: "Contar cuentos",
+                    items: [
+                      "Inventar cuentos cortos para que el niño pueda ir participando gestualmente o con alguna palabra que ya conoce."
+                    ]
+                  }
+                ]
+              },
+              {
+                id: "comprende-cuerpo-12-18",
+                title: "Comprende información sobre su cuerpo",
+                content: [
+                  {
+                    title: "Comprende información sobre su cuerpo",
+                    items: [
+                      "¿Dónde están los ojos? ¿Dónde está la boca?,...el adulto le enseñará si aún no lo conoce, posteriormente el niño debe señalarlos cuando el adulto le pregunta."
+                    ]
+                  }
+                ]
               }
             ]
           },
-              [AreaType.SOCIAL]: { title: "Área Social", subSections: [] },
-              [AreaType.PERCEPTION]: { title: "Percepción y Cognición", subSections: [] },
+              [AreaType.SOCIAL]: {
+                title: "Área Social",
+                subSections: [
+                  {
+                    id: "habitos-vestir-12-18",
+                    title: "Hábitos: Vestirse y desvestirse",
+                    content: [
+                      {
+                        title: "Vestirse y desvestirse",
+                        items: [
+                          "Empezamos a ayudarle a sacarse prendas de vestir sencillas como calcetines, zapatos, ...Por ejemplo, le enseñamos los calcetines, se los ponemos y luego le tiramos un poco de la punta y le decimos que se los saque, indicándole el movimiento.",
+                          "Para poner jersey o camisa, le enseñamos el agujero de la misma, para que estire los brazos y los meta allí."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "habitos-lavarse-12-18",
+                    title: "Hábitos: Lavarse",
+                    content: [
+                      {
+                        title: "Lavarse",
+                        items: [
+                          "Las manos. Abrimos el grifo, mientras le vamos explicando lo que hacemos, ponemos sus manos debajo del agua y cuando están mojadas le enseñamos el jabón, le enjabonamos las manos y luego se las enjuagamos. Repetimos, dejando que el niño colabore. Se las secamos con la toalla.",
+                          "La cara. Le mojamos las manos y se las llevamos a la cara. Le enseñamos la toalla y le enseñamos como secarse."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "esfinteres-12-18",
+                    title: "Control de esfínteres",
+                    content: [
+                      {
+                        title: "Control de esfínteres",
+                        items: [
+                          "Continuamos poniéndole en el orinal y en el wáter. Tanto si hace como si no, nosotros nos mostramos contentos de que esté ahí sentado un rato. No hay necesidad de reñirle o apremiarle. Tampoco debemos dejarle solo."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              [AreaType.PERCEPTION]: {
+                title: "Percepción y Cognición",
+                subSections: [
+                  {
+                    id: "observacion-12-18",
+                    title: "Ejercicios de observación",
+                    content: [
+                      {
+                        title: "Sin intervención del adulto",
+                        items: [
+                          "Le ponemos delante de una ventana y le dejamos que mire sin decirle nada, unos minutos.",
+                          "Le enseñamos un libro atractivo y dejamos que lo observe sin decirle nada."
+                        ]
+                      },
+                      {
+                        title: "Con intervención del adulto",
+                        items: [
+                          "Los ejercicios anteriores, pero diciéndole al niño lo que hacemos o llamándole la atención sobre algo determinado."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "memoria-12-18",
+                    title: "Ejercicios de memoria",
+                    content: [
+                      {
+                        title: "Ejercicios de memoria",
+                        items: [
+                          "Le enseñamos una lámina y le decimos: ¿Dónde está...? Pasamos página, le enseñamos otra cosa y volvemos a la primera página a preguntar lo mismo.",
+                          "Guardamos un juguete suyo en una caja o cajón antes de irse a dormir o a comer y al día siguiente o después de comer le preguntamos \"donde está.\"",
+                          "Le enseñamos un perro (por ejemplo) y luego lo mezclamos con otros animales. Le pedimos que lo busque.",
+                          "Darle objetos para manipular o arrastrar y enseñarle cómo. Esperar y volvérselo a dar.",
+                          "Buscar dibujos.",
+                          "Clasificar colores, formas y tamaños. Dame los rojos, damos los redondos, dame los pequeños,..."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
             }
           },
           {
             id: "tramo-18-24",
             label: "2º tramo (18 - 24 meses)",
             areas: {
-              [AreaType.GROSS_MOTOR]: { title: "Motricidad Gruesa", subSections: [] },
+              [AreaType.GROSS_MOTOR]: {
+                title: "Motricidad Gruesa",
+                subSections: [
+                  {
+                    id: "posturas-18-24",
+                    title: "Posturas",
+                    content: [
+                      {
+                        title: "De pie",
+                        items: [
+                          "Saltando obstáculos pequeños: cuerda de saltar, un taco pequeño.",
+                          "Andar por caminos estrechos marcados en el suelo.",
+                          "Transportar de un lado a otro, objetos en las dos manos.",
+                          "Le llenamos las manos de juguetes pequeños, cubos, ...y jugamos a trasladarlos sin que se le caigan.",
+                          "Subir y bajar escaleras. Primero a gatas, luego con apoyo, primero un pie y luego el otro y empezar a bajarlas de espaldas.",
+                          "Empieza a saltar desde alturas pequeñas.",
+                          "Chutar un balón. Esto le ayudará a mantener mejor el equilibrio en un solo pie.",
+                          "Jugar a perseguirlo corriendo."
+                        ]
+                      },
+                      {
+                        title: "En cuclillas",
+                        items: [
+                          "Andando con él de la mano, le tiramos un juguete al suelo y le ayudamos a que se agache sin soltarle, seguimos andando y seguimos tirando juguetes para que los recoja."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
               [AreaType.FINE_MOTOR]: { title: "Motricidad Fina", subSections: [] },
               [AreaType.LANGUAGE]: { title: "Lenguaje", subSections: [] },
               [AreaType.SOCIAL]: { title: "Área Social", subSections: [] },
