@@ -446,15 +446,121 @@ export const APP_DATA: Category[] = [
                   }
                 ]
               },
-              [AreaType.SOCIAL]:      { title: "Área Social",              subSections: [] },
-              [AreaType.PERCEPTION]:  { title: "Percepción y Cognición",   subSections: [] },
+              [AreaType.SOCIAL]: {
+                title: "Área Social",
+                subSections: [
+                  {
+                    id: "apego-6-9",
+                    title: "Juegos de apego",
+                    content: [
+                      {
+                        title: "Juegos de apego",
+                        items: [
+                          "Cosquillas con contacto corporal.",
+                          "Carcajadas sin contacto corporal."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              [AreaType.PERCEPTION]: {
+                title: "Percepción y Cognición",
+                subSections: [
+                  {
+                    id: "decisiones-6-9",
+                    title: "Juegos de tomar decisiones",
+                    content: [
+                      {
+                        title: "Juegos de tomar decisiones",
+                        items: [
+                          "Ofrecerle dos juguetes para que se decida a coger solo uno."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "posicion-juguetes-6-9",
+                    title: "Cambios en la posición de los juguetes",
+                    content: [
+                      {
+                        title: "Cambios en la posición de los juguetes",
+                        items: [
+                          "Cambiarle los juguetes del sitio dónde están habitualmente, de espaldas, medio tapados,… para que él los descubra."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "observacion-6-9",
+                    title: "Ejercicios de observación",
+                    content: [
+                      {
+                        title: "Ejercicios de observación",
+                        items: [
+                          "Enseñarle libros con detalles.",
+                          "Ofrecerle juguetes con muchos detalles llamativos."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "memoria-6-9",
+                    title: "Memoria: asociación de palabra y gesto",
+                    content: [
+                      {
+                        title: "Memoria: asociación de palabra y gesto",
+                        items: [
+                          "Le cantamos una canción que acompañamos de palabra y gesto. Terminará por hacer el gesto sin que se lo pidamos.",
+                          "Decir adiós, lo repetirá de forma automática."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
             }
           },
           {
             id: "tramo-9-12",
             label: "3er tramo (9 meses - 1 año)",
             areas: {
-              [AreaType.GROSS_MOTOR]: { title: "Motricidad Gruesa",        subSections: [] },
+              [AreaType.GROSS_MOTOR]: {
+                title: "Motricidad Gruesa",
+                subSections: [
+                  {
+                    id: "posturas-9-12",
+                    title: "Posturas preferidas",
+                    content: [
+                      {
+                        title: "Sentado. Mantiene bien el equilibrio y disfruta mirando lo que hay.",
+                        items: [
+                          "Le sentamos sobre un rodillo grande y le sujetamos por muslos y rodillas. Suavemente deslizamos el rodillo adelante y atrás para que el niño haga esfuerzo por enderezarse y permanezca sentado.",
+                          "Sentamos al niño delante nuestra y jugamos a pasarle la pelota. La distancia entre el adulto y el niño debe ser pequeña para facilitarle que nos la devuelva.",
+                          "Sentarle en el suelo y ponerle juguetes para que los coja y juegue con ellos. Así sentado sin apoyo, va liberando los brazos. Reforzar sus intentos.",
+                          "Ofrecerle una caja o cubo llena de juguetes para que los saque.",
+                          "Darle juegos de encajes sencillos. Le resultará fácil sacarlos, le ayudamos a ponerlos.",
+                          "Reflejo de apoyo lateral. Estando el niño sentado sobre una superficie dura, lo empujamos repentinamente hacia uno y otro lado, para que apoye la mano correspondiente y así se protegerá ante una caída hacia los lados."
+                        ]
+                      },
+                      {
+                        title: "Pasar de tumbado boca arriba / tumbado boca abajo y viceversa",
+                        items: [
+                          "Le damos las manos para que se incorpore, una vez sentado le volvemos a tumbar.",
+                          "Aprovechamos al cambiarlo, le cogemos los pies y se los acercamos a la boca. También en esta postura le cruzamos los brazos y se los abrimos."
+                        ]
+                      },
+                      {
+                        title: "Tumbado boca abajo",
+                        items: [
+                          "Le ofrecemos juguetes para que se arrastren. Le enseñamos algún juguete y cuando vaya a alcanzarlo se lo alejamos para que siga intentando cogerlo.",
+                          "Carretilla. Estando el niño boca abajo, levantarlo sujetándolo por los muslos y haciendo que se apoye sobre sus brazos. Incitarle a que se desplace utilizando solo sus brazos."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
               [AreaType.FINE_MOTOR]:  { title: "Motricidad Fina",          subSections: [] },
               [AreaType.LANGUAGE]:    { title: "Lenguaje",                 subSections: [] },
               [AreaType.SOCIAL]:      { title: "Área Social",              subSections: [] },
