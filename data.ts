@@ -558,11 +558,158 @@ export const APP_DATA: Category[] = [
                         ]
                       }
                     ]
+                  },
+                  {
+                    id: "gateo-9-12",
+                    title: "Gateo",
+                    content: [
+                      {
+                        title: "Gateo",
+                        items: [
+                          "Le agarramos por los muslos impidiéndole que lo haga, seguramente se enojará, esperamos unos segundos y lo dejamos.",
+                          "Dejamos la habitación libre de juguetes y nos ponemos a gatear con el bebé, gateamos en línea recta, para atrás, dando vueltas, …",
+                          "Gatear en una habitación llena de juguetes, obstáculos, tendrá que sortearlos.",
+                          "Ponerle elementos sorpresa: al ir gateando se encuentra con un pañuelo que al tirar de él, sale su juguete preferido.",
+                          "Colgar de la pared algún juguete pequeño que no tenga peso, se pondrá de pie para cogerlo…. Cuando domine la postura de pie, se lo vamos elevando para que tenga que esforzarse en cogerlo.",
+                          "Colgar de la pared paneles con muñecos, cintas, pelotas de distinto tamaño…pero que pueda tocar, morder, chupar, tirar, … Cambiar los paneles cuando ya los tenga aburridos.",
+                          "Cuando gatee sin dificultad, le ponemos cojines de diferentes tamaños, animándolo a subir y seguir desplazándose."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "de-pie-9-12",
+                    title: "De pie / Apoyo sobre su cuerpo",
+                    content: [
+                      {
+                        title: "De pie / Apoyo sobre su cuerpo",
+                        items: [
+                          "Jugar con él cogiéndole por las caderas de pie. Hablarle, reír, cantarle, balancearle.",
+                          "Primeros pasos con ayuda: Cuando está de pie agarrado con las dos manos, ofrecerle un juguete para que lo coja y suelte una mano. Si se cae, ayudarle a ponerse de pie y ofrecerle otra vez el juguete. Sin forzarle, le cogemos de las manos y le ayudamos a andar, si se cansa, flexiona las rodillas, le dejamos para que gatee un rato. Luego lo volvemos a intentar. No forzarlo, hay niños que dan pasos y otros todavía no.",
+                          "Coger objetos del suelo: Estando el niño de pie agarrado a un mueble o a diferentes alturas, colocar juguetes de su agrado en el suelo, para que se agache a cogerlo. Empezar con juguetes altos e ir disminuyendo la altura a medida que disminuyen sus dificultades."
+                        ]
+                      }
+                    ]
                   }
                 ]
               },
-              [AreaType.FINE_MOTOR]:  { title: "Motricidad Fina",          subSections: [] },
-              [AreaType.LANGUAGE]:    { title: "Lenguaje",                 subSections: [] },
+              [AreaType.FINE_MOTOR]: {
+                title: "Motricidad Fina",
+                subSections: [
+                  {
+                    id: "golpeteo-9-12",
+                    title: "Golpeteo de objetos: coordinación de ambas manos",
+                    content: [
+                      {
+                        title: "Golpeteo de objetos, para la coordinación de ambas manos",
+                        items: [
+                          "Vertical, de arriba abajo. Horizontal, golpeando un objeto contra otro.",
+                          "Coger 2 objetos a la vez con ambas manos. Cuando el niño tenga un objeto ofrecerle otro, intentando que sostenga los dos."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "pinza-9-12",
+                    title: "Pinza digital",
+                    content: [
+                      {
+                        title: "Pinza digital",
+                        items: [
+                          "Ofrecerle canicas, botones, bolitas,… para que los coja con el dedo índice y pulgar."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "indice-9-12",
+                    title: "Señalar con el dedo índice",
+                    content: [
+                      {
+                        title: "Señalar con el dedo índice",
+                        items: [
+                          "Tocar el piano con ese dedo.",
+                          "Tocar interruptores."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "sacar-meter-9-12",
+                    title: "Sacar y meter objetos",
+                    content: [
+                      {
+                        title: "Sacar y meter objetos",
+                        items: [
+                          "Sacar objetos de un recipiente ancho.",
+                          "Sacar y meter anillas grandes en un eje."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "otros-9-12",
+                    title: "Otros ejercicios",
+                    content: [
+                      {
+                        title: "Otros ejercicios",
+                        items: [
+                          "Seguimos tocando palmas. Unos lo realizan, otros no.",
+                          "Untarle los dedos con sustancias ricas para que los chupe o se los mire.",
+                          "Abrir y cerrar los dedos de la mano de forma espontánea. Cuando le digamos \"adiós\", ya puede realizar movimientos con los 4 dedos.",
+                          "Le ayudaremos a palparse el cuerpo con las manos: la cara, la barriga, las piernas, …",
+                          "Dejamos que con el índice nos toque la boca, los ojos, …",
+                          "Con lapiceros de colores gordos y no tóxicos, dejar que los toque sin insinuarle para qué sirven. Más tarde cogemos hojas grandes de papel o cartulinas, nos ponemos a su lado y realizamos una raya, otra y otra, … hasta que él nos quiera imitar. No se trata de escribir, más bien de plasmar un movimiento, que normalmente le gusta.",
+                          "Darles trapos y le decimos \"mira\", mientras nosotros hacemos gesto de limpiar el suelo, mesa, cama, … con movimientos circulares y horizontales. La intención es que el niño nos imite.",
+                          "Enseñarle a amasar: Le hundimos los dedos en una pasta espesa hecha con agua y harina, con plastilina blanda.",
+                          "Hacer agujeros grandes en una cartulina y después agujeros pequeños para que meta por ahí los dedos.",
+                          "Darle hojas de papel para que rompa, revistas viejas...",
+                          "Darle cuentos para que pase las hojas con el dedo índice.",
+                          "Darle encajes de diferente dificultad: cajas que se metan unas dentro de otras, muñecas rusas, …",
+                          "Le proporcionamos un rastrillo de juguete, le enseñamos el movimiento de arrastre y dejamos que juegue con él.",
+                          "Tira de la cadena del wáter.",
+                          "Encender y apagar las luces.",
+                          "Tapar y destapar tarteras."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              [AreaType.LANGUAGE]: {
+                title: "Lenguaje",
+                subSections: [
+                  {
+                    id: "expresiones-9-12",
+                    title: "Imitar expresiones faciales nuestras",
+                    content: [
+                      {
+                        title: "Imitar expresiones faciales nuestras",
+                        items: [
+                          "Abrir y cerrar la boca.",
+                          "Sacar y meter la lengua.",
+                          "Hacer sonidos guturales: ja ja je je, dentales y labiales tatata, papap, bababa, dadada, mamama.",
+                          "Acariciarle las mejillas, soplárselas, tocárselas con algodón, plumas, con sus muñecos, con una cuchara de metal,…",
+                          "Delante de un espejo, le cogemos su mano y le decimos: \"pelo\" se la llevamos al pelo, luego en la boca, la nariz, orejas."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "silencio-sonido-9-12",
+                    title: "Jugar alternando silencio y sonido",
+                    content: [
+                      {
+                        title: "Jugar alternando silencio y sonido",
+                        items: [
+                          "Combinar voz y no voz: le decimos \"dame la pelota\" y se lo repetimos sin hacer sonido (sólo con muecas de la boca).",
+                          "Ponemos música y la apagamos, la volvemos a poner. Lo mismo con nuestra voz."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
               [AreaType.SOCIAL]:      { title: "Área Social",              subSections: [] },
               [AreaType.PERCEPTION]:  { title: "Percepción y Cognición",   subSections: [] },
             }
