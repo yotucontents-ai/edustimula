@@ -336,11 +336,9 @@ const FullScreenGame: React.FC<{
                 className={`p-6 rounded-2xl border-2 flex flex-col items-center gap-4 transition-all duration-300 min-h-[160px] ${cardClass}`}
               >
                 {opt.imageSrc ? (
-                  <img 
-                    src={opt.imageSrc} 
-                    alt={opt.label} 
-                    className="w-full h-32 object-contain" 
-                  />
+                  <img src={opt.imageSrc} alt={opt.label} className="w-full h-32 object-contain" />
+                ) : opt.emoji ? (
+                  <span style={{ fontSize: game.options.length <= 2 ? '80px' : '56px' }} role="img" aria-label={opt.label} className="leading-none select-none">{opt.emoji}</span>
                 ) : (
                   <Icon size={game.options.length <= 2 ? 80 : 48} className={iconClass} strokeWidth={1.5} />
                 )}

@@ -38,7 +38,7 @@ export interface InteractiveGame {
   type: 'select-image' | 'binary-choice';
   question: string;
   correctAnswer: string;
-  options: { id: string; label: string; icon?: string; imageSrc?: string }[];
+  options: { id: string; label: string; icon?: string; imageSrc?: string; emoji?: string }[];
   successMessage?: string;
 }
 
