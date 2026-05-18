@@ -1,4 +1,4 @@
-import { CategoryId, Category, AreaType } from './types';
+import { CategoryId, Category, AreaType, IntroItem } from './types';
 
 export const APP_DATA: Category[] = [
   {
@@ -19,14 +19,14 @@ export const APP_DATA: Category[] = [
         id: "0-1",
         label: "0 – 1 año",
         introText: [
-          "Háblale y cántale mientras le haces los ejercicios.",
-          "Nunca lo despiertes ni lo fuerces.",
-          "Espera 20 minutos después de comer.",
-          "Trabaja en un lugar seguro y tranquilo.",
-          "Repite los ejercicios dos veces por semana.",
-          "No usar guantes, que tenga el contacto con la piel.",
-          "No usar tablets, pantallas."
-        ],
+          { icon: "Music",      color: "bg-orange-100",  text: "Háblale y cántale mientras le haces los ejercicios." },
+          { icon: "BedSingle",  color: "bg-blue-100",    text: "Nunca lo despiertes ni lo fuerces." },
+          { icon: "Clock",      color: "bg-amber-100",   text: "Espera 20 minutos después de comer." },
+          { icon: "Home",       color: "bg-green-100",   text: "Trabaja en un lugar seguro y tranquilo." },
+          { icon: "RefreshCw",  color: "bg-violet-100",  text: "Repite los ejercicios dos veces por semana." },
+          { icon: "Hand",       color: "bg-rose-100",    text: "No usar guantes; que tenga el contacto con la piel." },
+          { icon: "MonitorOff", color: "bg-slate-100",   text: "No usar tablets ni pantallas." },
+        ] as IntroItem[],
         subGroups: [
           {
             id: "tramo-0-3",
@@ -868,10 +868,10 @@ export const APP_DATA: Category[] = [
         id: "1-2",
         label: "1 – 2 años",
         introText: [
-          "Fomenta la autonomía permitiendo que intente señalar los objetos.",
-          "Celebra cada acierto con entusiasmo.",
-          "Nombra los objetos en voz alta para reforzar el vocabulario cotidiano."
-        ],
+          { icon: "Fingerprint", color: "bg-orange-100", text: "Fomenta la autonomía permitiendo que intente señalar los objetos." },
+          { icon: "Star",        color: "bg-yellow-100", text: "Celebra cada acierto con entusiasmo." },
+          { icon: "MessageCircle", color: "bg-sky-100",  text: "Nombra los objetos en voz alta para reforzar el vocabulario cotidiano." },
+        ] as IntroItem[],
         subGroups: [
           {
             id: "tramo-12-18",
@@ -1605,10 +1605,10 @@ export const APP_DATA: Category[] = [
         id: "2-3",
         label: "2 – 3 años",
         introText: [
-          "A esta edad el niño ya puede realizar frases sencillas.",
-          "Fomenta el juego simbólico (hacer como que come, como que duerme).",
-          "Trabaja la coordinación motora con juegos de saltar o trepar."
-        ],
+          { icon: "MessageSquare", color: "bg-orange-100", text: "A esta edad el niño ya puede realizar frases sencillas." },
+          { icon: "Gamepad2",      color: "bg-purple-100", text: "Fomenta el juego simbólico (hacer como que come, como que duerme)." },
+          { icon: "Activity",      color: "bg-green-100",  text: "Trabaja la coordinación motora con juegos de saltar o trepar." },
+        ] as IntroItem[],
         areas: {
           [AreaType.SOCIAL]: {
             title: "Área Social",

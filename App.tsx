@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { APP_DATA } from './data';
-import { Category, AgeGroup, AreaType, CategoryId, SubSection, InteractiveGame, AreaConfig } from './types';
+import { Category, AgeGroup, AreaType, CategoryId, SubSection, InteractiveGame, AreaConfig, IntroItem } from './types';
 import {
   ChevronLeft,
   Baby,
@@ -59,7 +59,14 @@ import {
   Gamepad2,
   Brain,
   Hash,
-  Compass
+  Compass,
+  Music,
+  Clock,
+  RefreshCw,
+  MonitorOff,
+  Fingerprint,
+  MessageSquare,
+  BedSingle,
 } from 'lucide-react';
 
 // --- Icon Mapping ---
@@ -105,8 +112,51 @@ const IconMap: Record<string, any> = {
   Search,
   Headphones,
   Gamepad2,
-  FolderOpen
+  FolderOpen,
+  Brain,
+  Hash,
+  Compass,
+  Music,
+  Clock,
+  RefreshCw,
+  MonitorOff,
+  Fingerprint,
+  MessageSquare,
+  BedSingle,
+  Activity,
+  Hand,
+  MessageCircle,
 };
+
+// --- Intro Tips Panel ---
+const IntroPanel: React.FC<{ items: (string | IntroItem)[]; title: string }> = ({ items, title }) => (
+  <div className="mb-4">
+    <h3 className="font-bold text-slate-700 text-sm uppercase tracking-wide mb-3 flex items-center gap-2">
+      <Info size={15} className="text-yellow-500" /> {title}
+    </h3>
+    <div className="grid grid-cols-1 gap-2">
+      {items.map((item, i) => {
+        const isRich = typeof item !== 'string';
+        const text = isRich ? item.text : item;
+        const iconName = isRich ? item.icon : null;
+        const colorClass = isRich && item.color ? item.color : 'bg-yellow-50';
+        const Icon = iconName ? IconMap[iconName] : null;
+        return (
+          <div key={i} className="flex items-center gap-3 bg-white rounded-2xl p-3 shadow-sm border border-slate-100">
+            {Icon ? (
+              <div className={`flex-shrink-0 w-12 h-12 rounded-xl ${colorClass} flex items-center justify-center`}>
+                <Icon size={26} className="text-slate-600" strokeWidth={1.5} />
+              </div>
+            ) : (
+              <div className="flex-shrink-0 w-3 h-3 rounded-full bg-yellow-400 ml-1.5" />
+            )}
+            <span className="text-sm text-slate-700 leading-snug">{text}</span>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+);
 
 // --- Audio Helper ---
 const playTextToSpeech = (text: string) => {
@@ -537,17 +587,8 @@ export default function App() {
           textColorClass="text-white"
         />
         <main className="flex-1 p-6 max-w-md mx-auto w-full space-y-4">
-          {hasIntro && (
-            <div className="bg-white p-4 rounded-xl shadow-sm mb-2 border-l-4 border-yellow-400">
-              <h3 className="font-bold text-slate-800 mb-2 flex items-center gap-2">
-                <Info size={18} className="text-yellow-500"/> Antes de iniciar las actividades propuestas
-              </h3>
-              <ul className="text-sm text-slate-600 space-y-1 list-disc list-inside">
-                {selectedAgeGroup.introText?.map((txt, i) => (
-                  <li key={i}>{txt}</li>
-                ))}
-              </ul>
-            </div>
+          {hasIntro && selectedAgeGroup.introText && (
+            <IntroPanel items={selectedAgeGroup.introText} title="Antes de iniciar las actividades" />
           )}
           {selectedAgeGroup.subGroups!.map((sub) => (
             <AgeGroupCard
@@ -575,17 +616,8 @@ export default function App() {
           textColorClass="text-white"
         />
         <main className="flex-1 p-6 max-w-md mx-auto w-full">
-          {hasIntro && (
-            <div className="bg-white p-4 rounded-xl shadow-sm mb-6 border-l-4 border-yellow-400">
-              <h3 className="font-bold text-slate-800 mb-2 flex items-center gap-2">
-                <Info size={18} className="text-yellow-500"/> Recomendaciones
-              </h3>
-              <ul className="text-sm text-slate-600 space-y-1 list-disc list-inside">
-                {activeGroup.introText?.map((txt, i) => (
-                  <li key={i}>{txt}</li>
-                ))}
-              </ul>
-            </div>
+          {hasIntro && activeGroup.introText && (
+            <IntroPanel items={activeGroup.introText} title="Recomendaciones" />
           )}
           <div className="grid grid-cols-2 gap-4">
             {selectedCategory.areaConfigs.map((cfg) => (

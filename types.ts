@@ -51,10 +51,16 @@ export interface SubSection {
   subSections?: SubSection[];
 }
 
+export interface IntroItem {
+  text: string;
+  icon: string;  // Lucide icon name
+  color?: string; // Tailwind bg color class e.g. "bg-orange-100"
+}
+
 export interface AgeGroup {
   id: string;
   label: string;
-  introText?: string[];
+  introText?: (string | IntroItem)[];
   subGroups?: AgeGroup[];
   areas?: {
     [key in AreaType]?: {
