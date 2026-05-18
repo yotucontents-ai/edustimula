@@ -42,9 +42,9 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Fortalecimiento de cuello y espalda",
                         items: [
-                          "a) Utilizamos tres dedos para sujetar el cuello del bebé y hacer una especie de abdominales acostado, sentado.",
-                          "b) Entre 2-3 meses: dado la vuelta hacia abajo, podemos poner objetos de colores delante para que levante levemente la cabecita, para que intente levantar y girar la cabeza.",
-                          "c) Colocar al bebé en una superficie dura apoyando los antebrazos, acariciar su espalda o pasar los dedos por encima de su columna vertebral, bajando del cuello a la cadera, pero NO en sentido contrario."
+                          { text: "Utilizamos tres dedos para sujetar el cuello del bebé y hacer una especie de abdominales: lo inclinamos desde tumbado hacia sentado.", imageSrc: "https://images.unsplash.com/photo-1560328055-e938bb2ed50a?w=600&q=80" },
+                          { text: "Entre 2-3 meses: boca abajo, ponemos objetos de colores delante para que levante y gire levemente la cabecita.", imageSrc: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&q=80" },
+                          { text: "Boca abajo sobre superficie dura apoyando los antebrazos; acariciar su espalda bajando del cuello a la cadera. NO en sentido contrario.", imageSrc: "https://images.unsplash.com/photo-1616699002805-cef7b374b4f2?w=600&q=80" }
                         ]
                       }
                     ]

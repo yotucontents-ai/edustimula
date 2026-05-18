@@ -31,7 +31,7 @@ export interface AreaConfig {
 
 export interface ContentItem {
   title: string;
-  items: string[];
+  items: Array<string | { text: string; imageSrc: string }>;
 }
 
 export interface InteractiveGame {
