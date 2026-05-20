@@ -217,7 +217,16 @@ const CategoryCard: React.FC<{ category: Category; onClick: () => void }> = ({ c
     >
       <Icon size={48} strokeWidth={1.5} />
       <div className="text-center">
-        <h2 className="text-xl font-bold">{category.title}</h2>
+        {(() => {
+          const parenIdx = category.title.indexOf('(');
+          if (parenIdx === -1) return <h2 className="text-lg font-bold">{category.title}</h2>;
+          return (
+            <>
+              <h2 className="text-lg font-bold leading-tight">{category.title.slice(0, parenIdx).trim()}</h2>
+              <p className="text-sm font-semibold opacity-90 mt-0.5">{category.title.slice(parenIdx)}</p>
+            </>
+          );
+        })()}
       </div>
     </button>
   );
@@ -555,7 +564,7 @@ export default function App() {
           <h1 className="text-2xl font-bold text-center text-slate-800">EduStimula</h1>
           <p className="text-center text-slate-500 text-sm">Seleccione una etapa educativa</p>
         </header>
-        <main className="flex-1 p-6 max-w-md mx-auto w-full grid grid-cols-2 gap-4 content-center">
+        <main className="p-4 pt-3 max-w-md mx-auto w-full grid grid-cols-2 gap-4">
           {APP_DATA.map((cat) => (
             <CategoryCard 
               key={cat.id} 
