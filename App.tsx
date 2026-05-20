@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { APP_DATA } from './data';
 import { Category, AgeGroup, AreaType, CategoryId, SubSection, InteractiveGame, AreaConfig, IntroItem } from './types';
 import {
@@ -171,25 +171,27 @@ const playTextToSpeech = (text: string) => {
 
 // --- Components ---
 
-const Header = ({ 
-  title, 
-  subtitle, 
-  onBack, 
-  bgColorClass = "bg-white", 
+const Header = ({
+  title,
+  subtitle,
+  onBack,
+  onHome,
+  bgColorClass = "bg-white",
   textColorClass = "text-slate-800",
   rightElement
-}: { 
-  title: string; 
-  subtitle?: string; 
-  onBack?: () => void; 
-  bgColorClass?: string; 
+}: {
+  title: string;
+  subtitle?: string;
+  onBack?: () => void;
+  onHome?: () => void;
+  bgColorClass?: string;
   textColorClass?: string;
   rightElement?: React.ReactNode;
 }) => (
   <header className={`sticky top-0 z-10 p-4 shadow-sm flex items-center gap-4 ${bgColorClass} transition-colors duration-300`}>
     {onBack && (
-      <button 
-        onClick={onBack} 
+      <button
+        onClick={onBack}
         className="p-2 rounded-full bg-white/20 hover:bg-white/30 text-current transition-all flex-shrink-0"
         aria-label="Volver"
       >
@@ -200,6 +202,15 @@ const Header = ({
       <h1 className={`text-xl font-bold ${textColorClass} truncate`}>{title}</h1>
       {subtitle && <p className={`text-sm opacity-90 ${textColorClass} truncate`}>{subtitle}</p>}
     </div>
+    {onHome && (
+      <button
+        onClick={onHome}
+        className="p-2 rounded-full bg-white/20 hover:bg-white/30 text-current transition-all flex-shrink-0"
+        aria-label="Inicio"
+      >
+        <Home size={22} />
+      </button>
+    )}
     {rightElement}
   </header>
 );
@@ -275,13 +286,15 @@ const AreaCard = ({ config, onClick }: { config: AreaConfig; onClick: () => void
 const TextDetailView: React.FC<{
   subSection: SubSection;
   onClose: () => void;
+  onHome?: () => void;
   colorClass: string;
-}> = ({ subSection, onClose, colorClass }) => {
+}> = ({ subSection, onClose, onHome, colorClass }) => {
   return (
     <div className="fixed inset-0 z-50 bg-slate-50 flex flex-col animate-in slide-in-from-right duration-300">
-      <Header 
-        title={subSection.title} 
+      <Header
+        title={subSection.title}
         onBack={onClose}
+        onHome={onHome}
         bgColorClass="bg-white"
         textColorClass={colorClass}
       />
@@ -453,7 +466,7 @@ const FullScreenGame: React.FC<{
 };
 
 
-const ContentViewer = ({ areaTitle, subSections, colorTextClass }: { areaTitle: string; subSections: SubSection[]; colorTextClass: string }) => {
+const ContentViewer = ({ areaTitle, subSections, colorTextClass, onHome }: { areaTitle: string; subSections: SubSection[]; colorTextClass: string; onHome?: () => void }) => {
   const [activeSubSection, setActiveSubSection] = useState<SubSection | null>(null);
 
   const handleNext = () => {
@@ -469,18 +482,20 @@ const ContentViewer = ({ areaTitle, subSections, colorTextClass }: { areaTitle: 
   if (activeSubSection?.subSections) {
     return (
       <div className="fixed inset-0 z-50 bg-slate-50 flex flex-col animate-in slide-in-from-right duration-300">
-        <Header 
+        <Header
           title={activeSubSection.title}
-          subtitle={areaTitle} 
+          subtitle={areaTitle}
           onBack={() => setActiveSubSection(null)}
+          onHome={onHome}
           bgColorClass="bg-white"
           textColorClass={colorTextClass}
         />
         <main className="flex-1 p-6 max-w-md mx-auto w-full">
-           <ContentViewer 
+           <ContentViewer
              areaTitle={activeSubSection.title}
              subSections={activeSubSection.subSections}
              colorTextClass={colorTextClass}
+             onHome={onHome}
            />
         </main>
       </div>
@@ -501,9 +516,10 @@ const ContentViewer = ({ areaTitle, subSections, colorTextClass }: { areaTitle: 
 
   if (activeSubSection && !activeSubSection.game && !activeSubSection.subSections) {
     return (
-      <TextDetailView 
+      <TextDetailView
         subSection={activeSubSection}
         onClose={() => setActiveSubSection(null)}
+        onHome={onHome}
         colorClass={colorTextClass}
       />
     );
@@ -557,6 +573,47 @@ export default function App() {
   const [selectedSubGroup, setSelectedSubGroup] = useState<AgeGroup | null>(null);
   const [selectedAreaType, setSelectedAreaType] = useState<AreaType | null>(null);
 
+  // Refs so event listeners always see latest state
+  const navRef = useRef({ selectedCategory, selectedAgeGroup, selectedSubGroup, selectedAreaType });
+  useEffect(() => {
+    navRef.current = { selectedCategory, selectedAgeGroup, selectedSubGroup, selectedAreaType };
+  });
+
+  const goBack = useCallback(() => {
+    const s = navRef.current;
+    if (s.selectedAreaType) { setSelectedAreaType(null); return; }
+    if (s.selectedSubGroup) { setSelectedSubGroup(null); return; }
+    if (s.selectedAgeGroup) { setSelectedAgeGroup(null); return; }
+    if (s.selectedCategory) { setSelectedCategory(null); return; }
+  }, []);
+
+  const goHome = useCallback(() => {
+    setSelectedAreaType(null);
+    setSelectedSubGroup(null);
+    setSelectedAgeGroup(null);
+    setSelectedCategory(null);
+  }, []);
+
+  // Hardware back button: intercept popstate so it navigates within the app
+  useEffect(() => {
+    history.replaceState({ idx: 0 }, '');
+    history.pushState({ idx: 1 }, '');
+
+    const handlePopState = (e: PopStateEvent) => {
+      if (e.state?.idx === 0) {
+        const isAtHome = !navRef.current.selectedCategory;
+        if (!isAtHome) {
+          goBack();
+          history.pushState({ idx: 1 }, '');
+        }
+        // At home → let the browser navigate back naturally
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [goBack]);
+
   if (!selectedCategory) {
     return (
       <div className="min-h-screen bg-slate-50 flex flex-col">
@@ -580,10 +637,11 @@ export default function App() {
   if (!selectedAgeGroup) {
     return (
       <div className={`min-h-screen ${selectedCategory.bgClass} flex flex-col`}>
-        <Header 
-          title={selectedCategory.title} 
+        <Header
+          title={selectedCategory.title}
           subtitle="Selecciona la edad"
           onBack={() => setSelectedCategory(null)}
+          onHome={goHome}
           bgColorClass={selectedCategory.colorClass}
           textColorClass="text-white"
         />
@@ -617,6 +675,7 @@ export default function App() {
           title={selectedAgeGroup.label}
           subtitle="Selecciona el tramo"
           onBack={() => setSelectedAgeGroup(null)}
+          onHome={goHome}
           bgColorClass={selectedCategory.colorClass}
           textColorClass="text-white"
         />
@@ -646,6 +705,7 @@ export default function App() {
           title={activeGroup.label}
           subtitle="Selecciona el área de desarrollo"
           onBack={() => selectedSubGroup ? setSelectedSubGroup(null) : setSelectedAgeGroup(null)}
+          onHome={goHome}
           bgColorClass={selectedCategory.colorClass}
           textColorClass="text-white"
         />
@@ -675,15 +735,17 @@ export default function App() {
         title={areaData?.title || 'Área'}
         subtitle={activeGroup.label}
         onBack={() => setSelectedAreaType(null)}
+        onHome={goHome}
         bgColorClass="bg-white"
         textColorClass={selectedCategory.textClass}
       />
       <main className="flex-1 p-6 max-w-md mx-auto w-full">
         {areaData ? (
-          <ContentViewer 
-            areaTitle={areaData.title} 
+          <ContentViewer
+            areaTitle={areaData.title}
             subSections={areaData.subSections}
             colorTextClass={selectedCategory.textClass}
+            onHome={goHome}
           />
         ) : (
           <div className="text-center p-10 text-slate-400">
