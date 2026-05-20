@@ -42,9 +42,9 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Fortalecimiento de cuello y espalda",
                         items: [
-                          "Utilizamos tres dedos para sujetar el cuello del bebé y hacer una especie de abdominales: lo inclinamos desde tumbado hacia sentado.",
-                          "Entre 2-3 meses: boca abajo, ponemos objetos de colores delante para que levante y gire levemente la cabecita.",
-                          { text: "Boca abajo sobre superficie dura apoyando los antebrazos; acariciar su espalda bajando del cuello a la cadera. NO en sentido contrario.", imageSrc: "https://images.unsplash.com/photo-vVb62FI7jaE?w=600&q=80" }
+                          { text: "Utilizamos tres dedos para sujetar el cuello del bebé y hacer una especie de abdominales: lo inclinamos desde tumbado hacia sentado.", imageSrc: "https://picsum.photos/seed/neck-baby-1/600/400" },
+                          { text: "Entre 2-3 meses: boca abajo, ponemos objetos de colores delante para que levante y gire levemente la cabecita.", imageSrc: "https://picsum.photos/seed/tummy-time-baby/600/400" },
+                          { text: "Boca abajo sobre superficie dura apoyando los antebrazos; acariciar su espalda bajando del cuello a la cadera. NO en sentido contrario.", imageSrc: "https://picsum.photos/seed/tummy-forearm/600/400" }
                         ]
                       }
                     ]
@@ -56,11 +56,11 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Con sumo cuidado movilizamos al bebé",
                         items: [
-                          "a) Extendemos brazos arriba.",
-                          "b) Brazos cruzados sobre el pecho.",
-                          "c) Un brazo arriba, otro abajo.",
-                          "d) Extendemos piernas, se las flexionamos suavemente por la rodilla: primero una pierna, luego otra, las dos a la vez.",
-                          "e) Brazo y pierna cruzada."
+                          { text: "Extendemos brazos arriba.", imageSrc: "https://picsum.photos/seed/baby-arms-up/600/400" },
+                          { text: "Brazos cruzados sobre el pecho.", imageSrc: "https://picsum.photos/seed/baby-arms-cross/600/400" },
+                          { text: "Un brazo arriba, otro abajo.", imageSrc: "https://picsum.photos/seed/baby-arm-alt/600/400" },
+                          { text: "Extendemos piernas, se las flexionamos suavemente por la rodilla: primero una pierna, luego otra, las dos a la vez.", imageSrc: "https://picsum.photos/seed/baby-legs-flex/600/400" },
+                          { text: "Brazo y pierna cruzada.", imageSrc: "https://picsum.photos/seed/baby-cross-pattern/600/400" }
                         ]
                       }
                     ]
@@ -77,15 +77,15 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Actividades",
                         items: [
-                          "Con objetos de diferentes texturas se los pasamos suavemente por las manos y por los pies, por todo su cuerpo.",
-                          "Ofrécele juguetes para que los sujete; permítele que se los lleve a la boca si están limpios.",
-                          { text: "Si no es capaz de coger un objeto, ayúdale poniendo sus dedos alrededor del mismo.", imageSrc: "https://images.unsplash.com/photo-M0oVPGsWk1E?w=600&q=80" },
-                          { text: "Extiende sus puños; se acostumbrará a una mayor sensación que reciben sus palmas.", imageSrc: "https://images.unsplash.com/photo-tCbTGNwrFNM?w=600&q=80" },
-                          { text: "Estira suavemente cada dedo de la mano.", imageSrc: "https://images.unsplash.com/photo-5zp0jym2w9M?w=600&q=80" },
-                          "Recorre su cuerpo con una toalla pequeña o paño suave: manos, piernas, pies.",
-                          "Coge su mano y llévasela a su boca para que la chupe.",
-                          "Pasar su mano sobre la cara y pelo.",
-                          "Descubrir sus manos: llevar las manos a la altura de los ojos y unírselas."
+                          { text: "Con objetos de diferentes texturas se los pasamos suavemente por las manos y por los pies, por todo su cuerpo.", imageSrc: "https://picsum.photos/seed/baby-texture-play/600/400" },
+                          { text: "Ofrécele juguetes para que los sujete; permítele que se los lleve a la boca si están limpios.", imageSrc: "https://picsum.photos/seed/baby-holds-toy/600/400" },
+                          { text: "Si no es capaz de coger un objeto, ayúdale poniendo sus dedos alrededor del mismo.", imageSrc: "https://picsum.photos/seed/baby-grasp-finger/600/400" },
+                          { text: "Extiende sus puños; se acostumbrará a una mayor sensación que reciben sus palmas.", imageSrc: "https://picsum.photos/seed/baby-open-fist/600/400" },
+                          { text: "Estira suavemente cada dedo de la mano.", imageSrc: "https://picsum.photos/seed/baby-finger-stretch/600/400" },
+                          { text: "Recorre su cuerpo con una toalla pequeña o paño suave: manos, piernas, pies.", imageSrc: "https://picsum.photos/seed/baby-soft-cloth/600/400" },
+                          { text: "Coge su mano y llévasela a su boca para que la chupe.", imageSrc: "https://picsum.photos/seed/baby-hand-mouth/600/400" },
+                          { text: "Pasar su mano sobre la cara y pelo.", imageSrc: "https://picsum.photos/seed/baby-hand-face/600/400" },
+                          { text: "Descubrir sus manos: llevar las manos a la altura de los ojos y unírselas.", imageSrc: "https://picsum.photos/seed/baby-discover-hands/600/400" }
                         ]
                       }
                     ]
@@ -103,10 +103,10 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Actividades",
                         items: [
-                          { text: "Sonríele y háblale mientras lo atiendes.", imageSrc: "https://images.unsplash.com/photo-WvVyudMd1Es?w=600&q=80" },
-                          { text: "Distingue su llanto. Apóyalo contra tu pecho.", imageSrc: "https://images.unsplash.com/photo-AQU2NkE_lwk?w=600&q=80" },
-                          "Usa tono de voz dulce, acarícialo.",
-                          { text: "Dale mucho cariño, besos y abrazos.", imageSrc: "https://images.unsplash.com/photo-dZYI4ga2eUA?w=600&q=80" }
+                          { text: "Sonríele y háblale mientras lo atiendes.", imageSrc: "https://picsum.photos/seed/parent-smile-baby/600/400" },
+                          { text: "Distingue su llanto. Apóyalo contra tu pecho.", imageSrc: "https://picsum.photos/seed/parent-baby-chest/600/400" },
+                          { text: "Usa tono de voz dulce, acarícialo.", imageSrc: "https://picsum.photos/seed/parent-baby-voice/600/400" },
+                          { text: "Dale mucho cariño, besos y abrazos.", imageSrc: "https://picsum.photos/seed/parent-hug-baby/600/400" }
                         ]
                       }
                     ]
@@ -123,8 +123,8 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Estimulación visual",
                         items: [
-                          "Mírale a la cara, atrae su mirada.",
-                          "Usamos objetos de colores con contrastes como blanco, negro, rojo, al mismo tiempo — por ejemplo cintas, tarjetas. Las llevamos de derecha a izquierda delante de la cara del bebé, de arriba abajo."
+                          { text: "Mírale a la cara, atrae su mirada.", imageSrc: "https://picsum.photos/seed/mother-baby-gaze/600/400" },
+                          { text: "Usamos objetos de colores con contrastes como blanco, negro, rojo — cintas, tarjetas. Las llevamos de derecha a izquierda delante de la cara del bebé, de arriba abajo.", imageSrc: "https://picsum.photos/seed/baby-contrast-cards/600/400" }
                         ]
                       }
                     ]
@@ -136,11 +136,11 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Estimulación auditiva",
                         items: [
-                          "Utilizamos objetos sonoros y también con nuestra voz. El bebé se inclinará ligeramente hacia el lado del sonido.",
-                          "Háblale para que empiece a fijar la mirada.",
-                          "Ponle música suave y de baja intensidad; estimula la sensibilidad auditiva y cerebral.",
-                          "Dale un sonajero y agítalo para que intente imitar el movimiento. Cuida que no se golpee.",
-                          "Háblale, llámale por su nombre."
+                          { text: "Utilizamos objetos sonoros y también con nuestra voz. El bebé se inclinará ligeramente hacia el lado del sonido.", imageSrc: "https://picsum.photos/seed/baby-sound-object/600/400" },
+                          { text: "Háblale para que empiece a fijar la mirada.", imageSrc: "https://picsum.photos/seed/parent-talk-newborn/600/400" },
+                          { text: "Ponle música suave y de baja intensidad; estimula la sensibilidad auditiva y cerebral.", imageSrc: "https://picsum.photos/seed/baby-listen-music/600/400" },
+                          { text: "Dale un sonajero y agítalo para que intente imitar el movimiento. Cuida que no se golpee.", imageSrc: "https://picsum.photos/seed/baby-rattle-play/600/400" },
+                          { text: "Háblale, llámale por su nombre.", imageSrc: "https://picsum.photos/seed/baby-name-call/600/400" }
                         ]
                       }
                     ]
