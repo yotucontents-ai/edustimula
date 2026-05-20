@@ -42,9 +42,9 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Fortalecimiento de cuello y espalda",
                         items: [
-                          { text: "Utilizamos tres dedos para sujetar el cuello del bebé y hacer una especie de abdominales: lo inclinamos desde tumbado hacia sentado.", imageSrc: "https://images.unsplash.com/photo-1560328055-e938bb2ed50a?w=600&q=80" },
-                          { text: "Entre 2-3 meses: boca abajo, ponemos objetos de colores delante para que levante y gire levemente la cabecita.", imageSrc: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&q=80" },
-                          { text: "Boca abajo sobre superficie dura apoyando los antebrazos; acariciar su espalda bajando del cuello a la cadera. NO en sentido contrario.", imageSrc: "https://images.unsplash.com/photo-1616699002805-cef7b374b4f2?w=600&q=80" }
+                          "Utilizamos tres dedos para sujetar el cuello del bebé y hacer una especie de abdominales: lo inclinamos desde tumbado hacia sentado.",
+                          "Entre 2-3 meses: boca abajo, ponemos objetos de colores delante para que levante y gire levemente la cabecita.",
+                          { text: "Boca abajo sobre superficie dura apoyando los antebrazos; acariciar su espalda bajando del cuello a la cadera. NO en sentido contrario.", imageSrc: "https://images.unsplash.com/photo-vVb62FI7jaE?w=600&q=80" }
                         ]
                       }
                     ]
@@ -79,9 +79,9 @@ export const APP_DATA: Category[] = [
                         items: [
                           "Con objetos de diferentes texturas se los pasamos suavemente por las manos y por los pies, por todo su cuerpo.",
                           "Ofrécele juguetes para que los sujete; permítele que se los lleve a la boca si están limpios.",
-                          "Si no es capaz de coger un objeto, ayúdale poniendo sus dedos alrededor del mismo.",
-                          "Extiende sus puños; se acostumbrará a una mayor sensación que reciben sus palmas.",
-                          "Estira suavemente cada dedo de la mano.",
+                          { text: "Si no es capaz de coger un objeto, ayúdale poniendo sus dedos alrededor del mismo.", imageSrc: "https://images.unsplash.com/photo-M0oVPGsWk1E?w=600&q=80" },
+                          { text: "Extiende sus puños; se acostumbrará a una mayor sensación que reciben sus palmas.", imageSrc: "https://images.unsplash.com/photo-tCbTGNwrFNM?w=600&q=80" },
+                          { text: "Estira suavemente cada dedo de la mano.", imageSrc: "https://images.unsplash.com/photo-5zp0jym2w9M?w=600&q=80" },
                           "Recorre su cuerpo con una toalla pequeña o paño suave: manos, piernas, pies.",
                           "Coge su mano y llévasela a su boca para que la chupe.",
                           "Pasar su mano sobre la cara y pelo.",
@@ -103,10 +103,10 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Actividades",
                         items: [
-                          "Sonríele y háblale mientras lo atiendes.",
-                          "Distingue su llanto. Apóyalo contra tu pecho.",
+                          { text: "Sonríele y háblale mientras lo atiendes.", imageSrc: "https://images.unsplash.com/photo-WvVyudMd1Es?w=600&q=80" },
+                          { text: "Distingue su llanto. Apóyalo contra tu pecho.", imageSrc: "https://images.unsplash.com/photo-AQU2NkE_lwk?w=600&q=80" },
                           "Usa tono de voz dulce, acarícialo.",
-                          "Dale mucho cariño, besos y abrazos."
+                          { text: "Dale mucho cariño, besos y abrazos.", imageSrc: "https://images.unsplash.com/photo-dZYI4ga2eUA?w=600&q=80" }
                         ]
                       }
                     ]

@@ -291,7 +291,19 @@ const TextDetailView: React.FC<{
                       <li key={i} className={`text-slate-700 ${hasImage ? 'rounded-xl overflow-hidden border border-slate-100 shadow-sm' : 'flex items-start gap-3'}`}>
                         {hasImage ? (
                           <>
-                            <img src={src!} alt={text} className="w-full h-44 object-cover" loading="lazy" />
+                            <img
+                              src={src!}
+                              alt={text}
+                              className="w-full h-44 object-cover"
+                              loading="lazy"
+                              onError={e => {
+                                const li = (e.currentTarget as HTMLImageElement).closest('li');
+                                if (li) {
+                                  li.className = 'text-slate-700 flex items-start gap-3';
+                                  li.innerHTML = `<div class="mt-1.5 w-2 h-2 rounded-full flex-shrink-0 ${colorClass.replace('text-', 'bg-')}"></div><span class="leading-relaxed">${text}</span>`;
+                                }
+                              }}
+                            />
                             <p className="px-3 py-2 text-sm leading-relaxed">{text}</p>
                           </>
                         ) : (
