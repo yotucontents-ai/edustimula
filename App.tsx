@@ -217,7 +217,6 @@ const CategoryCard: React.FC<{ category: Category; onClick: () => void }> = ({ c
     >
       <Icon size={48} strokeWidth={1.5} />
       <div className="text-center">
-        <span className="block text-3xl font-bold opacity-30 mb-1">{category.id}</span>
         <h2 className="text-xl font-bold">{category.title}</h2>
       </div>
     </button>
@@ -556,7 +555,7 @@ export default function App() {
           <h1 className="text-2xl font-bold text-center text-slate-800">EduStimula</h1>
           <p className="text-center text-slate-500 text-sm">Seleccione una etapa educativa</p>
         </header>
-        <main className="flex-1 p-6 max-w-md mx-auto w-full grid grid-cols-1 gap-4 content-center">
+        <main className="flex-1 p-6 max-w-md mx-auto w-full grid grid-cols-2 gap-4 content-center">
           {APP_DATA.map((cat) => (
             <CategoryCard 
               key={cat.id} 
