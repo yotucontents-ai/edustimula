@@ -42,9 +42,9 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Fortalecimiento de cuello y espalda",
                         items: [
-                          { text: "Utilizamos tres dedos para sujetar el cuello del bebé y hacer una especie de abdominales: lo inclinamos desde tumbado hacia sentado.", imageSrc: "https://picsum.photos/seed/neck-baby-1/600/400" },
+                          { text: "Utilizamos tres dedos para sujetar el cuello del bebé y hacer una especie de abdominales: lo inclinamos desde tumbado hacia sentado.", imageSrc: "/images/cuello-pull-to-sit.jpg" },
                           { text: "Entre 2-3 meses: boca abajo, ponemos objetos de colores delante para que levante y gire levemente la cabecita.", imageSrc: "https://picsum.photos/seed/tummy-time-baby/600/400" },
-                          { text: "Boca abajo sobre superficie dura apoyando los antebrazos; acariciar su espalda bajando del cuello a la cadera. NO en sentido contrario.", imageSrc: "https://picsum.photos/seed/tummy-forearm/600/400" }
+                          { text: "Boca abajo sobre superficie dura apoyando los antebrazos; acariciar su espalda bajando del cuello a la cadera. NO en sentido contrario.", imageSrc: "/images/cuello-tummy.jpg" }
                         ]
                       }
                     ]
@@ -56,9 +56,9 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Con sumo cuidado movilizamos al bebé",
                         items: [
-                          { text: "Extendemos brazos arriba.", imageSrc: "https://picsum.photos/seed/baby-arms-up/600/400" },
-                          { text: "Brazos cruzados sobre el pecho.", imageSrc: "https://picsum.photos/seed/baby-arms-cross/600/400" },
-                          { text: "Un brazo arriba, otro abajo.", imageSrc: "https://picsum.photos/seed/baby-arm-alt/600/400" },
+                          { text: "Extendemos brazos arriba.", imageSrc: "/images/tono-brazos-arriba.jpg" },
+                          { text: "Brazos cruzados sobre el pecho.", imageSrc: "/images/tono-brazos-cruzados.jpg" },
+                          { text: "Un brazo arriba, otro abajo.", imageSrc: "/images/tono-brazo-alt.jpg" },
                           { text: "Extendemos piernas, se las flexionamos suavemente por la rodilla: primero una pierna, luego otra, las dos a la vez.", imageSrc: "https://picsum.photos/seed/baby-legs-flex/600/400" },
                           { text: "Brazo y pierna cruzada.", imageSrc: "https://picsum.photos/seed/baby-cross-pattern/600/400" }
                         ]
