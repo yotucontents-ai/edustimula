@@ -863,7 +863,7 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Participar en juegos de escondite",
                         items: [
-                          "Jugar a esconderse con un pañuelo, trapo,…nos tapamos la cara y nos destapamos. Se lo hacemos a él."
+                          { text: "Jugar a esconderse con un pañuelo, trapo,…nos tapamos la cara y nos destapamos. Se lo hacemos a él.", imageSrc: "https://picsum.photos/seed/baby-peek-a-boo-cloth/600/400" },
                         ]
                       }
                     ]
@@ -875,8 +875,8 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Juego cooperativo con pelota",
                         items: [
-                          "Nos sentamos frente al niño y le tiramos una pelota, esperamos a que él haga lo mismo.",
-                          "Le ofrecemos sus juguetes, cuando los coja, esperamos que él nos ofrezca alguno, si no lo hace, le decimos: ¿me lo das? Mientras se lo quitamos suavemente."
+                          { text: "Nos sentamos frente al niño y le tiramos una pelota, esperamos a que él haga lo mismo.", imageSrc: "https://picsum.photos/seed/baby-ball-roll-back/600/400" },
+                          { text: "Le ofrecemos sus juguetes, cuando los coja, esperamos que él nos ofrezca alguno, si no lo hace, le decimos: ¿me lo das? Mientras se lo quitamos suavemente.", imageSrc: "https://picsum.photos/seed/baby-give-toy-sharing/600/400" },
                         ]
                       }
                     ]
@@ -888,8 +888,8 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Control de esfínteres",
                         items: [
-                          "Cuando le saquemos el pañal se lo acercamos un poco y le decimos: \"caca\", \"pis\" y lo tiramos.",
-                          "Le ponemos en el orinal a las horas que creamos más adecuadas, al menos una vez al día."
+                          { text: "Cuando le saquemos el pañal se lo acercamos un poco y le decimos: \"caca\", \"pis\" y lo tiramos.", imageSrc: "https://picsum.photos/seed/baby-diaper-change-word/600/400" },
+                          { text: "Le ponemos en el orinal a las horas que creamos más adecuadas, al menos una vez al día.", imageSrc: "https://picsum.photos/seed/baby-potty-daily-routine/600/400" },
                         ]
                       }
                     ]
@@ -901,8 +901,8 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Colaborar en comidas y en el baño",
                         items: [
-                          "El niño debe colaborar cuando se le viste, facilitando la entrada de la prenda. Ya debe empezar a quitarse ropa fácil: gorro, guante, calcetín, zapato,...",
-                          "No tienen que lavarse, sí darse cuenta de lo que se está haciendo e intentar en algún momento imitarlo: lavar la cara con su manita, lavarse las dos manos,…"
+                          { text: "El niño debe colaborar cuando se le viste, facilitando la entrada de la prenda. Ya debe empezar a quitarse ropa fácil: gorro, guante, calcetín, zapato,...", imageSrc: "https://picsum.photos/seed/baby-dressing-cooperate/600/400" },
+                          { text: "No tienen que lavarse, sí darse cuenta de lo que se está haciendo e intentar en algún momento imitarlo: lavar la cara con su manita, lavarse las dos manos,…", imageSrc: "https://picsum.photos/seed/baby-wash-face-imitate/600/400" },
                         ]
                       }
                     ]
@@ -919,9 +919,9 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Ejercicios de observación",
                         items: [
-                          "Con un pañuelo tapamos objetos, ya sea en su habitación, baño, comedor…y los destapamos. Esperamos a que lo haga él.",
-                          "Jugamos a esconder objetos y que el niño los encuentre. Le enseñamos un juguete, cuando lo vaya a coger, lo escondemos en nuestra mano, tiene que intentar abrirla. Un juguete más grande lo escondemos en distintos sitios, siempre que vea dónde... debe de tratar de cogerlo.",
-                          "Le cogemos en brazos y miramos por la ventana sin hablar. Al cabo de un rato le explicamos lo que vemos."
+                          { text: "Con un pañuelo tapamos objetos, ya sea en su habitación, baño, comedor…y los destapamos. Esperamos a que lo haga él.", imageSrc: "https://picsum.photos/seed/baby-cloth-cover-object/600/400" },
+                          { text: "Jugamos a esconder objetos y que el niño los encuentre. Le enseñamos un juguete, cuando lo vaya a coger, lo escondemos en nuestra mano, tiene que intentar abrirla.", imageSrc: "https://picsum.photos/seed/baby-find-hidden-toy-hand/600/400" },
+                          { text: "Le cogemos en brazos y miramos por la ventana sin hablar. Al cabo de un rato le explicamos lo que vemos.", imageSrc: "https://picsum.photos/seed/baby-window-watching-arms/600/400" },
                         ]
                       }
                     ]
@@ -933,9 +933,9 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Juegos de elección",
                         items: [
-                          "Darle varias láminas o tarjetas para que las mire, esperamos a que coja una y retiramos las otras. Cuando termine volvemos a hacer lo mismo.",
-                          "Ofrecerle dos juguetes, cuando se incline por uno, escondemos el otro y jugamos con el niño. Después volvemos a ofrecerle los dos. A veces se inclinan siempre por el mismo.",
-                          "Cuando le queramos dar un trozo de pan, galleta... le ofrecemos dos trozos, esperamos que elija uno. El otro no se lo damos."
+                          { text: "Darle varias láminas o tarjetas para que las mire, esperamos a que coja una y retiramos las otras. Cuando termine volvemos a hacer lo mismo.", imageSrc: "https://picsum.photos/seed/baby-choose-flashcard/600/400" },
+                          { text: "Ofrecerle dos juguetes, cuando se incline por uno, escondemos el otro y jugamos con el niño. Después volvemos a ofrecerle los dos. A veces se inclinan siempre por el mismo.", imageSrc: "https://picsum.photos/seed/baby-choose-favorite-toy/600/400" },
+                          { text: "Cuando le queramos dar un trozo de pan, galleta... le ofrecemos dos trozos, esperamos que elija uno. El otro no se lo damos.", imageSrc: "https://picsum.photos/seed/baby-choose-food-piece/600/400" },
                         ]
                       }
                     ]
@@ -947,9 +947,9 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Juegos de memoria",
                         items: [
-                          "Le enseñamos un juego, cuando lo domine, nos olvidamos del juego uno o dos días. Lo repetimos después de ese tiempo y observamos si el bebé lo recuerda.",
-                          "Enseñarle el timbre de la casa y esperar que al regresar de la calle busque el mismo lugar.",
-                          "Guardar algunos juguetes siempre en un sitio determinado que él lo sepa, al pasar unos días irá directamente al sitio a buscarlos. Al cabo de días se los cambiamos de lugar sin advertírselo. Observamos si nos pide ayuda o se asombra. Se los damos y los volvemos al lugar de siempre."
+                          { text: "Le enseñamos un juego, cuando lo domine, nos olvidamos del juego uno o dos días. Lo repetimos después de ese tiempo y observamos si el bebé lo recuerda.", imageSrc: "https://picsum.photos/seed/baby-memory-game-recall/600/400" },
+                          { text: "Enseñarle el timbre de la casa y esperar que al regresar de la calle busque el mismo lugar.", imageSrc: "https://picsum.photos/seed/baby-doorbell-location/600/400" },
+                          { text: "Guardar algunos juguetes siempre en un sitio determinado. Al cabo de días se los cambiamos de lugar sin advertírselo. Observamos si nos pide ayuda o se asombra.", imageSrc: "https://picsum.photos/seed/baby-toy-storage-place/600/400" },
                         ]
                       }
                     ]
