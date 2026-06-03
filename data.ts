@@ -543,6 +543,20 @@ export const APP_DATA: Category[] = [
                         ]
                       }
                     ]
+                  },
+                  {
+                    id: "habitos-6-9",
+                    title: "Hábitos",
+                    content: [
+                      {
+                        title: "Hábitos",
+                        items: [
+                          { text: "Iniciarlo en el control de esfínteres. Al darnos cuenta de que va a hacer caca, le ponemos en el orinal. Ya se le puede ir acostumbrando poco a poco después de beber o de las comidas. Le entretenemos y cuando se dé cuenta que ha hecho caca o pis, se pondrá muy contento y lo irá pidiendo cada vez más. No regañarle.", imageSrc: "https://picsum.photos/seed/baby-potty-training/600/400" },
+                          { text: "Vestirse. Poco a poco colaborará en el vestido. Le vamos diciendo: un brazo, la pierna, la cabeza.", imageSrc: "https://picsum.photos/seed/baby-getting-dressed/600/400" },
+                          { text: "Lavarse. Enseñarle la esponja y explicarle: el bebé se lava las manos, los pies.", imageSrc: "https://picsum.photos/seed/baby-washing-hands-sponge/600/400" },
+                        ]
+                      }
+                    ]
                   }
                 ]
               },
