@@ -699,8 +699,8 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Golpeteo de objetos, para la coordinación de ambas manos",
                         items: [
-                          "Vertical, de arriba abajo. Horizontal, golpeando un objeto contra otro.",
-                          "Coger 2 objetos a la vez con ambas manos. Cuando el niño tenga un objeto ofrecerle otro, intentando que sostenga los dos."
+                          { text: "Vertical, de arriba abajo. Horizontal, golpeando un objeto contra otro.", imageSrc: "https://picsum.photos/seed/baby-bang-objects-hands/600/400" },
+                          { text: "Coger 2 objetos a la vez con ambas manos. Cuando el niño tenga un objeto ofrecerle otro, intentando que sostenga los dos.", imageSrc: "https://picsum.photos/seed/baby-hold-two-objects/600/400" },
                         ]
                       }
                     ]
@@ -712,7 +712,7 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Pinza digital",
                         items: [
-                          "Ofrecerle canicas, botones, bolitas,… para que los coja con el dedo índice y pulgar."
+                          { text: "Ofrecerle canicas, botones, bolitas,… para que los coja con el dedo índice y pulgar.", imageSrc: "https://picsum.photos/seed/baby-pincer-marbles-buttons/600/400" },
                         ]
                       }
                     ]
@@ -724,8 +724,8 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Señalar con el dedo índice",
                         items: [
-                          "Tocar el piano con ese dedo.",
-                          "Tocar interruptores."
+                          { text: "Tocar el piano con ese dedo.", imageSrc: "https://picsum.photos/seed/baby-index-finger-piano/600/400" },
+                          { text: "Tocar interruptores.", imageSrc: "https://picsum.photos/seed/baby-index-light-switch/600/400" },
                         ]
                       }
                     ]
@@ -737,8 +737,8 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Sacar y meter objetos",
                         items: [
-                          "Sacar objetos de un recipiente ancho.",
-                          "Sacar y meter anillas grandes en un eje."
+                          { text: "Sacar objetos de un recipiente ancho.", imageSrc: "https://picsum.photos/seed/baby-take-out-container/600/400" },
+                          { text: "Sacar y meter anillas grandes en un eje.", imageSrc: "https://picsum.photos/seed/baby-stacking-rings/600/400" },
                         ]
                       }
                     ]
@@ -750,22 +750,22 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Otros ejercicios",
                         items: [
-                          "Seguimos tocando palmas. Unos lo realizan, otros no.",
-                          "Untarle los dedos con sustancias ricas para que los chupe o se los mire.",
-                          "Abrir y cerrar los dedos de la mano de forma espontánea. Cuando le digamos \"adiós\", ya puede realizar movimientos con los 4 dedos.",
-                          "Le ayudaremos a palparse el cuerpo con las manos: la cara, la barriga, las piernas, …",
-                          "Dejamos que con el índice nos toque la boca, los ojos, …",
-                          "Con lapiceros de colores gordos y no tóxicos, dejar que los toque sin insinuarle para qué sirven. Más tarde cogemos hojas grandes de papel o cartulinas, nos ponemos a su lado y realizamos una raya, otra y otra, … hasta que él nos quiera imitar. No se trata de escribir, más bien de plasmar un movimiento, que normalmente le gusta.",
-                          "Darles trapos y le decimos \"mira\", mientras nosotros hacemos gesto de limpiar el suelo, mesa, cama, … con movimientos circulares y horizontales. La intención es que el niño nos imite.",
-                          "Enseñarle a amasar: Le hundimos los dedos en una pasta espesa hecha con agua y harina, con plastilina blanda.",
-                          "Hacer agujeros grandes en una cartulina y después agujeros pequeños para que meta por ahí los dedos.",
-                          "Darle hojas de papel para que rompa, revistas viejas...",
-                          "Darle cuentos para que pase las hojas con el dedo índice.",
-                          "Darle encajes de diferente dificultad: cajas que se metan unas dentro de otras, muñecas rusas, …",
-                          "Le proporcionamos un rastrillo de juguete, le enseñamos el movimiento de arrastre y dejamos que juegue con él.",
-                          "Tira de la cadena del wáter.",
-                          "Encender y apagar las luces.",
-                          "Tapar y destapar tarteras."
+                          { text: "Seguimos tocando palmas. Unos lo realizan, otros no.", imageSrc: "https://picsum.photos/seed/baby-clapping-hands/600/400" },
+                          { text: "Untarle los dedos con sustancias ricas para que los chupe o se los mire.", imageSrc: "https://picsum.photos/seed/baby-finger-licking-food/600/400" },
+                          { text: "Abrir y cerrar los dedos de la mano de forma espontánea. Cuando le digamos \"adiós\", ya puede realizar movimientos con los 4 dedos.", imageSrc: "https://picsum.photos/seed/baby-open-close-fingers/600/400" },
+                          { text: "Le ayudaremos a palparse el cuerpo con las manos: la cara, la barriga, las piernas, …", imageSrc: "https://picsum.photos/seed/baby-touch-own-body/600/400" },
+                          { text: "Dejamos que con el índice nos toque la boca, los ojos, …", imageSrc: "https://picsum.photos/seed/baby-index-touch-face/600/400" },
+                          { text: "Con lapiceros de colores gordos y no tóxicos, dejar que los toque. Más tarde realizamos rayas en papel grande para que nos imite.", imageSrc: "https://picsum.photos/seed/baby-chunky-crayons-paper/600/400" },
+                          { text: "Darles trapos y hacer gesto de limpiar el suelo, mesa, cama con movimientos circulares y horizontales para que el niño nos imite.", imageSrc: "https://picsum.photos/seed/baby-wipe-cloth-imitate/600/400" },
+                          { text: "Enseñarle a amasar: hundir los dedos en pasta espesa de agua y harina, o con plastilina blanda.", imageSrc: "https://picsum.photos/seed/baby-dough-fingers-knead/600/400" },
+                          { text: "Hacer agujeros grandes en una cartulina y después agujeros pequeños para que meta por ahí los dedos.", imageSrc: "https://picsum.photos/seed/baby-finger-holes-cardboard/600/400" },
+                          { text: "Darle hojas de papel para que rompa, revistas viejas.", imageSrc: "https://picsum.photos/seed/baby-tearing-paper/600/400" },
+                          { text: "Darle cuentos para que pase las hojas con el dedo índice.", imageSrc: "https://picsum.photos/seed/baby-turn-book-pages/600/400" },
+                          { text: "Darle encajes de diferente dificultad: cajas que se metan unas dentro de otras, muñecas rusas, …", imageSrc: "https://picsum.photos/seed/baby-nesting-boxes-matryoshka/600/400" },
+                          { text: "Le proporcionamos un rastrillo de juguete, le enseñamos el movimiento de arrastre y dejamos que juegue con él.", imageSrc: "https://picsum.photos/seed/baby-toy-rake-dragging/600/400" },
+                          { text: "Tira de la cadena del wáter.", imageSrc: "https://picsum.photos/seed/baby-toilet-flush-chain/600/400" },
+                          { text: "Encender y apagar las luces.", imageSrc: "https://picsum.photos/seed/baby-light-switch-on-off/600/400" },
+                          { text: "Tapar y destapar tarteras.", imageSrc: "https://picsum.photos/seed/baby-container-lid-open/600/400" },
                         ]
                       }
                     ]
