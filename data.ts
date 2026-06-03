@@ -983,29 +983,29 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Sentado",
                         items: [
-                          "Su equilibrio es bueno, es capaz de reaccionar a movimientos que le hacen perder el equilibrio con otros movimientos compensatorios.",
-                          "Sentamos al niño en un taburete, de forma que los pies no toquen el suelo, le invitamos a bajar ofreciéndole las manos. A medida que domine el ejercicio vamos retirándole nuestras manos.",
-                          "Nos sentamos con el niño en el suelo y jugamos a tirarnos la pelota."
+                          { text: "Su equilibrio es bueno, es capaz de reaccionar a movimientos que le hacen perder el equilibrio con otros movimientos compensatorios.", imageSrc: "https://picsum.photos/seed/toddler-sitting-balance-react/600/400" },
+                          { text: "Sentamos al niño en un taburete, de forma que los pies no toquen el suelo, le invitamos a bajar ofreciéndole las manos. A medida que domine el ejercicio vamos retirándole nuestras manos.", imageSrc: "https://picsum.photos/seed/toddler-stool-feet-up/600/400" },
+                          { text: "Nos sentamos con el niño en el suelo y jugamos a tirarnos la pelota.", imageSrc: "https://picsum.photos/seed/toddler-floor-ball-pass/600/400" },
                         ]
                       },
                       {
                         title: "A gatas. Siempre que sea un juego.",
                         items: [
-                          "Jugamos a subir escaleras gateando.",
-                          "Ponemos obstáculos en el suelo y nos ponemos a gatear sorteándolos."
+                          { text: "Jugamos a subir escaleras gateando.", imageSrc: "https://picsum.photos/seed/toddler-crawl-stairs/600/400" },
+                          { text: "Ponemos obstáculos en el suelo y nos ponemos a gatear sorteándolos.", imageSrc: "https://picsum.photos/seed/toddler-crawl-obstacles/600/400" },
                         ]
                       },
                       {
                         title: "De pie",
                         items: [
-                          "Debe desplazarse sin dificultad. Y desde esta posición juega, anda, sube, baja, cambia de posición, …",
-                          "Camina solo o con ayuda de forma todavía insegura.",
-                          "Se agacha y coge juguetes que se le caen o que encuentra sin perder el equilibrio.",
-                          "Andar hacia atrás.",
-                          "Le ofrecemos juguetes con hilos o cuerdas para que pueda arrastrarlos.",
-                          "Hacer pequeñas carreras, a ver quién llega primero a la puerta... le cogemos de la mano y corremos, \"corre, corre que nos pillan\".",
-                          "Le damos las manos y jugamos a subir y a bajar.",
-                          "Jugamos a tirarnos la pelota de pie."
+                          { text: "Debe desplazarse sin dificultad. Y desde esta posición juega, anda, sube, baja, cambia de posición, …", imageSrc: "https://picsum.photos/seed/toddler-standing-moving/600/400" },
+                          { text: "Camina solo o con ayuda de forma todavía insegura.", imageSrc: "https://picsum.photos/seed/toddler-first-walk-unsteady/600/400" },
+                          { text: "Se agacha y coge juguetes que se le caen o que encuentra sin perder el equilibrio.", imageSrc: "https://picsum.photos/seed/toddler-squat-pick-up/600/400" },
+                          { text: "Andar hacia atrás.", imageSrc: "https://picsum.photos/seed/toddler-walk-backwards/600/400" },
+                          { text: "Le ofrecemos juguetes con hilos o cuerdas para que pueda arrastrarlos.", imageSrc: "https://picsum.photos/seed/toddler-pull-toy-string/600/400" },
+                          { text: "Hacer pequeñas carreras, a ver quién llega primero a la puerta... le cogemos de la mano y corremos.", imageSrc: "https://picsum.photos/seed/toddler-running-race-hand/600/400" },
+                          { text: "Le damos las manos y jugamos a subir y a bajar.", imageSrc: "https://picsum.photos/seed/toddler-up-down-hands/600/400" },
+                          { text: "Jugamos a tirarnos la pelota de pie.", imageSrc: "https://picsum.photos/seed/toddler-standing-ball-throw/600/400" },
                         ]
                       }
                     ]
@@ -1022,10 +1022,10 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Prensión",
                         items: [
-                          "Coger fideos gordos y guardarlos en una caja.",
-                          "Coger fideos finos.",
-                          "Sacar y meter cubos de una caja.",
-                          "Jugar a lanzar objetos."
+                          { text: "Coger fideos gordos y guardarlos en una caja.", imageSrc: "https://picsum.photos/seed/toddler-thick-pasta-box/600/400" },
+                          { text: "Coger fideos finos.", imageSrc: "https://picsum.photos/seed/toddler-thin-pasta-pick/600/400" },
+                          { text: "Sacar y meter cubos de una caja.", imageSrc: "https://picsum.photos/seed/toddler-blocks-in-out-box/600/400" },
+                          { text: "Jugar a lanzar objetos.", imageSrc: "https://picsum.photos/seed/toddler-throwing-objects/600/400" },
                         ]
                       }
                     ]
@@ -1037,10 +1037,10 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Manos",
                         items: [
-                          "Encajar aros en un palo. Primero le ofrecemos aros grandes y luego más pequeños.",
-                          "Le dejamos ceras gruesas y papel y le enseñamos a garabatear, una vez al día.",
-                          "En una cartulina hacemos 5 agujeros para poner los dedos. Introducimos por allí los dedos y se lo enseñamos. Retiramos nuestra mano y después le introducimos sus dedos.",
-                          "Manipulación y palpación de distintos materiales con diferente textura y dureza: frutas, verduras, telas..."
+                          { text: "Encajar aros en un palo. Primero le ofrecemos aros grandes y luego más pequeños.", imageSrc: "https://picsum.photos/seed/toddler-ring-stacking-peg/600/400" },
+                          { text: "Le dejamos ceras gruesas y papel y le enseñamos a garabatear, una vez al día.", imageSrc: "https://picsum.photos/seed/toddler-chunky-crayons-scribble/600/400" },
+                          { text: "En una cartulina hacemos 5 agujeros para poner los dedos. Introducimos por allí los dedos y se lo enseñamos. Retiramos nuestra mano y después le introducimos sus dedos.", imageSrc: "https://picsum.photos/seed/toddler-cardboard-finger-holes/600/400" },
+                          { text: "Manipulación y palpación de distintos materiales con diferente textura y dureza: frutas, verduras, telas...", imageSrc: "https://picsum.photos/seed/toddler-texture-exploration/600/400" },
                         ]
                       }
                     ]
@@ -1052,12 +1052,12 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Dedos",
                         items: [
-                          "Cogemos plastilina blanda y con el índice hacemos agujeros. Le enseñamos para que él haga lo mismo.",
-                          "Con una esponjita con color, que pinte en una cartulina.",
-                          "Le pintamos sus dedos, de un solo color, de varios colores, …",
-                          "Le atamos hilos de lana en sus dedos a modo de anillo para que se los saque.",
-                          "Le ofrecemos nuestra mano cerrada en forma de puño y vamos abriendo los dedos uno a uno. La volvemos a cerrar y le pedimos al niño que nos abra los dedos uno a uno.",
-                          "Señalar imágenes con el dedo índice."
+                          { text: "Cogemos plastilina blanda y con el índice hacemos agujeros. Le enseñamos para que él haga lo mismo.", imageSrc: "https://picsum.photos/seed/toddler-playdough-index-holes/600/400" },
+                          { text: "Con una esponjita con color, que pinte en una cartulina.", imageSrc: "https://picsum.photos/seed/toddler-sponge-paint-cardboard/600/400" },
+                          { text: "Le pintamos sus dedos, de un solo color, de varios colores, …", imageSrc: "https://picsum.photos/seed/toddler-finger-paint-colors/600/400" },
+                          { text: "Le atamos hilos de lana en sus dedos a modo de anillo para que se los saque.", imageSrc: "https://picsum.photos/seed/toddler-wool-finger-rings/600/400" },
+                          { text: "Le ofrecemos nuestra mano cerrada en forma de puño y vamos abriendo los dedos uno a uno. La volvemos a cerrar y le pedimos al niño que nos abra los dedos uno a uno.", imageSrc: "https://picsum.photos/seed/toddler-open-fingers-one-by-one/600/400" },
+                          { text: "Señalar imágenes con el dedo índice.", imageSrc: "https://picsum.photos/seed/toddler-point-picture-book/600/400" },
                         ]
                       }
                     ]
@@ -1213,13 +1213,13 @@ export const APP_DATA: Category[] = [
                   {
                     title: "Ejercicios de lengua y de labios",
                     items: [
-                      "Hacemos ruido con la lengua, para que la mueva.",
-                      "Hacer chasquidos.",
-                      "Abrir y cerrar los labios.",
-                      "Sacar la lengua y meterla sin ruido y con ruido.",
-                      "Dar besos solo con los labios o tirándolos con la mano.",
-                      "Soplar para: Apagar cerillas, velas, volar algodones encima de una mesa, bolitas de papel...",
-                      "Soplarle su cara y que él nos sople la nuestra."
+                      { text: "Hacemos ruido con la lengua, para que la mueva.", imageSrc: "https://picsum.photos/seed/toddler-tongue-noise/600/400" },
+                      { text: "Hacer chasquidos.", imageSrc: "https://picsum.photos/seed/toddler-tongue-click/600/400" },
+                      { text: "Abrir y cerrar los labios.", imageSrc: "https://picsum.photos/seed/toddler-lips-open-close/600/400" },
+                      { text: "Sacar la lengua y meterla sin ruido y con ruido.", imageSrc: "https://picsum.photos/seed/toddler-tongue-in-out-sound/600/400" },
+                      { text: "Dar besos solo con los labios o tirándolos con la mano.", imageSrc: "https://picsum.photos/seed/toddler-kiss-lips-blowing/600/400" },
+                      { text: "Soplar para: Apagar cerillas, velas, volar algodones encima de una mesa, bolitas de papel...", imageSrc: "https://picsum.photos/seed/toddler-blow-candle-cotton/600/400" },
+                      { text: "Soplarle su cara y que él nos sople la nuestra.", imageSrc: "https://picsum.photos/seed/toddler-blow-face-adult/600/400" },
                     ]
                   }
                 ]
@@ -1231,8 +1231,8 @@ export const APP_DATA: Category[] = [
                   {
                     title: "Señalar objetos",
                     items: [
-                      "Colocamos delante del niño objetos que conozca bien, le decimos el nombre señalándolo. Después repetimos el ejercicio sin señalarlo, esperamos que él lo haga.",
-                      "Repetimos con otros juguetes."
+                      { text: "Colocamos delante del niño objetos que conozca bien, le decimos el nombre señalándolo. Después repetimos el ejercicio sin señalarlo, esperamos que él lo haga.", imageSrc: "https://picsum.photos/seed/toddler-objects-point-name/600/400" },
+                      { text: "Repetimos con otros juguetes.", imageSrc: "https://picsum.photos/seed/toddler-more-toys-name/600/400" },
                     ]
                   }
                 ]
@@ -1244,10 +1244,10 @@ export const APP_DATA: Category[] = [
                   {
                     title: "Libros, tarjetas, láminas",
                     items: [
-                      "Cogemos un libro con imágenes grandes o pequeñas, esperamos que mire una y le decimos el nombre.",
-                      "Le enseñamos fotos suyas, decimos su nombre.",
-                      "Fotos de papá, de mamá, decimos su nombre, …",
-                      "Aprovechamos la hora de la comida para decirle el nombre de lo que va a utilizar: plato, vaso, cuchara, ...Lo mismo con la ropa de vestir."
+                      { text: "Cogemos un libro con imágenes grandes o pequeñas, esperamos que mire una y le decimos el nombre.", imageSrc: "https://picsum.photos/seed/toddler-picture-book-name/600/400" },
+                      { text: "Le enseñamos fotos suyas, decimos su nombre.", imageSrc: "https://picsum.photos/seed/toddler-own-photo-name/600/400" },
+                      { text: "Fotos de papá, de mamá, decimos su nombre, …", imageSrc: "https://picsum.photos/seed/toddler-parents-photos/600/400" },
+                      { text: "Aprovechamos la hora de la comida para decirle el nombre de lo que va a utilizar: plato, vaso, cuchara. Lo mismo con la ropa de vestir.", imageSrc: "https://picsum.photos/seed/toddler-mealtime-naming/600/400" },
                     ]
                   }
                 ]
@@ -1259,8 +1259,8 @@ export const APP_DATA: Category[] = [
                   {
                     title: "Cantar",
                     items: [
-                      "Cantarle una canción sencilla varias veces para que el niño a su manera intente seguir un trozo a su manera.",
-                      "Elegimos una palabra de un estribillo sencillo, para que él la termine. Por ejemplo: \"palmas, Palmi...\""
+                      { text: "Cantarle una canción sencilla varias veces para que el niño a su manera intente seguir un trozo a su manera.", imageSrc: "https://picsum.photos/seed/toddler-sing-simple-song/600/400" },
+                      { text: "Elegimos una palabra de un estribillo sencillo, para que él la termine. Por ejemplo: \"palmas, Palmi...\"", imageSrc: "https://picsum.photos/seed/toddler-finish-song-word/600/400" },
                     ]
                   }
                 ]
@@ -1272,7 +1272,7 @@ export const APP_DATA: Category[] = [
                   {
                     title: "Contar cuentos",
                     items: [
-                      "Inventar cuentos cortos para que el niño pueda ir participando gestualmente o con alguna palabra que ya conoce."
+                      { text: "Inventar cuentos cortos para que el niño pueda ir participando gestualmente o con alguna palabra que ya conoce.", imageSrc: "https://picsum.photos/seed/toddler-short-story-gesture/600/400" },
                     ]
                   }
                 ]
@@ -1284,7 +1284,7 @@ export const APP_DATA: Category[] = [
                   {
                     title: "Comprende información sobre su cuerpo",
                     items: [
-                      "¿Dónde están los ojos? ¿Dónde está la boca?,...el adulto le enseñará si aún no lo conoce, posteriormente el niño debe señalarlos cuando el adulto le pregunta."
+                      { text: "¿Dónde están los ojos? ¿Dónde está la boca?,...el adulto le enseñará si aún no lo conoce, posteriormente el niño debe señalarlos cuando el adulto le pregunta.", imageSrc: "https://picsum.photos/seed/toddler-body-parts-where/600/400" },
                     ]
                   }
                 ]
@@ -1301,8 +1301,8 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Vestirse y desvestirse",
                         items: [
-                          "Empezamos a ayudarle a sacarse prendas de vestir sencillas como calcetines, zapatos, ...Por ejemplo, le enseñamos los calcetines, se los ponemos y luego le tiramos un poco de la punta y le decimos que se los saque, indicándole el movimiento.",
-                          "Para poner jersey o camisa, le enseñamos el agujero de la misma, para que estire los brazos y los meta allí."
+                          { text: "Empezamos a ayudarle a sacarse prendas sencillas como calcetines, zapatos. Le enseñamos los calcetines, se los ponemos y le tiramos un poco de la punta para que se los saque.", imageSrc: "https://picsum.photos/seed/toddler-pull-off-socks/600/400" },
+                          { text: "Para poner jersey o camisa, le enseñamos el agujero de la misma, para que estire los brazos y los meta allí.", imageSrc: "https://picsum.photos/seed/toddler-put-on-shirt/600/400" },
                         ]
                       }
                     ]
@@ -1314,8 +1314,8 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Lavarse",
                         items: [
-                          "Las manos. Abrimos el grifo, mientras le vamos explicando lo que hacemos, ponemos sus manos debajo del agua y cuando están mojadas le enseñamos el jabón, le enjabonamos las manos y luego se las enjuagamos. Repetimos, dejando que el niño colabore. Se las secamos con la toalla.",
-                          "La cara. Le mojamos las manos y se las llevamos a la cara. Le enseñamos la toalla y le enseñamos como secarse."
+                          { text: "Las manos. Abrimos el grifo, ponemos sus manos bajo el agua, le enjabonamos y enjuagamos. Dejamos que el niño colabore y se las secamos con la toalla.", imageSrc: "https://picsum.photos/seed/toddler-handwash-soap-tap/600/400" },
+                          { text: "La cara. Le mojamos las manos y se las llevamos a la cara. Le enseñamos la toalla y cómo secarse.", imageSrc: "https://picsum.photos/seed/toddler-face-wash-towel/600/400" },
                         ]
                       }
                     ]
@@ -1327,7 +1327,7 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Control de esfínteres",
                         items: [
-                          "Continuamos poniéndole en el orinal y en el wáter. Tanto si hace como si no, nosotros nos mostramos contentos de que esté ahí sentado un rato. No hay necesidad de reñirle o apremiarle. Tampoco debemos dejarle solo."
+                          { text: "Continuamos poniéndole en el orinal y en el wáter. Tanto si hace como si no, nos mostramos contentos de que esté sentado un rato. No hay necesidad de reñirle ni dejarle solo.", imageSrc: "https://picsum.photos/seed/toddler-potty-toilet-routine/600/400" },
                         ]
                       }
                     ]
@@ -1344,14 +1344,14 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Sin intervención del adulto",
                         items: [
-                          "Le ponemos delante de una ventana y le dejamos que mire sin decirle nada, unos minutos.",
-                          "Le enseñamos un libro atractivo y dejamos que lo observe sin decirle nada."
+                          { text: "Le ponemos delante de una ventana y le dejamos que mire sin decirle nada, unos minutos.", imageSrc: "https://picsum.photos/seed/toddler-window-watching-alone/600/400" },
+                          { text: "Le enseñamos un libro atractivo y dejamos que lo observe sin decirle nada.", imageSrc: "https://picsum.photos/seed/toddler-book-explore-alone/600/400" },
                         ]
                       },
                       {
                         title: "Con intervención del adulto",
                         items: [
-                          "Los ejercicios anteriores, pero diciéndole al niño lo que hacemos o llamándole la atención sobre algo determinado."
+                          { text: "Los ejercicios anteriores, pero diciéndole al niño lo que hacemos o llamándole la atención sobre algo determinado.", imageSrc: "https://picsum.photos/seed/toddler-adult-point-window/600/400" },
                         ]
                       }
                     ]
@@ -1363,12 +1363,12 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Ejercicios de memoria",
                         items: [
-                          "Le enseñamos una lámina y le decimos: ¿Dónde está...? Pasamos página, le enseñamos otra cosa y volvemos a la primera página a preguntar lo mismo.",
-                          "Guardamos un juguete suyo en una caja o cajón antes de irse a dormir o a comer y al día siguiente o después de comer le preguntamos \"donde está.\"",
-                          "Le enseñamos un perro (por ejemplo) y luego lo mezclamos con otros animales. Le pedimos que lo busque.",
-                          "Darle objetos para manipular o arrastrar y enseñarle cómo. Esperar y volvérselo a dar.",
-                          "Buscar dibujos.",
-                          "Clasificar colores, formas y tamaños. Dame los rojos, damos los redondos, dame los pequeños,..."
+                          { text: "Le enseñamos una lámina y le decimos: ¿Dónde está...? Pasamos página, le enseñamos otra cosa y volvemos a la primera página a preguntar lo mismo.", imageSrc: "https://picsum.photos/seed/toddler-flashcard-memory-where/600/400" },
+                          { text: "Guardamos un juguete suyo en una caja o cajón antes de irse a dormir, al día siguiente le preguntamos \"¿dónde está?\".", imageSrc: "https://picsum.photos/seed/toddler-hidden-toy-next-day/600/400" },
+                          { text: "Le enseñamos un perro (por ejemplo) y luego lo mezclamos con otros animales. Le pedimos que lo busque.", imageSrc: "https://picsum.photos/seed/toddler-find-animal-mixed/600/400" },
+                          { text: "Darle objetos para manipular o arrastrar y enseñarle cómo. Esperar y volvérselo a dar.", imageSrc: "https://picsum.photos/seed/toddler-object-manipulate-recall/600/400" },
+                          { text: "Buscar dibujos.", imageSrc: "https://picsum.photos/seed/toddler-find-drawing/600/400" },
+                          { text: "Clasificar colores, formas y tamaños. Dame los rojos, dame los redondos, dame los pequeños,...", imageSrc: "https://picsum.photos/seed/toddler-sort-colors-shapes/600/400" },
                         ]
                       }
                     ]
@@ -1391,20 +1391,20 @@ export const APP_DATA: Category[] = [
                       {
                         title: "De pie",
                         items: [
-                          "Saltando obstáculos pequeños: cuerda de saltar, un taco pequeño.",
-                          "Andar por caminos estrechos marcados en el suelo.",
-                          "Transportar de un lado a otro, objetos en las dos manos.",
-                          "Le llenamos las manos de juguetes pequeños, cubos, ...y jugamos a trasladarlos sin que se le caigan.",
-                          "Subir y bajar escaleras. Primero a gatas, luego con apoyo, primero un pie y luego el otro y empezar a bajarlas de espaldas.",
-                          "Empieza a saltar desde alturas pequeñas.",
-                          "Chutar un balón. Esto le ayudará a mantener mejor el equilibrio en un solo pie.",
-                          "Jugar a perseguirlo corriendo."
+                          { text: "Saltando obstáculos pequeños: cuerda de saltar, un taco pequeño.", imageSrc: "https://picsum.photos/seed/toddler-jump-obstacle-rope/600/400" },
+                          { text: "Andar por caminos estrechos marcados en el suelo.", imageSrc: "https://picsum.photos/seed/toddler-walk-narrow-path/600/400" },
+                          { text: "Transportar de un lado a otro, objetos en las dos manos.", imageSrc: "https://picsum.photos/seed/toddler-carry-both-hands/600/400" },
+                          { text: "Le llenamos las manos de juguetes pequeños, cubos, y jugamos a trasladarlos sin que se le caigan.", imageSrc: "https://picsum.photos/seed/toddler-carry-blocks-no-drop/600/400" },
+                          { text: "Subir y bajar escaleras. Primero a gatas, luego con apoyo, primero un pie y luego el otro y empezar a bajarlas de espaldas.", imageSrc: "https://picsum.photos/seed/toddler-stairs-up-down/600/400" },
+                          { text: "Empieza a saltar desde alturas pequeñas.", imageSrc: "https://picsum.photos/seed/toddler-jump-small-height/600/400" },
+                          { text: "Chutar un balón. Esto le ayudará a mantener mejor el equilibrio en un solo pie.", imageSrc: "https://picsum.photos/seed/toddler-kick-ball-balance/600/400" },
+                          { text: "Jugar a perseguirlo corriendo.", imageSrc: "https://picsum.photos/seed/toddler-chase-running-play/600/400" },
                         ]
                       },
                       {
                         title: "En cuclillas",
                         items: [
-                          "Andando con él de la mano, le tiramos un juguete al suelo y le ayudamos a que se agache sin soltarle, seguimos andando y seguimos tirando juguetes para que los recoja."
+                          { text: "Andando de la mano, le tiramos un juguete al suelo y le ayudamos a que se agache sin soltarle para recogerlo.", imageSrc: "https://picsum.photos/seed/toddler-squat-pick-walking/600/400" },
                         ]
                       }
                     ]
@@ -1421,13 +1421,13 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Prensión",
                         items: [
-                          "Coger hilos de distinto grosor y que los meta en una caja.",
-                          "Pinchar palillos en plastilina blanda.",
-                          "Desenroscar tapones de rosca en botellas. Desenroscar tornillos grandes.",
-                          "Romper o rasgar papeles de revistas con las manos.",
-                          "Hacer torres con cubos, tacos, cajas.",
-                          "Abrir las manos para que nos las choque. Que él las ponga y le chocamos nosotros.",
-                          "Tiramos el balón con las dos manos: sentado o de pie."
+                          { text: "Coger hilos de distinto grosor y que los meta en una caja.", imageSrc: "https://picsum.photos/seed/toddler-threads-box-thickness/600/400" },
+                          { text: "Pinchar palillos en plastilina blanda.", imageSrc: "https://picsum.photos/seed/toddler-toothpick-playdough/600/400" },
+                          { text: "Desenroscar tapones de rosca en botellas. Desenroscar tornillos grandes.", imageSrc: "https://picsum.photos/seed/toddler-unscrew-bottle-cap/600/400" },
+                          { text: "Romper o rasgar papeles de revistas con las manos.", imageSrc: "https://picsum.photos/seed/toddler-tear-magazine-paper/600/400" },
+                          { text: "Hacer torres con cubos, tacos, cajas.", imageSrc: "https://picsum.photos/seed/toddler-block-tower-build/600/400" },
+                          { text: "Abrir las manos para que nos las choque. Que él las ponga y le chocamos nosotros.", imageSrc: "https://picsum.photos/seed/toddler-high-five-hands/600/400" },
+                          { text: "Tiramos el balón con las dos manos: sentado o de pie.", imageSrc: "https://picsum.photos/seed/toddler-throw-ball-both-hands/600/400" },
                         ]
                       }
                     ]
@@ -1439,19 +1439,19 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Manos",
                         items: [
-                          "Jugamos a dar palmadas. Ponemos una música con canción cortita, al final aplaudimos.",
-                          "Le enseñamos a abrir y cerrar los grifos.",
-                          "Introducir en botellas de cuello estrecho lentejas, guisantes, judías,...",
-                          "Deshacer lazos.",
-                          "Le acariciamos uno a uno los dedos. Se los pellizcamos a la vez que le cantamos alguna canción relacionada con ello.",
-                          "Le hacemos cosquillas en la palma de la mano.",
-                          "Quitar y poner gomets, cintas adhesivas, cello,...",
-                          "Desenvolver caramelos o pequeños paquetitos.",
-                          "Garabatear libremente con colores.",
-                          "Ensartar aros en una cuerda.",
-                          "Le enseñamos a subir y bajar cremalleras.",
-                          "Jugamos a verter agua, arena, juguetes....de un cubo a otro.",
-                          "Pasar las páginas de un cuento."
+                          { text: "Jugamos a dar palmadas. Ponemos una música con canción cortita, al final aplaudimos.", imageSrc: "https://picsum.photos/seed/toddler-clap-music-end/600/400" },
+                          { text: "Le enseñamos a abrir y cerrar los grifos.", imageSrc: "https://picsum.photos/seed/toddler-open-close-tap/600/400" },
+                          { text: "Introducir en botellas de cuello estrecho lentejas, guisantes, judías,...", imageSrc: "https://picsum.photos/seed/toddler-drop-lentils-bottle/600/400" },
+                          { text: "Deshacer lazos.", imageSrc: "https://picsum.photos/seed/toddler-untie-bow-knot/600/400" },
+                          { text: "Le acariciamos uno a uno los dedos mientras le cantamos alguna canción relacionada.", imageSrc: "https://picsum.photos/seed/toddler-finger-song-caress/600/400" },
+                          { text: "Le hacemos cosquillas en la palma de la mano.", imageSrc: "https://picsum.photos/seed/toddler-palm-tickle/600/400" },
+                          { text: "Quitar y poner gomets, cintas adhesivas, cello,...", imageSrc: "https://picsum.photos/seed/toddler-sticker-tape-peel/600/400" },
+                          { text: "Desenvolver caramelos o pequeños paquetitos.", imageSrc: "https://picsum.photos/seed/toddler-unwrap-candy/600/400" },
+                          { text: "Garabatear libremente con colores.", imageSrc: "https://picsum.photos/seed/toddler-free-scribble-crayons/600/400" },
+                          { text: "Ensartar aros en una cuerda.", imageSrc: "https://picsum.photos/seed/toddler-thread-rings-string/600/400" },
+                          { text: "Le enseñamos a subir y bajar cremalleras.", imageSrc: "https://picsum.photos/seed/toddler-zip-unzip/600/400" },
+                          { text: "Jugamos a verter agua, arena, juguetes de un cubo a otro.", imageSrc: "https://picsum.photos/seed/toddler-pour-water-buckets/600/400" },
+                          { text: "Pasar las páginas de un cuento.", imageSrc: "https://picsum.photos/seed/toddler-turn-pages-book/600/400" },
                         ]
                       }
                     ]
@@ -1468,12 +1468,12 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Ejercicios de oído",
                         items: [
-                          "Hablarle con distintas tonalidades, desde posiciones distintas.",
-                          "Le sentamos en una silla y le llamamos desde el lado derecho, desde el lado izquierdo, por detrás por su nombre, esperamos a que se gire y nos escondemos.",
-                          "Tocamos distintos instrumentos y se los ofrecemos para que los toque.",
-                          "Jugamos a dar palmadas fuertes y flojas.",
-                          "Jugamos a dar patadas fuertes u flojas, sentados en el suelo.",
-                          "Le susurramos en el oído derecho, luego en el izquierdo. Buscamos sonidos escondidos, para que se guíe por el sonido."
+                          { text: "Hablarle con distintas tonalidades, desde posiciones distintas.", imageSrc: "https://picsum.photos/seed/toddler-tones-voice-positions/600/400" },
+                          { text: "Le sentamos en una silla y le llamamos desde el lado derecho, izquierdo, por detrás. Esperamos que se gire y nos escondemos.", imageSrc: "https://picsum.photos/seed/toddler-turn-sound-direction/600/400" },
+                          { text: "Tocamos distintos instrumentos y se los ofrecemos para que los toque.", imageSrc: "https://picsum.photos/seed/toddler-instruments-play/600/400" },
+                          { text: "Jugamos a dar palmadas fuertes y flojas.", imageSrc: "https://picsum.photos/seed/toddler-loud-soft-clap/600/400" },
+                          { text: "Jugamos a dar patadas fuertes u flojas, sentados en el suelo.", imageSrc: "https://picsum.photos/seed/toddler-loud-soft-kick-floor/600/400" },
+                          { text: "Le susurramos en el oído derecho, luego en el izquierdo. Buscamos sonidos escondidos para que se guíe por el sonido.", imageSrc: "https://picsum.photos/seed/toddler-whisper-ear-find-sound/600/400" },
                         ]
                       }
                     ]
@@ -1485,7 +1485,7 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Ejercicios de labios",
                         items: [
-                          "Hacer pequeños círculos alrededor de las comisuras de los labios."
+                          { text: "Hacer pequeños círculos alrededor de las comisuras de los labios.", imageSrc: "https://picsum.photos/seed/toddler-lip-corner-circles/600/400" },
                         ]
                       }
                     ]
@@ -1497,10 +1497,10 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Ejercicios de lengua",
                         items: [
-                          "Sacar y meter la lengua despacio. Lo hacemos primero nosotros para que él intente hacer lo mismo.",
-                          "Tocar con la lengua el labio inferior y el superior.",
-                          "Sacar y meter la lengua rápido haciendo ruido.",
-                          "Jugamos a lamer sustancias esparcidas en platos, para imitar como comen o beben animales."
+                          { text: "Sacar y meter la lengua despacio. Lo hacemos primero nosotros para que él intente hacer lo mismo.", imageSrc: "https://picsum.photos/seed/toddler-tongue-slow-in-out/600/400" },
+                          { text: "Tocar con la lengua el labio inferior y el superior.", imageSrc: "https://picsum.photos/seed/toddler-tongue-touch-lips/600/400" },
+                          { text: "Sacar y meter la lengua rápido haciendo ruido.", imageSrc: "https://picsum.photos/seed/toddler-tongue-fast-noise/600/400" },
+                          { text: "Jugamos a lamer sustancias esparcidas en platos, para imitar como comen o beben animales.", imageSrc: "https://picsum.photos/seed/toddler-lick-plate-animal/600/400" },
                         ]
                       }
                     ]
@@ -1512,9 +1512,9 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Soplar",
                         items: [
-                          "Soplamos por soplar: pelotitas de algodón, bolas grandes de algodón, hojas secas.",
-                          "Jugamos a hacer burbujas con una pajita.",
-                          "Podemos soplar a apagar velitas."
+                          { text: "Soplamos por soplar: pelotitas de algodón, bolas grandes de algodón, hojas secas.", imageSrc: "https://picsum.photos/seed/toddler-blow-cotton-leaves/600/400" },
+                          { text: "Jugamos a hacer burbujas con una pajita.", imageSrc: "https://picsum.photos/seed/toddler-straw-bubbles/600/400" },
+                          { text: "Podemos soplar a apagar velitas.", imageSrc: "https://picsum.photos/seed/toddler-blow-candles/600/400" },
                         ]
                       }
                     ]
@@ -1526,15 +1526,15 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Expresión verbal",
                         items: [
-                          "Jugamos a nombrar sus juguetes: Elegimos unos cuantos juguetes, le señalamos uno y le preguntamos ¿Qué es esto?, si no responde se lo decimos nosotros, esperamos unos segundos y hacemos lo mismo con otros juguetes. No es necesario que diga el nombre de los juguetes, es suficiente con que nos escuche y atienda.",
-                          "Jugar a terminar palabras. Elegimos palabras sencillas y le enseñamos a que las termine.",
-                          "Le enseñamos a decir sí y no.",
-                          "Le enseñamos a decir su nombre.",
-                          "Saludos: Decimos \"adiós\" con la mano y verbalmente cuando alguien se va. Cuando alguien llegue decimos \"hola\".",
-                          "Contamos cuentos.",
-                          "Le nombramos las acciones más importantes del día: Por la mañana \"hay que levantarse y desayunar\". Al mediodía \"es hora de comer\". Por la tarde \"a merendar\". Por la noche \"es hora de cenar\".",
-                          "Frases cortas con dos palabras sin nexos para expresar lo que necesita.",
-                          "Aparece la primera pregunta ¿qué es? Se interesa por todo lo que le rodea."
+                          { text: "Jugamos a nombrar juguetes: señalamos uno y preguntamos ¿Qué es esto? Si no responde se lo decimos, esperamos y seguimos con otros juguetes.", imageSrc: "https://picsum.photos/seed/toddler-name-toys-what-is/600/400" },
+                          { text: "Jugar a terminar palabras. Elegimos palabras sencillas y le enseñamos a que las termine.", imageSrc: "https://picsum.photos/seed/toddler-finish-words-game/600/400" },
+                          { text: "Le enseñamos a decir sí y no.", imageSrc: "https://picsum.photos/seed/toddler-yes-no-gestures/600/400" },
+                          { text: "Le enseñamos a decir su nombre.", imageSrc: "https://picsum.photos/seed/toddler-say-own-name/600/400" },
+                          { text: "Saludos: Decimos \"adiós\" con la mano cuando alguien se va. Cuando alguien llegue decimos \"hola\".", imageSrc: "https://picsum.photos/seed/toddler-hello-goodbye-wave/600/400" },
+                          { text: "Contamos cuentos.", imageSrc: "https://picsum.photos/seed/toddler-storytime-lap/600/400" },
+                          { text: "Nombramos las acciones del día: levantarse, desayunar, comer, merendar, cenar.", imageSrc: "https://picsum.photos/seed/toddler-daily-routine-name/600/400" },
+                          { text: "Frases cortas con dos palabras sin nexos para expresar lo que necesita.", imageSrc: "https://picsum.photos/seed/toddler-two-word-phrases/600/400" },
+                          { text: "Aparece la primera pregunta ¿qué es? Se interesa por todo lo que le rodea.", imageSrc: "https://picsum.photos/seed/toddler-what-is-curious/600/400" },
                         ]
                       }
                     ]
@@ -1551,10 +1551,10 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Hábitos",
                         items: [
-                          "Potenciar el encuentro con otros niños (guardería, parque, familiares...) dando juguetes a todos e iniciando algún juego: pelota, cochecitos, hacer torres....",
-                          "Le enseñamos a recoger los juguetes, con ayuda.",
-                          "Cuando alguien le ofrezca algo u él lo coja, le decimos que diga \"gracias\".",
-                          "Le enseñamos que hay cosas que se pueden hacer y otras que no, sin reñirle, pero advirtiéndole y enseñándole, por ejemplo, cuando toque cosas peligrosas como enchufes..."
+                          { text: "Potenciar el encuentro con otros niños (guardería, parque, familiares) dando juguetes a todos e iniciando algún juego: pelota, cochecitos, hacer torres.", imageSrc: "https://picsum.photos/seed/toddler-play-other-children/600/400" },
+                          { text: "Le enseñamos a recoger los juguetes, con ayuda.", imageSrc: "https://picsum.photos/seed/toddler-tidy-up-toys/600/400" },
+                          { text: "Cuando alguien le ofrezca algo, le decimos que diga \"gracias\".", imageSrc: "https://picsum.photos/seed/toddler-say-thank-you/600/400" },
+                          { text: "Le enseñamos que hay cosas que se pueden hacer y otras que no, sin reñirle, advirtiéndole cuando toque cosas peligrosas.", imageSrc: "https://picsum.photos/seed/toddler-no-dangerous-things/600/400" },
                         ]
                       }
                     ]
@@ -1566,9 +1566,9 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Control de esfínteres",
                         items: [
-                          "Cuando tenga pis o caca, le diremos que nos ayude a cambiarle. Le haremos buscar el pañal y las toallitas. Le enseñamos el pañal sucio y le diremos ¡Como huele! y lo tiramos.",
-                          "Podemos alternar pañal y no pañal si nos parece oportuno, para que se dé cuenta cuando se moja que es incómodo.",
-                          "Lo acostumbramos a sentarse en el orinal y que vaya pidiendo pis y caca."
+                          { text: "Cuando tenga pis o caca, le pedimos que nos ayude a cambiarle, busque el pañal y las toallitas. Le enseñamos el pañal sucio y lo tiramos.", imageSrc: "https://picsum.photos/seed/toddler-diaper-change-help/600/400" },
+                          { text: "Podemos alternar pañal y no pañal para que se dé cuenta cuando se moja que es incómodo.", imageSrc: "https://picsum.photos/seed/toddler-no-diaper-awareness/600/400" },
+                          { text: "Lo acostumbramos a sentarse en el orinal y que vaya pidiendo pis y caca.", imageSrc: "https://picsum.photos/seed/toddler-potty-ask-habit/600/400" },
                         ]
                       }
                     ]
@@ -1580,11 +1580,11 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Vestirse y desvestirse",
                         items: [
-                          "Le ayudamos a buscar en una prenda de ropa la parte delantera y la de atrás. También el derecho y el revés.",
-                          "Le enseñamos a quitarse la ropa. Empezamos con prendas sencillas, calcetines, pantalón, abrigo... Le explicamos como tirar de ellos, antes sacamos un poco la prenda para facilitarle la labor.",
-                          "Jugamos a bajar pantalones y faldas.",
-                          "Con el abrigo, chaqueta, pantalón etc. puesto, le ayudamos a subir la cremallera y a bajarla.",
-                          "Jugamos a vestir y desvestir a los muñecos."
+                          { text: "Le ayudamos a buscar en una prenda la parte delantera y la de atrás, el derecho y el revés.", imageSrc: "https://picsum.photos/seed/toddler-front-back-clothes/600/400" },
+                          { text: "Le enseñamos a quitarse la ropa empezando con prendas sencillas: calcetines, pantalón, abrigo. Sacamos un poco la prenda para facilitarle la labor.", imageSrc: "https://picsum.photos/seed/toddler-undress-simple-clothes/600/400" },
+                          { text: "Jugamos a bajar pantalones y faldas.", imageSrc: "https://picsum.photos/seed/toddler-pull-down-pants/600/400" },
+                          { text: "Con el abrigo o chaqueta puesto, le ayudamos a subir y bajar la cremallera.", imageSrc: "https://picsum.photos/seed/toddler-zip-jacket/600/400" },
+                          { text: "Jugamos a vestir y desvestir a los muñecos.", imageSrc: "https://picsum.photos/seed/toddler-dress-undress-doll/600/400" },
                         ]
                       }
                     ]
@@ -1596,9 +1596,9 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Lavarse",
                         items: [
-                          "Le enseñamos a cepillarse los dientes después de las comidas, le permitimos que lo haga con el dedo o que utilice un cepillo de dientes para niños con pasta.",
-                          "Le enseñamos a lavarse después de las comidas.",
-                          "Le enseñamos como le cortamos las uñas y para qué."
+                          { text: "Le enseñamos a cepillarse los dientes después de las comidas, le permitimos que lo haga con el dedo o con un cepillo para niños.", imageSrc: "https://picsum.photos/seed/toddler-brush-teeth-after-meal/600/400" },
+                          { text: "Le enseñamos a lavarse después de las comidas.", imageSrc: "https://picsum.photos/seed/toddler-wash-after-meal/600/400" },
+                          { text: "Le enseñamos como le cortamos las uñas y para qué.", imageSrc: "https://picsum.photos/seed/toddler-nail-cutting-explain/600/400" },
                         ]
                       }
                     ]
@@ -1615,8 +1615,8 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Ejercicios de observación",
                         items: [
-                          "A través de libros con imágenes, tarjetas.",
-                          "En la casa, paseamos observando y diciendo el nombre de las cosas, las señalamos. Por la ventana, observamos lo que vemos y lo comentamos."
+                          { text: "A través de libros con imágenes, tarjetas.", imageSrc: "https://picsum.photos/seed/toddler-image-books-cards/600/400" },
+                          { text: "En la casa, paseamos observando y diciendo el nombre de las cosas. Por la ventana, observamos lo que vemos y lo comentamos.", imageSrc: "https://picsum.photos/seed/toddler-home-walk-point-name/600/400" },
                         ]
                       }
                     ]
@@ -1628,9 +1628,9 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Ejercicios de atención",
                         items: [
-                          "Damos dos palmadas encima de la mesa. Le explicamos que al levantar las manos, él debe dar también dos palmadas. Lo mismo dando dos patadas con los pies.",
-                          "Le contamos un cuento, le decimos que esté atento y le pedimos que nos señale los personajes conforme van saliendo.",
-                          "Le damos instrucciones cortas para que las realice. Por ejemplo.: trae los cubos de la mesa."
+                          { text: "Damos dos palmadas encima de la mesa. Al levantar las manos, él debe dar también dos palmadas. Lo mismo con patadas.", imageSrc: "https://picsum.photos/seed/toddler-table-clap-mirror/600/400" },
+                          { text: "Le contamos un cuento, le decimos que esté atento y le pedimos que señale los personajes conforme van saliendo.", imageSrc: "https://picsum.photos/seed/toddler-story-point-characters/600/400" },
+                          { text: "Le damos instrucciones cortas para que las realice. Por ejemplo: trae los cubos de la mesa.", imageSrc: "https://picsum.photos/seed/toddler-short-instruction-fetch/600/400" },
                         ]
                       }
                     ]
@@ -1642,51 +1642,51 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Construir torres",
                         items: [
-                          "La hacemos primero nosotros, la tiramos y le pedimos que la haga luego."
+                          { text: "La hacemos primero nosotros, la tiramos y le pedimos que la haga luego.", imageSrc: "https://picsum.photos/seed/toddler-tower-build-knock/600/400" },
                         ]
                       },
                       {
                         title: "Comparaciones",
                         items: [
-                          "Grande/pequeño. Lo podemos hacer con juguetes, láminas... le pedimos que nos señale o traiga el grande o el pequeño, según lo que queramos.",
-                          "Pesado/ligero. Por ejemplo, con un papel y una bolsa con cosas que pesen.",
-                          "Lleno/vacío. Con una caja vacía y otra con juguetes, un vaso vacío y otro con líquido.",
-                          "Largo/corto. Con hilos largos y cortos, con líneas largas y cortas, con calcetines largos y cortos, ..."
+                          { text: "Grande/pequeño. Con juguetes o láminas, le pedimos que señale o traiga el grande o el pequeño.", imageSrc: "https://picsum.photos/seed/toddler-big-small-compare/600/400" },
+                          { text: "Pesado/ligero. Por ejemplo, con un papel y una bolsa con cosas que pesen.", imageSrc: "https://picsum.photos/seed/toddler-heavy-light-compare/600/400" },
+                          { text: "Lleno/vacío. Con una caja vacía y otra con juguetes, un vaso vacío y otro con líquido.", imageSrc: "https://picsum.photos/seed/toddler-full-empty-compare/600/400" },
+                          { text: "Largo/corto. Con hilos largos y cortos, líneas largas y cortas, calcetines largos y cortos.", imageSrc: "https://picsum.photos/seed/toddler-long-short-compare/600/400" },
                         ]
                       },
                       {
                         title: "Colores",
                         items: [
-                          "Ponemos encima los que sean del mismo color. No tiene que saber el nombre de los colores. Ej.: Juntamos papeles del mismo color, juntamos juguetes del mismo color, juntamos ropa del mismo color."
+                          { text: "Ponemos encima los que sean del mismo color. No tiene que saber el nombre. Ej.: juntamos papeles, juguetes o ropa del mismo color.", imageSrc: "https://picsum.photos/seed/toddler-sort-same-color/600/400" },
                         ]
                       },
                       {
                         title: "Rompecabezas sencillos",
                         items: [
-                          "Tableros con 3 piezas de animales.",
-                          "Partimos las figuras básicas de círculo, triángulo y cuadrado en dos mitades. Le enseñamos la figura montada, la desmontamos y le pedimos que la monte.",
-                          "Partimos una hoja de papel delante de él en dos, le enseñamos como se juntan y vuelve a ser una.",
-                          "Con una naranja, mandarina, manzana, plátano, ..."
+                          { text: "Tableros con 3 piezas de animales.", imageSrc: "https://picsum.photos/seed/toddler-3piece-animal-puzzle/600/400" },
+                          { text: "Partimos las figuras básicas de círculo, triángulo y cuadrado en dos mitades, las desmontamos y le pedimos que las monte.", imageSrc: "https://picsum.photos/seed/toddler-shape-halves-puzzle/600/400" },
+                          { text: "Partimos una hoja de papel delante de él en dos, le enseñamos como se juntan y vuelve a ser una.", imageSrc: "https://picsum.photos/seed/toddler-paper-tear-join/600/400" },
+                          { text: "Con una naranja, mandarina, manzana, plátano, ...", imageSrc: "https://picsum.photos/seed/toddler-fruit-halves-pieces/600/400" },
                         ]
                       },
                       {
                         title: "Concepto de tiempo: Día / Noche",
                         items: [
-                          "Aprovechamos la luz solar para explicarle que es de día y a la hora de acostarse cuando está a oscuras que es de noche.",
-                          "Le enseñamos dibujos que se vean las estrellas y la luna, es de noche. Dibujos donde se vea el sol, es de día."
+                          { text: "Aprovechamos la luz solar para explicarle que es de día y a la hora de acostarse que es de noche.", imageSrc: "https://picsum.photos/seed/toddler-day-night-sunlight/600/400" },
+                          { text: "Le enseñamos dibujos con estrellas y luna (noche) y dibujos con sol (día).", imageSrc: "https://picsum.photos/seed/toddler-day-night-drawings/600/400" },
                         ]
                       },
                       {
                         title: "Jugamos a contar: Uno",
                         items: [
-                          "Le decimos que nos traiga un juguete, enseñándole a la vez 1 dedo.",
-                          "Le enseñamos objetos de uno en uno, mientras decimos \"uno\"."
+                          { text: "Le decimos que nos traiga un juguete, enseñándole a la vez 1 dedo.", imageSrc: "https://picsum.photos/seed/toddler-count-one-finger/600/400" },
+                          { text: "Le enseñamos objetos de uno en uno, mientras decimos \"uno\".", imageSrc: "https://picsum.photos/seed/toddler-one-object-at-a-time/600/400" },
                         ]
                       },
                       {
                         title: "Juegos simbólicos",
                         items: [
-                          "Con una caja, hacemos como que es un coche, conducimos, pitamos..."
+                          { text: "Con una caja, hacemos como que es un coche, conducimos, pitamos...", imageSrc: "https://picsum.photos/seed/toddler-box-pretend-car/600/400" },
                         ]
                       }
                     ]
@@ -1716,9 +1716,9 @@ export const APP_DATA: Category[] = [
                   {
                     title: "Juego de caras",
                     items: [
-                      "Muéstrale una cara feliz y otra triste.",
-                      "Pídele que imite la cara que pones tú.",
-                      "Nombra la emoción: 'Estoy alegre', 'Estoy enfadado'."
+                      { text: "Muéstrale una cara feliz y otra triste.", imageSrc: "https://picsum.photos/seed/child-happy-sad-face/600/400" },
+                      { text: "Pídele que imite la cara que pones tú.", imageSrc: "https://picsum.photos/seed/child-imitate-expression/600/400" },
+                      { text: "Nombra la emoción: 'Estoy alegre', 'Estoy enfadado'.", imageSrc: "https://picsum.photos/seed/child-emotions-naming/600/400" },
                     ]
                   }
                 ]
