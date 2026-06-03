@@ -442,10 +442,10 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Tono muscular",
                         items: [
-                          "Ejercicios de relajación y respiración, como en el trimestre anterior con el balón de playa.",
-                          "Palpaciones con las yemas de los dedos por todo el cuerpo, ligeros golpes, ligeros masajes.",
-                          "Amasarle suavemente la espalda, las piernas y los brazos.",
-                          "Masajes faciales."
+                          { text: "Ejercicios de relajación y respiración, como en el trimestre anterior con el balón de playa.", imageSrc: "https://picsum.photos/seed/baby-beach-ball-relax/600/400" },
+                          { text: "Palpaciones con las yemas de los dedos por todo el cuerpo, ligeros golpes, ligeros masajes.", imageSrc: "https://picsum.photos/seed/baby-fingertip-massage/600/400" },
+                          { text: "Amasarle suavemente la espalda, las piernas y los brazos.", imageSrc: "https://picsum.photos/seed/baby-back-leg-massage/600/400" },
+                          { text: "Masajes faciales.", imageSrc: "https://picsum.photos/seed/baby-facial-massage/600/400" },
                         ]
                       }
                     ]
@@ -457,11 +457,11 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Si el bebé no adopta alguna de estas posturas, incitarle a que se coloque en ellas.",
                         items: [
-                          "Tumbado boca abajo. Desde esta postura se arrastra hacia atrás, se sienta, gira sobre sí mismo, etc.",
-                          "Tumbado boca arriba. Sobre todo, cuando algo le llama mucho la atención.",
-                          "Sentado. Permanece en esta posición al final del trimestre sin perder el equilibrio.",
-                          "De pie. Al final de este trimestre intentan ponerse de pie cuando tienen cerca objetos o personas que se lo permiten.",
-                          "Gateo. Se inicia el gateo. Con este ejercicio se ejercitan los dos hemisferios del cerebro."
+                          { text: "Tumbado boca abajo. Desde esta postura se arrastra hacia atrás, se sienta, gira sobre sí mismo, etc.", imageSrc: "https://picsum.photos/seed/baby-tummy-crawl-spin/600/400" },
+                          { text: "Tumbado boca arriba. Sobre todo, cuando algo le llama mucho la atención.", imageSrc: "https://picsum.photos/seed/baby-back-attention/600/400" },
+                          { text: "Sentado. Permanece en esta posición al final del trimestre sin perder el equilibrio.", imageSrc: "https://picsum.photos/seed/baby-sitting-balance/600/400" },
+                          { text: "De pie. Al final de este trimestre intentan ponerse de pie cuando tienen cerca objetos o personas que se lo permiten.", imageSrc: "https://picsum.photos/seed/baby-standing-support/600/400" },
+                          { text: "Gateo. Se inicia el gateo. Con este ejercicio se ejercitan los dos hemisferios del cerebro.", imageSrc: "https://picsum.photos/seed/baby-crawling-start/600/400" },
                         ]
                       }
                     ]
@@ -478,9 +478,9 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Si el bebé no hace estas acciones, incitarle a que las realice.",
                         items: [
-                          "Le gusta coger objetos y soltarlos.",
-                          "Diferencia unos materiales de otros.",
-                          "Utiliza el índice y el pulgar para coger objetos."
+                          { text: "Le gusta coger objetos y soltarlos.", imageSrc: "https://picsum.photos/seed/baby-grasp-release-object/600/400" },
+                          { text: "Diferencia unos materiales de otros.", imageSrc: "https://picsum.photos/seed/baby-texture-materials/600/400" },
+                          { text: "Utiliza el índice y el pulgar para coger objetos.", imageSrc: "https://picsum.photos/seed/baby-pincer-grasp-6m/600/400" },
                         ]
                       }
                     ]
@@ -492,9 +492,9 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Si el bebé no hace estas acciones, incitarle a que las realice.",
                         items: [
-                          "Señala con el índice, aplaude. Da palmadas, da golpes, tira objetos lejos.",
-                          "Le gusta manipular objetos con ambas manos.",
-                          "Empieza a utilizar la pinza pulgar índice para coger objetos más con una mano que con otra."
+                          { text: "Señala con el índice, aplaude. Da palmadas, da golpes, tira objetos lejos.", imageSrc: "https://picsum.photos/seed/baby-point-clap-throw/600/400" },
+                          { text: "Le gusta manipular objetos con ambas manos.", imageSrc: "https://picsum.photos/seed/baby-both-hands-objects/600/400" },
+                          { text: "Empieza a utilizar la pinza pulgar índice para coger objetos más con una mano que con otra.", imageSrc: "https://picsum.photos/seed/baby-thumb-index-dominant/600/400" },
                         ]
                       }
                     ]
@@ -511,17 +511,17 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Si el bebé no hace estas acciones, incitarle a que las realice.",
                         items: [
-                          "En este trimestre aparece su primera palabra, en unos niños ocurre antes, en otros más tarde.",
-                          "A partir del 8º mes al niño le gusta mucho imitar.",
-                          "Es normal ver al niño con la lengua fuera. Es importante activar este músculo para el habla. Todo lo que hagamos juegos o sonidos enseñándoles la lengua, le gustarán mucho.",
-                          "Empieza a comprender preguntas como ¿dónde está el chupete? ¿Dónde está mamá? ¡No toques eso!",
-                          "Utiliza el grito para mostrar su enfado.",
-                          "Emite mucha cantidad de sonidos ante personas conocidas.",
-                          "Utiliza el índice para señalar, como forma primitiva de preguntar.",
-                          "Le gusta que le hablen, que le canten, la música, suele bailar al oírla.",
-                          "Empezar a enseñarle a decir \"adiós\".",
-                          "Dar nombre a las cosas.",
-                          "Tirar besos y soplar."
+                          { text: "En este trimestre aparece su primera palabra, en unos niños ocurre antes, en otros más tarde.", imageSrc: "https://picsum.photos/seed/baby-first-word/600/400" },
+                          { text: "A partir del 8º mes al niño le gusta mucho imitar.", imageSrc: "https://picsum.photos/seed/baby-imitation-8months/600/400" },
+                          { text: "Es normal ver al niño con la lengua fuera. Es importante activar este músculo para el habla. Todo lo que hagamos juegos o sonidos enseñándoles la lengua, le gustarán mucho.", imageSrc: "https://picsum.photos/seed/baby-tongue-out-play/600/400" },
+                          { text: "Empieza a comprender preguntas como ¿dónde está el chupete? ¿Dónde está mamá? ¡No toques eso!", imageSrc: "https://picsum.photos/seed/baby-understanding-questions/600/400" },
+                          { text: "Utiliza el grito para mostrar su enfado.", imageSrc: "https://picsum.photos/seed/baby-cry-frustration/600/400" },
+                          { text: "Emite mucha cantidad de sonidos ante personas conocidas.", imageSrc: "https://picsum.photos/seed/baby-babbling-familiar-face/600/400" },
+                          { text: "Utiliza el índice para señalar, como forma primitiva de preguntar.", imageSrc: "https://picsum.photos/seed/baby-pointing-index/600/400" },
+                          { text: "Le gusta que le hablen, que le canten, la música, suele bailar al oírla.", imageSrc: "https://picsum.photos/seed/baby-music-dancing/600/400" },
+                          { text: "Empezar a enseñarle a decir \"adiós\".", imageSrc: "https://picsum.photos/seed/baby-waving-goodbye/600/400" },
+                          { text: "Dar nombre a las cosas.", imageSrc: "https://picsum.photos/seed/baby-naming-objects/600/400" },
+                          { text: "Tirar besos y soplar.", imageSrc: "https://picsum.photos/seed/baby-blowing-kisses/600/400" },
                         ]
                       }
                     ]
@@ -538,8 +538,8 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Juegos de apego",
                         items: [
-                          "Cosquillas con contacto corporal.",
-                          "Carcajadas sin contacto corporal."
+                          { text: "Cosquillas con contacto corporal.", imageSrc: "https://picsum.photos/seed/baby-tickling-contact/600/400" },
+                          { text: "Carcajadas sin contacto corporal.", imageSrc: "https://picsum.photos/seed/baby-laughing-no-touch/600/400" },
                         ]
                       }
                     ]
@@ -556,7 +556,7 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Juegos de tomar decisiones",
                         items: [
-                          "Ofrecerle dos juguetes para que se decida a coger solo uno."
+                          { text: "Ofrecerle dos juguetes para que se decida a coger solo uno.", imageSrc: "https://picsum.photos/seed/baby-choose-two-toys/600/400" },
                         ]
                       }
                     ]
@@ -568,7 +568,7 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Cambios en la posición de los juguetes",
                         items: [
-                          "Cambiarle los juguetes del sitio dónde están habitualmente, de espaldas, medio tapados,… para que él los descubra."
+                          { text: "Cambiarle los juguetes del sitio dónde están habitualmente, de espaldas, medio tapados,… para que él los descubra.", imageSrc: "https://picsum.photos/seed/baby-discover-hidden-toy/600/400" },
                         ]
                       }
                     ]
@@ -580,8 +580,8 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Ejercicios de observación",
                         items: [
-                          "Enseñarle libros con detalles.",
-                          "Ofrecerle juguetes con muchos detalles llamativos."
+                          { text: "Enseñarle libros con detalles.", imageSrc: "https://picsum.photos/seed/baby-picture-book-details/600/400" },
+                          { text: "Ofrecerle juguetes con muchos detalles llamativos.", imageSrc: "https://picsum.photos/seed/baby-detailed-colorful-toys/600/400" },
                         ]
                       }
                     ]
@@ -593,8 +593,8 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Memoria: asociación de palabra y gesto",
                         items: [
-                          "Le cantamos una canción que acompañamos de palabra y gesto. Terminará por hacer el gesto sin que se lo pidamos.",
-                          "Decir adiós, lo repetirá de forma automática."
+                          { text: "Le cantamos una canción que acompañamos de palabra y gesto. Terminará por hacer el gesto sin que se lo pidamos.", imageSrc: "https://picsum.photos/seed/baby-song-word-gesture/600/400" },
+                          { text: "Decir adiós, lo repetirá de forma automática.", imageSrc: "https://picsum.photos/seed/baby-bye-bye-automatic/600/400" },
                         ]
                       }
                     ]
