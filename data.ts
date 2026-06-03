@@ -355,21 +355,75 @@ export const APP_DATA: Category[] = [
                 title: "Percepción y Cognición",
                 subSections: [
                   {
-                    id: "percepcion-3-6",
-                    title: "Conceptos a desarrollar",
+                    id: "fijacion-visual-3-6",
+                    title: "Fijación visual",
                     content: [
                       {
-                        title: "Conceptos (en desarrollo)",
+                        title: "Fijación visual",
                         items: [
-                          { text: "Fijación visual.", imageSrc: "https://picsum.photos/seed/baby-visual-fixation/600/400" },
-                          { text: "Seguimiento visual de los objetos.", imageSrc: "https://picsum.photos/seed/baby-visual-tracking/600/400" },
-                          { text: "Localización de sonidos.", imageSrc: "https://picsum.photos/seed/baby-sound-location/600/400" },
-                          { text: "Juego de esconderse.", imageSrc: "https://picsum.photos/seed/baby-peek-a-boo/600/400" },
-                          { text: "Ejercicios de atención.", imageSrc: "https://picsum.photos/seed/baby-attention-exercise/600/400" }
+                          { text: "Colgar objetos de colores vivos en la cuna al alcance de la vista.", imageSrc: "https://picsum.photos/seed/crib-colorful-objects/600/400" },
+                          { text: "Colgar objetos de colores vivos con un hilo encima de la cabeza a unos 20 cm.", imageSrc: "https://picsum.photos/seed/baby-hanging-toy-string/600/400" },
+                          { text: "Cara a cara con el bebé, a unos 50 cm, acercándonos lentamente.", imageSrc: "https://picsum.photos/seed/baby-face-to-face-50cm/600/400" },
+                          { text: "En el momento de la alimentación llamarle la atención con objetos de colores.", imageSrc: "https://picsum.photos/seed/baby-feeding-colorful-toy/600/400" },
                         ]
                       }
                     ]
-                  }
+                  },
+                  {
+                    id: "seguimiento-visual-3-6",
+                    title: "Seguimiento visual de los objetos",
+                    content: [
+                      {
+                        title: "Direcciones de un objeto",
+                        items: [
+                          { text: "Seguir con la mirada un objeto de colores vivos colgado de un hilo: lateral, hacia adelante y hacia atrás.", imageSrc: "https://picsum.photos/seed/baby-tracking-object-directions/600/400" },
+                        ]
+                      },
+                      {
+                        title: "Lanzar bolitas ante su mirada",
+                        items: [
+                          { text: "Hacer rodar bolitas de distintos colores sobre la mesa ante su mirada.", imageSrc: "https://picsum.photos/seed/baby-watching-rolling-balls/600/400" },
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "localizacion-sonidos-3-6",
+                    title: "Localización de sonidos",
+                    content: [
+                      {
+                        title: "Localización de sonidos",
+                        items: [
+                          { text: "Ponerle una pulsera con cascabeles en la muñeca.", imageSrc: "https://picsum.photos/seed/baby-wrist-jingle-bracelet/600/400" },
+                          { text: "Hacer sonar sonajeros y campanillas a unos 20 cm de cada oído, fuera del campo visual.", imageSrc: "https://picsum.photos/seed/baby-rattle-ear-sound/600/400" },
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "juego-esconderse-3-6",
+                    title: "Juego de esconderse",
+                    content: [
+                      {
+                        title: "Juego de esconderse",
+                        items: [
+                          { text: "Tapar y destapar juguetes inmediatamente, luego mantenerlos tapados unos segundos.", imageSrc: "https://picsum.photos/seed/baby-peek-a-boo-toy-cover/600/400" },
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "ejercicios-atencion-3-6",
+                    title: "Ejercicios de atención",
+                    content: [
+                      {
+                        title: "Ejercicios de atención",
+                        items: [
+                          { text: "Paseos deteniéndonos ante niños jugando, palomas, perros u otras situaciones que llamen su atención.", imageSrc: "https://picsum.photos/seed/baby-walk-attention-stimulation/600/400" },
+                        ]
+                      }
+                    ]
+                  },
                 ]
               },
             }
