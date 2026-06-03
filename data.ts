@@ -782,11 +782,11 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Imitar expresiones faciales nuestras",
                         items: [
-                          "Abrir y cerrar la boca.",
-                          "Sacar y meter la lengua.",
-                          "Hacer sonidos guturales: ja ja je je, dentales y labiales tatata, papap, bababa, dadada, mamama.",
-                          "Acariciarle las mejillas, soplárselas, tocárselas con algodón, plumas, con sus muñecos, con una cuchara de metal,…",
-                          "Delante de un espejo, le cogemos su mano y le decimos: \"pelo\" se la llevamos al pelo, luego en la boca, la nariz, orejas."
+                          { text: "Abrir y cerrar la boca.", imageSrc: "https://picsum.photos/seed/baby-open-close-mouth/600/400" },
+                          { text: "Sacar y meter la lengua.", imageSrc: "https://picsum.photos/seed/baby-stick-out-tongue/600/400" },
+                          { text: "Hacer sonidos guturales: ja ja je je, dentales y labiales tatata, papap, bababa, dadada, mamama.", imageSrc: "https://picsum.photos/seed/baby-babbling-gutural/600/400" },
+                          { text: "Acariciarle las mejillas, soplárselas, tocárselas con algodón, plumas, con sus muñecos, con una cuchara de metal,…", imageSrc: "https://picsum.photos/seed/baby-cheek-touch-feather/600/400" },
+                          { text: "Delante de un espejo, le cogemos su mano y le decimos: \"pelo\" se la llevamos al pelo, luego en la boca, la nariz, orejas.", imageSrc: "https://picsum.photos/seed/baby-mirror-body-parts/600/400" },
                         ]
                       }
                     ]
@@ -798,8 +798,8 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Jugar alternando silencio y sonido",
                         items: [
-                          "Combinar voz y no voz: le decimos \"dame la pelota\" y se lo repetimos sin hacer sonido (sólo con muecas de la boca).",
-                          "Ponemos música y la apagamos, la volvemos a poner. Lo mismo con nuestra voz."
+                          { text: "Combinar voz y no voz: le decimos \"dame la pelota\" y se lo repetimos sin hacer sonido (sólo con muecas de la boca).", imageSrc: "https://picsum.photos/seed/baby-voice-silence-mouth/600/400" },
+                          { text: "Ponemos música y la apagamos, la volvemos a poner. Lo mismo con nuestra voz.", imageSrc: "https://picsum.photos/seed/baby-music-on-off/600/400" },
                         ]
                       }
                     ]
@@ -811,29 +811,29 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Comprender una prohibición",
                         items: [
-                          "\"NO\". Cuando el niño se acerque a algo que no queramos que toque, le decimos: NO. El niño se tiene que detener y mirarnos. Al cabo de unos segundos intentará volver a tocarlo, le apartamos enseñándole otro objeto. Repetimos la negación cada vez que realice una acción que no debe."
+                          { text: "\"NO\". Cuando el niño se acerque a algo que no queramos que toque, le decimos: NO. El niño se tiene que detener y mirarnos. Al cabo de unos segundos intentará volver a tocarlo, le apartamos enseñándole otro objeto. Repetimos la negación cada vez que realice una acción que no debe.", imageSrc: "https://picsum.photos/seed/baby-understand-no-prohibition/600/400" },
                         ]
                       },
                       {
                         title: "Responder adecuadamente cuando se le llama por su nombre",
                         items: [
-                          "Cuando le llamemos debe mirarnos. Entonces debemos ofrecerle algún juguete, darle comida o salir de paseo."
+                          { text: "Cuando le llamemos debe mirarnos. Entonces debemos ofrecerle algún juguete, darle comida o salir de paseo.", imageSrc: "https://picsum.photos/seed/baby-respond-name-look/600/400" },
                         ]
                       },
                       {
                         title: "Imitar ruidos",
                         items: [
-                          "Por ejemplo, darle un coche y enseñarle a imitar su sonido: BRUM, BRUM, BRUM.",
-                          "Imitar sonidos de animales."
+                          { text: "Por ejemplo, darle un coche y enseñarle a imitar su sonido: BRUM, BRUM, BRUM.", imageSrc: "https://picsum.photos/seed/baby-toy-car-brum/600/400" },
+                          { text: "Imitar sonidos de animales.", imageSrc: "https://picsum.photos/seed/baby-animal-sounds-imitate/600/400" },
                         ]
                       },
                       {
                         title: "Jugamos con tarjetas, libros, juguetes: imitar sonidos",
                         items: [
-                          "Le enseñamos imágenes de animales, niños, partes de la cara, juguetes y le vamos diciendo el nombre: \"gato\", \"tren\", \"pelota\", \"cara\", \"nariz\".",
-                          "Ponemos encima de la mesa tres juguetes, nos sentamos con el niño. Decimos el nombre de uno de los juguetes mientras lo señalamos, esperamos y repetimos su nombre, volvemos a esperar. Hay niños que intentan imitar sonidos, otros todavía no.",
-                          "Juegos con la punta de la lengua emitiendo sonidos.",
-                          "Imitamos sonidos que el niño produzca."
+                          { text: "Le enseñamos imágenes de animales, niños, partes de la cara, juguetes y le vamos diciendo el nombre: \"gato\", \"tren\", \"pelota\", \"cara\", \"nariz\".", imageSrc: "https://picsum.photos/seed/baby-flashcards-animals-names/600/400" },
+                          { text: "Ponemos encima de la mesa tres juguetes, nos sentamos con el niño. Decimos el nombre de uno de los juguetes mientras lo señalamos, esperamos y repetimos su nombre. Hay niños que intentan imitar sonidos, otros todavía no.", imageSrc: "https://picsum.photos/seed/baby-table-three-toys-name/600/400" },
+                          { text: "Juegos con la punta de la lengua emitiendo sonidos.", imageSrc: "https://picsum.photos/seed/baby-tongue-tip-sounds/600/400" },
+                          { text: "Imitamos sonidos que el niño produzca.", imageSrc: "https://picsum.photos/seed/baby-adult-imitates-sounds/600/400" },
                         ]
                       }
                     ]
@@ -845,8 +845,8 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Lenguaje y atención",
                         items: [
-                          "Jugamos con él a contarle cuentos. Nos sentamos con él con uno de sus cuentos, lo abrimos esperando que él nos ayude y le contamos lo que vemos.",
-                          "Cogemos sus manos o sus brazos y le contamos lo que vemos: \"mira este dedito es el más pequeño...\""
+                          { text: "Jugamos con él a contarle cuentos. Nos sentamos con él con uno de sus cuentos, lo abrimos esperando que él nos ayude y le contamos lo que vemos.", imageSrc: "https://picsum.photos/seed/baby-storytime-together/600/400" },
+                          { text: "Cogemos sus manos o sus brazos y le contamos lo que vemos: \"mira este dedito es el más pequeño...\"", imageSrc: "https://picsum.photos/seed/baby-finger-rhyme-hand/600/400" },
                         ]
                       }
                     ]
