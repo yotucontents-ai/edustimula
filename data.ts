@@ -92,7 +92,35 @@ export const APP_DATA: Category[] = [
                   }
                 ]
               },
-              [AreaType.LANGUAGE]:    { title: "Lenguaje",                 subSections: [] },
+              [AreaType.LANGUAGE]: {
+                title: "Lenguaje",
+                subSections: [
+                  {
+                    id: "lenguaje-estimulacion",
+                    title: "Estimulación del lenguaje",
+                    content: [
+                      {
+                        title: "Interacción y voz",
+                        items: [
+                          { text: "Interactuar frecuentemente con el bebé: hablarle, cantarle, arrullarle. Es muy bueno que escuche nuestra voz.", imageSrc: "https://picsum.photos/seed/baby-talk-sing/600/400" },
+                          { text: "Responder con entusiasmo a los sonidos y sonrisas del bebé.", imageSrc: "https://picsum.photos/seed/baby-smile-respond/600/400" },
+                          { text: "Comienza a reconocer sonidos. Es recomendable hablarle con voz suave.", imageSrc: "https://picsum.photos/seed/baby-soft-voice/600/400" },
+                        ]
+                      },
+                      {
+                        title: "Comunicación a través del llanto",
+                        items: [
+                          { text: "«Nheh» o «leh» — Reflejo de búsqueda: tengo hambre.", imageSrc: "https://picsum.photos/seed/baby-cry-hungry/600/400" },
+                          { text: "«Owh» — Estoy cansado, tengo sueño.", imageSrc: "https://picsum.photos/seed/baby-yawn-tired/600/400" },
+                          { text: "«Ehe» o «el», sonido intermitente — Estoy incómodo y necesito eruptar.", imageSrc: "https://picsum.photos/seed/baby-burp/600/400" },
+                          { text: "«Eairh», sonido gutural «arrrr» y las piernas se doblan al estómago — Tengo gases o cólicos, me duele la barriga.", imageSrc: "https://picsum.photos/seed/baby-gas-colic/600/400" },
+                          { text: "«Ay, ay, puaj» y ojos cerrados — Sonido de fatiga.", imageSrc: "https://picsum.photos/seed/baby-fatigue/600/400" },
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
               [AreaType.SOCIAL]: {
                 title: "Área Social",
                 subSections: [
