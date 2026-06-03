@@ -631,26 +631,26 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Sentado. Mantiene bien el equilibrio y disfruta mirando lo que hay.",
                         items: [
-                          "Le sentamos sobre un rodillo grande y le sujetamos por muslos y rodillas. Suavemente deslizamos el rodillo adelante y atrás para que el niño haga esfuerzo por enderezarse y permanezca sentado.",
-                          "Sentamos al niño delante nuestra y jugamos a pasarle la pelota. La distancia entre el adulto y el niño debe ser pequeña para facilitarle que nos la devuelva.",
-                          "Sentarle en el suelo y ponerle juguetes para que los coja y juegue con ellos. Así sentado sin apoyo, va liberando los brazos. Reforzar sus intentos.",
-                          "Ofrecerle una caja o cubo llena de juguetes para que los saque.",
-                          "Darle juegos de encajes sencillos. Le resultará fácil sacarlos, le ayudamos a ponerlos.",
-                          "Reflejo de apoyo lateral. Estando el niño sentado sobre una superficie dura, lo empujamos repentinamente hacia uno y otro lado, para que apoye la mano correspondiente y así se protegerá ante una caída hacia los lados."
+                          { text: "Le sentamos sobre un rodillo grande y le sujetamos por muslos y rodillas. Suavemente deslizamos el rodillo adelante y atrás para que el niño haga esfuerzo por enderezarse y permanezca sentado.", imageSrc: "https://picsum.photos/seed/baby-roller-sitting-balance/600/400" },
+                          { text: "Sentamos al niño delante nuestra y jugamos a pasarle la pelota. La distancia entre el adulto y el niño debe ser pequeña para facilitarle que nos la devuelva.", imageSrc: "https://picsum.photos/seed/baby-sitting-ball-pass/600/400" },
+                          { text: "Sentarle en el suelo y ponerle juguetes para que los coja y juegue con ellos. Así sentado sin apoyo, va liberando los brazos. Reforzar sus intentos.", imageSrc: "https://picsum.photos/seed/baby-sitting-floor-toys/600/400" },
+                          { text: "Ofrecerle una caja o cubo llena de juguetes para que los saque.", imageSrc: "https://picsum.photos/seed/baby-box-toys-emptying/600/400" },
+                          { text: "Darle juegos de encajes sencillos. Le resultará fácil sacarlos, le ayudamos a ponerlos.", imageSrc: "https://picsum.photos/seed/baby-shape-sorter-simple/600/400" },
+                          { text: "Reflejo de apoyo lateral. Estando el niño sentado sobre una superficie dura, lo empujamos repentinamente hacia uno y otro lado, para que apoye la mano correspondiente y así se protegerá ante una caída hacia los lados.", imageSrc: "https://picsum.photos/seed/baby-lateral-support-reflex/600/400" },
                         ]
                       },
                       {
                         title: "Pasar de tumbado boca arriba / tumbado boca abajo y viceversa",
                         items: [
-                          "Le damos las manos para que se incorpore, una vez sentado le volvemos a tumbar.",
-                          "Aprovechamos al cambiarlo, le cogemos los pies y se los acercamos a la boca. También en esta postura le cruzamos los brazos y se los abrimos."
+                          { text: "Le damos las manos para que se incorpore, una vez sentado le volvemos a tumbar.", imageSrc: "https://picsum.photos/seed/baby-sit-up-hands/600/400" },
+                          { text: "Aprovechamos al cambiarlo, le cogemos los pies y se los acercamos a la boca. También en esta postura le cruzamos los brazos y se los abrimos.", imageSrc: "https://picsum.photos/seed/baby-diaper-feet-mouth/600/400" },
                         ]
                       },
                       {
                         title: "Tumbado boca abajo",
                         items: [
-                          "Le ofrecemos juguetes para que se arrastren. Le enseñamos algún juguete y cuando vaya a alcanzarlo se lo alejamos para que siga intentando cogerlo.",
-                          "Carretilla. Estando el niño boca abajo, levantarlo sujetándolo por los muslos y haciendo que se apoye sobre sus brazos. Incitarle a que se desplace utilizando solo sus brazos."
+                          { text: "Le ofrecemos juguetes para que se arrastren. Le enseñamos algún juguete y cuando vaya a alcanzarlo se lo alejamos para que siga intentando cogerlo.", imageSrc: "https://picsum.photos/seed/baby-tummy-reach-toy/600/400" },
+                          { text: "Carretilla. Estando el niño boca abajo, levantarlo sujetándolo por los muslos y haciendo que se apoye sobre sus brazos. Incitarle a que se desplace utilizando solo sus brazos.", imageSrc: "https://picsum.photos/seed/baby-wheelbarrow-arms/600/400" },
                         ]
                       }
                     ]
@@ -662,13 +662,13 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Gateo",
                         items: [
-                          "Le agarramos por los muslos impidiéndole que lo haga, seguramente se enojará, esperamos unos segundos y lo dejamos.",
-                          "Dejamos la habitación libre de juguetes y nos ponemos a gatear con el bebé, gateamos en línea recta, para atrás, dando vueltas, …",
-                          "Gatear en una habitación llena de juguetes, obstáculos, tendrá que sortearlos.",
-                          "Ponerle elementos sorpresa: al ir gateando se encuentra con un pañuelo que al tirar de él, sale su juguete preferido.",
-                          "Colgar de la pared algún juguete pequeño que no tenga peso, se pondrá de pie para cogerlo…. Cuando domine la postura de pie, se lo vamos elevando para que tenga que esforzarse en cogerlo.",
-                          "Colgar de la pared paneles con muñecos, cintas, pelotas de distinto tamaño…pero que pueda tocar, morder, chupar, tirar, … Cambiar los paneles cuando ya los tenga aburridos.",
-                          "Cuando gatee sin dificultad, le ponemos cojines de diferentes tamaños, animándolo a subir y seguir desplazándose."
+                          { text: "Le agarramos por los muslos impidiéndole que lo haga, seguramente se enojará, esperamos unos segundos y lo dejamos.", imageSrc: "https://picsum.photos/seed/baby-crawl-hold-thighs/600/400" },
+                          { text: "Dejamos la habitación libre de juguetes y nos ponemos a gatear con el bebé, gateamos en línea recta, para atrás, dando vueltas, …", imageSrc: "https://picsum.photos/seed/baby-crawl-together-adult/600/400" },
+                          { text: "Gatear en una habitación llena de juguetes, obstáculos, tendrá que sortearlos.", imageSrc: "https://picsum.photos/seed/baby-crawl-obstacle-course/600/400" },
+                          { text: "Ponerle elementos sorpresa: al ir gateando se encuentra con un pañuelo que al tirar de él, sale su juguete preferido.", imageSrc: "https://picsum.photos/seed/baby-crawl-surprise-scarf/600/400" },
+                          { text: "Colgar de la pared algún juguete pequeño que no tenga peso, se pondrá de pie para cogerlo. Cuando domine la postura de pie, se lo vamos elevando para que tenga que esforzarse en cogerlo.", imageSrc: "https://picsum.photos/seed/baby-stand-reach-wall-toy/600/400" },
+                          { text: "Colgar de la pared paneles con muñecos, cintas, pelotas de distinto tamaño, pero que pueda tocar, morder, chupar, tirar. Cambiar los paneles cuando ya los tenga aburridos.", imageSrc: "https://picsum.photos/seed/baby-wall-panel-toys/600/400" },
+                          { text: "Cuando gatee sin dificultad, le ponemos cojines de diferentes tamaños, animándolo a subir y seguir desplazándose.", imageSrc: "https://picsum.photos/seed/baby-crawl-over-cushions/600/400" },
                         ]
                       }
                     ]
@@ -680,9 +680,9 @@ export const APP_DATA: Category[] = [
                       {
                         title: "De pie / Apoyo sobre su cuerpo",
                         items: [
-                          "Jugar con él cogiéndole por las caderas de pie. Hablarle, reír, cantarle, balancearle.",
-                          "Primeros pasos con ayuda: Cuando está de pie agarrado con las dos manos, ofrecerle un juguete para que lo coja y suelte una mano. Si se cae, ayudarle a ponerse de pie y ofrecerle otra vez el juguete. Sin forzarle, le cogemos de las manos y le ayudamos a andar, si se cansa, flexiona las rodillas, le dejamos para que gatee un rato. Luego lo volvemos a intentar. No forzarlo, hay niños que dan pasos y otros todavía no.",
-                          "Coger objetos del suelo: Estando el niño de pie agarrado a un mueble o a diferentes alturas, colocar juguetes de su agrado en el suelo, para que se agache a cogerlo. Empezar con juguetes altos e ir disminuyendo la altura a medida que disminuyen sus dificultades."
+                          { text: "Jugar con él cogiéndole por las caderas de pie. Hablarle, reír, cantarle, balancearle.", imageSrc: "https://picsum.photos/seed/baby-standing-hips-support/600/400" },
+                          { text: "Primeros pasos con ayuda: Cuando está de pie agarrado con las dos manos, ofrecerle un juguete para que lo coja y suelte una mano. Sin forzarle, le cogemos de las manos y le ayudamos a andar. No forzarlo, hay niños que dan pasos y otros todavía no.", imageSrc: "https://picsum.photos/seed/baby-first-steps-hands/600/400" },
+                          { text: "Coger objetos del suelo: Estando el niño de pie agarrado a un mueble, colocar juguetes en el suelo para que se agache a cogerlos. Empezar con juguetes altos e ir disminuyendo la altura.", imageSrc: "https://picsum.photos/seed/baby-stand-squat-pick-toy/600/400" },
                         ]
                       }
                     ]
