@@ -191,10 +191,10 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Mantenerse sentado, con ayuda y apoyo",
                         items: [
-                          "a) Dejarlo sentado en su silla inclinado todo el tiempo que resista sin cansarse; progresivamente ir pasándolo a posición más vertical del respaldo. Sentarlo sobre almohadones duros en distintos lugares de la casa.",
-                          "b) Ponerlo sentado en una superficie dura con las piernas en forma de uve.",
-                          "c) Cogerlo verticalmente, su espalda contra nuestro pecho, sujetando con una mano sus rodillas y la otra su abdomen: inclinarlo hacia adelante.",
-                          "d) Apoyo sobre su cuerpo: estando descalzo, sostenerlo por las axilas, elevarlo y dejarlo caer suavemente sobre distintas superficies."
+                          { text: "Dejarlo sentado en su silla inclinado todo el tiempo que resista sin cansarse; progresivamente ir pasándolo a posición más vertical del respaldo. Sentarlo sobre almohadones duros en distintos lugares de la casa.", imageSrc: "https://picsum.photos/seed/seated-baby-chair/600/400" },
+                          { text: "Ponerlo sentado en una superficie dura con las piernas en forma de uve.", imageSrc: "https://picsum.photos/seed/seated-baby-uve/600/400" },
+                          { text: "Cogerlo verticalmente, su espalda contra nuestro pecho, sujetando con una mano sus rodillas y la otra su abdomen: inclinarlo hacia adelante.", imageSrc: "https://picsum.photos/seed/baby-upright-support/600/400" },
+                          { text: "Apoyo sobre su cuerpo: estando descalzo, sostenerlo por las axilas, elevarlo y dejarlo caer suavemente sobre distintas superficies.", imageSrc: "https://picsum.photos/seed/baby-axila-support/600/400" }
                         ]
                       }
                     ]
@@ -206,14 +206,14 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Volteos",
                         items: [
-                          "Pasar de boca arriba a de lado, animarlo ofreciéndole algún juguete.",
-                          "Pasar de boca arriba a boca abajo. Coger su pierna por debajo de la rodilla, flexionarla e iniciar el volteo."
+                          { text: "Pasar de boca arriba a de lado, animarlo ofreciéndole algún juguete.", imageSrc: "https://picsum.photos/seed/baby-roll-side/600/400" },
+                          { text: "Pasar de boca arriba a boca abajo. Coger su pierna por debajo de la rodilla, flexionarla e iniciar el volteo.", imageSrc: "https://picsum.photos/seed/baby-roll-tummy/600/400" }
                         ]
                       },
                       {
                         title: "Ejercicios dorsales",
                         items: [
-                          "Al niño boca abajo, con una mano por las rodillas y la otra en el pecho, inclinarlo hacia un balón grande hasta que apoye las manos e inicie un esfuerzo para enderezarse. Reforzar sus intentos."
+                          { text: "Al niño boca abajo, con una mano por las rodillas y la otra en el pecho, inclinarlo hacia un balón grande hasta que apoye las manos e inicie un esfuerzo para enderezarse. Reforzar sus intentos.", imageSrc: "https://picsum.photos/seed/baby-ball-exercise/600/400" }
                         ]
                       }
                     ]
@@ -225,8 +225,8 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Reflejos",
                         items: [
-                          "De Landau: coger al bebé por el tronco, elevarlo horizontalmente. El niño debe levantar su cabeza y flexionar las extremidades.",
-                          "Del paracaidista: cogemos al niño por el tronco y rápidamente lo acercamos al suelo. Observaremos que antes de que la cabeza llegue al suelo, el niño extiende sus brazos. Es una reacción de equilibrio que dura toda la vida."
+                          { text: "De Landau: coger al bebé por el tronco, elevarlo horizontalmente. El niño debe levantar su cabeza y flexionar las extremidades.", imageSrc: "https://picsum.photos/seed/reflex-landau/600/400" },
+                          { text: "Del paracaidista: cogemos al niño por el tronco y rápidamente lo acercamos al suelo. Antes de que la cabeza llegue al suelo, el niño extiende sus brazos. Es una reacción de equilibrio que dura toda la vida.", imageSrc: "https://picsum.photos/seed/reflex-parachute/600/400" }
                         ]
                       }
                     ]
@@ -243,10 +243,10 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Ejercicios de manos y dedos",
                         items: [
-                          "a) Masaje en cada dedo de la mano.",
-                          "b) Movimientos de rotación de muñeca.",
-                          "c) Flexión de dedos.",
-                          "d) Extensión y flexión de los dedos del pie."
+                          { text: "Masaje en cada dedo de la mano.", imageSrc: "https://picsum.photos/seed/baby-finger-massage/600/400" },
+                          { text: "Movimientos de rotación de muñeca.", imageSrc: "https://picsum.photos/seed/baby-wrist-rotation/600/400" },
+                          { text: "Flexión de dedos.", imageSrc: "https://picsum.photos/seed/baby-finger-flex/600/400" },
+                          { text: "Extensión y flexión de los dedos del pie.", imageSrc: "https://picsum.photos/seed/baby-toe-flex/600/400" }
                         ]
                       }
                     ]
@@ -258,7 +258,7 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Coordinación mano-cabeza",
                         items: [
-                          "Cogemos las manos del bebé y se las juntamos, cantándole alguna canción como \"Palmas, palmitas\" o \"los lobitos\"."
+                          { text: "Cogemos las manos del bebé y se las juntamos, cantándole alguna canción como \"Palmas, palmitas\" o \"los lobitos\".", imageSrc: "https://picsum.photos/seed/baby-clapping-hands/600/400" }
                         ]
                       }
                     ]
@@ -270,10 +270,10 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Coger objetos que se le ofrecen",
                         items: [
-                          "Le acercamos objetos para que intente cogerlos.",
-                          "Ofrecerle objetos de distintos tamaños. Los grandes para que tenga que cogerlos con toda la mano, y los pequeños para que le entren en su palma y los agarre.",
-                          "Jugar a darle juguetes y luego a quitárselos.",
-                          "Tumbado, le tapamos la cara con un pañuelo; esperamos a que se lo quite. Si no lo consigue, se lo quitamos nosotros."
+                          { text: "Le acercamos objetos para que intente cogerlos.", imageSrc: "https://picsum.photos/seed/baby-reach-object/600/400" },
+                          { text: "Ofrecerle objetos de distintos tamaños. Los grandes para que tenga que cogerlos con toda la mano, y los pequeños para que le entren en su palma y los agarre.", imageSrc: "https://picsum.photos/seed/baby-grasp-sizes/600/400" },
+                          { text: "Jugar a darle juguetes y luego a quitárselos.", imageSrc: "https://picsum.photos/seed/baby-toy-exchange/600/400" },
+                          { text: "Tumbado, le tapamos la cara con un pañuelo; esperamos a que se lo quite. Si no lo consigue, se lo quitamos nosotros.", imageSrc: "https://picsum.photos/seed/baby-peek-cloth/600/400" }
                         ]
                       }
                     ]
@@ -290,13 +290,13 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Al final de los 6 meses",
                         items: [
-                          "Al final de los 6 meses tiene una buena fonación; realiza sonidos para llamar la atención, para entretenerse o para expresar sus necesidades. Ejercicios del adulto hacia el niño.",
-                          "Le nombramos los objetos que le damos.",
-                          "Le contamos cuentos mientras le tenemos en brazos. Le cantamos canciones.",
-                          "Jugamos a emitir sonidos un par de minutos al día.",
-                          "Jugamos a emitir cadenas de vocales: oooo, aaa, iiii... Cadenas consonánticas: babababa, mamamama, papapa.",
-                          "Hacemos ruidos con los labios juntos como si tirásemos besos.",
-                          "Gritamos."
+                          { text: "Al final de los 6 meses tiene una buena fonación; realiza sonidos para llamar la atención, para entretenerse o para expresar sus necesidades.", imageSrc: "https://picsum.photos/seed/baby-vocalize/600/400" },
+                          { text: "Le nombramos los objetos que le damos.", imageSrc: "https://picsum.photos/seed/parent-name-objects/600/400" },
+                          { text: "Le contamos cuentos mientras le tenemos en brazos. Le cantamos canciones.", imageSrc: "https://picsum.photos/seed/parent-baby-story/600/400" },
+                          { text: "Jugamos a emitir sonidos un par de minutos al día.", imageSrc: "https://picsum.photos/seed/baby-sounds-play/600/400" },
+                          { text: "Jugamos a emitir cadenas de vocales: oooo, aaa, iiii… Cadenas consonánticas: babababa, mamamama, papapa.", imageSrc: "https://picsum.photos/seed/baby-vowel-chains/600/400" },
+                          { text: "Hacemos ruidos con los labios juntos como si tirásemos besos.", imageSrc: "https://picsum.photos/seed/parent-lip-sounds/600/400" },
+                          { text: "Gritamos.", imageSrc: "https://picsum.photos/seed/baby-shout-play/600/400" }
                         ]
                       }
                     ]
@@ -308,7 +308,7 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Risas y gritos de alegría",
                         items: [
-                          "Dejamos que el bebé emita sonidos sin interrumpirle. Al parar le mostramos nuestra satisfacción."
+                          { text: "Dejamos que el bebé emita sonidos sin interrumpirle. Al parar le mostramos nuestra satisfacción.", imageSrc: "https://picsum.photos/seed/baby-happy-sounds/600/400" }
                         ]
                       }
                     ]
@@ -320,9 +320,9 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Lenguaje gestual",
                         items: [
-                          "Jugamos a poner cara de sorpresa, abrimos la boca y los ojos, levantamos las cejas.",
-                          "Le sacamos la lengua y nos ponemos las manos en las orejas moviéndolas.",
-                          "Ponemos cara de enfado, de tristeza, de llorar."
+                          { text: "Jugamos a poner cara de sorpresa, abrimos la boca y los ojos, levantamos las cejas.", imageSrc: "https://picsum.photos/seed/parent-surprise-face/600/400" },
+                          { text: "Le sacamos la lengua y nos ponemos las manos en las orejas moviéndolas.", imageSrc: "https://picsum.photos/seed/parent-tongue-face/600/400" },
+                          { text: "Ponemos cara de enfado, de tristeza, de llorar.", imageSrc: "https://picsum.photos/seed/parent-expression-face/600/400" }
                         ]
                       }
                     ]
@@ -339,12 +339,12 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Actividades sociales",
                         items: [
-                          "Responde al sonido de su nombre.",
-                          "Iniciación de la toma de alimentos semisólidos con cuchara.",
-                          "Acostumbrarle a salir y a hablarle cuando se encuentre con personas en el parque o en la calle.",
-                          "No dejar que lo cojan bruscamente otras personas. Cuando lo hagan, nos acercamos a él y ponemos cara de satisfacción.",
-                          "No lo dejamos mucho tiempo en brazos de otras personas.",
-                          "Dejar que otras personas jueguen con él. Mostrarle nuestra alegría."
+                          { text: "Responde al sonido de su nombre.", imageSrc: "https://picsum.photos/seed/baby-name-response/600/400" },
+                          { text: "Iniciación de la toma de alimentos semisólidos con cuchara.", imageSrc: "https://picsum.photos/seed/baby-spoon-food/600/400" },
+                          { text: "Acostumbrarle a salir y a hablarle cuando se encuentre con personas en el parque o en la calle.", imageSrc: "https://picsum.photos/seed/baby-outdoor-social/600/400" },
+                          { text: "No dejar que lo cojan bruscamente otras personas. Cuando lo hagan, nos acercamos a él y ponemos cara de satisfacción.", imageSrc: "https://picsum.photos/seed/baby-gentle-approach/600/400" },
+                          { text: "No lo dejamos mucho tiempo en brazos de otras personas.", imageSrc: "https://picsum.photos/seed/baby-parent-arms/600/400" },
+                          { text: "Dejar que otras personas jueguen con él. Mostrarle nuestra alegría.", imageSrc: "https://picsum.photos/seed/baby-others-play/600/400" }
                         ]
                       }
                     ]
@@ -361,11 +361,11 @@ export const APP_DATA: Category[] = [
                       {
                         title: "Conceptos (en desarrollo)",
                         items: [
-                          "Fijación visual.",
-                          "Seguimiento visual de los objetos.",
-                          "Localización de sonidos.",
-                          "Juego de esconderse.",
-                          "Ejercicios de atención."
+                          { text: "Fijación visual.", imageSrc: "https://picsum.photos/seed/baby-visual-fixation/600/400" },
+                          { text: "Seguimiento visual de los objetos.", imageSrc: "https://picsum.photos/seed/baby-visual-tracking/600/400" },
+                          { text: "Localización de sonidos.", imageSrc: "https://picsum.photos/seed/baby-sound-location/600/400" },
+                          { text: "Juego de esconderse.", imageSrc: "https://picsum.photos/seed/baby-peek-a-boo/600/400" },
+                          { text: "Ejercicios de atención.", imageSrc: "https://picsum.photos/seed/baby-attention-exercise/600/400" }
                         ]
                       }
                     ]
