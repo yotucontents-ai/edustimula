@@ -137,7 +137,87 @@ export const edad3a4: AgeGroup = {
         }
       ]
     },
-    [AreaType.FINE_MOTOR]:     { title: "Motricidad Fina",        subSections: [] },
+    [AreaType.FINE_MOTOR]: {
+      title: "Motricidad Fina",
+      subSections: [
+        {
+          id: "empleo-tijeras",
+          title: "Empleo de tijeras",
+          content: [
+            {
+              title: "Empleo de tijeras",
+              items: [
+                { text: "Darle unas tijeras de puntas redondeadas y enseñarle a cogerlas correctamente y hacer los movimientos de abrir y cerrar. Reforzar.", imageSrc: fotoProvisional("child-holding-round-tip-scissors") },
+                { text: "Darle un papel para que haga pequeños cortes (flequillos). Al principio ayudarle, guiándole en los movimientos. Irle retirando la ayuda progresivamente. Reforzar.", imageSrc: fotoProvisional("child-cutting-paper-fringe") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "puente-cinco-cubos",
+          title: "Imitación de la construcción de un puente de 5 cubos",
+          content: [
+            {
+              title: "Imitación de la construcción de un puente de 5 cubos",
+              items: [
+                { text: "Hacer ante la vista del niño un puente con 5 cubos y animarle a imitarlo. Al principio, si es necesario, ayudarle. Ir retirando la ayuda hasta que lo logre solo. Reforzar.", imageSrc: fotoProvisional("child-block-bridge-five-cubes") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "abrir-cerrar-cerraduras",
+          title: "Abrir y cerrar cerraduras",
+          content: [
+            {
+              title: "Abrir y cerrar cerraduras",
+              items: [
+                { text: "Enseñarle a abrir armarios, puertas que estén cerradas con llave. Al principio, ayudarle, guiándole la mano. Reforzar.", imageSrc: fotoProvisional("child-opening-lock-with-key") },
+                { text: "Enseñarle a utilizar la llave para cerrar. Reforzar.", imageSrc: fotoProvisional("child-closing-lock-with-key") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "copiar-cuadrado",
+          title: "Copiar un cuadrado",
+          content: [
+            {
+              title: "Copiar un cuadrado",
+              items: [
+                { text: "Hacer un cuadrado ante la vista del niño y enseñarle a imitarlo. Al principio si es necesario ayudarlo. Reforzar.", imageSrc: fotoProvisional("child-copying-square-board") },
+                { text: "Hacer lo mismo, pero sobre una mesa con lápiz y papel.", imageSrc: fotoProvisional("child-copying-square-paper-pencil") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "dibujar-cara-humana",
+          title: "Dibujar una cara humana",
+          content: [
+            {
+              title: "Dibujar una cara humana",
+              items: [
+                { text: "Enseñarle a trazar un círculo (cabeza) y a colocar correctamente los ojos, boca, pelo y nariz. Al principio, ayudarle señalando sobre nosotros lo que ha de dibujar, al tiempo que el niño lo va haciendo al lado del dibujo que hemos hecho. Si es necesario guiarle la mano al lugar correcto y ayudarle físicamente.", imageSrc: fotoProvisional("child-drawing-human-face") },
+                { text: "Ir retirando poco a poco la ayuda hasta que lo haga solo.", imageSrc: fotoProvisional("child-drawing-face-alone") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "colorear-superficies",
+          title: "Colorear superficies",
+          content: [
+            {
+              title: "Colorear superficies",
+              items: [
+                { text: "Darle láminas con figuras para rellenar y lápices de colores o ceras. Enseñarle a pintarlas sin salirse de los contornos. Empezar con formas geométricas sencillas de tamaño mediano y poco a poco se le va complicando la figura a rellenar.", imageSrc: fotoProvisional("child-coloring-shapes-within-lines") }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     [AreaType.ORAL_LANGUAGE]: {
       title: "Lenguaje Oral",
       subSections: [
