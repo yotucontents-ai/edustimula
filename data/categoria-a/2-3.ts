@@ -220,6 +220,113 @@ export const edad2a3: AgeGroup = {
         }
       ]
     },
+    [AreaType.LANGUAGE]: {
+      title: "Lenguaje",
+      subSections: [
+        {
+          id: "empleo-plural",
+          title: "Empleo del plural",
+          content: [
+            {
+              title: "Empleo del plural",
+              items: [
+                { text: "Formar plurales. Mostrar al niño una caja conteniendo una pelota. Preguntarle: “¿Qué es?” para que responda “una pelota”. A continuación presentarle otra caja con muchas pelotas y decirle “¿Qué son?” para que diga “pelotas”. Reforzar con muchos ejemplos.", imageSrc: fotoProvisional("child-plural-box-balls") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "empleo-pronombres",
+          title: "Empleo de pronombres",
+          content: [
+            {
+              title: "Yo",
+              items: [
+                { text: "Hacerle preguntas del tipo “¿Quién es… (su nombre)?”, para que diga “Yo”. Si no lo hace se le dice “di yo”. Insistir hasta que responda usando el pronombre Yo. Reforzar las respuestas.", imageSrc: fotoProvisional("child-pronoun-yo") }
+              ]
+            },
+            {
+              title: "Él / Ella",
+              items: [
+                { text: "Hacerle preguntas del tipo “¿Quién es… (nombre de un/una familiar)?”, para que responda “él”/“ella”. Si no lo hace, decirle “di él” o “di ella” al tiempo que se le hace señalar a la persona correspondiente. Reforzar las respuestas.", imageSrc: fotoProvisional("child-pronoun-el-ella") }
+              ]
+            },
+            {
+              title: "Tú, tuyo",
+              items: [
+                { text: "Hacer preguntas del tipo “¿Quién es mamá?”, para que responda “tú”. Si no lo hace, decirle “di tú”, al tiempo que se le hace señalar a la persona correspondiente. Reforzar sus respuestas.", imageSrc: fotoProvisional("child-pronoun-tu") }
+              ]
+            },
+            {
+              title: "Mío",
+              items: [
+                { text: "Hacerle preguntas del tipo “¿De quién son estos zapatos?”, al tiempo que se le muestran sus zapatos, para que responda “mío”. Hacer lo mismo con otras prendas de vestir, juguetes…", imageSrc: fotoProvisional("child-pronoun-mio-shoes") }
+              ]
+            },
+            {
+              title: "Eso",
+              items: [
+                { text: "Hacerle preguntas del tipo “¿Qué quieres?”, refiriéndonos a cosas que el niño desconoce su nombre, para que diga “eso”, al tiempo que lo señala. Reforzar las respuestas.", imageSrc: fotoProvisional("child-pronoun-eso") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "dice-su-nombre",
+          title: "Dice su nombre, nombrarse",
+          content: [
+            {
+              title: "Dice su nombre, nombrarse",
+              items: [
+                { text: "Preguntar al niño con frecuencia “¿Cómo te llamas?”. Si no contesta decirle “di… (su nombre)” hasta que responda a la pregunta. Reforzar sus intentos.", imageSrc: fotoProvisional("child-says-own-name") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "direcciones-espaciales",
+          title: "Comprensión de direcciones espaciales referidas a su cuerpo",
+          content: [
+            {
+              title: "Arriba - abajo",
+              items: [
+                { text: "Darle órdenes verbales del tipo: “pon los brazos arriba”, “pon los brazos abajo”, para que las ejecute. Ayudarle al principio si es necesario.", imageSrc: fotoProvisional("child-arms-up-down") }
+              ]
+            },
+            {
+              title: "Encima - debajo",
+              items: [
+                { text: "Poner al niño junto a una silla. Darle un juguete y decirle “ponlo debajo de la silla”. A continuación darle otro juguete y decirle “ponlo encima de la silla”. Al principio, si es necesario, ayudarle. Hacer lo mismo en otros lugares de la casa (cama, mesa…) y con objetos diferentes.", imageSrc: fotoProvisional("child-toy-over-under-chair") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "partes-del-cuerpo",
+          title: "Reconocimiento de partes de su cuerpo",
+          content: [
+            {
+              title: "Reconocimiento de partes de su cuerpo",
+              items: [
+                { text: "Enseñarle a reconocer primero en sí mismo, después en otra persona y finalmente en un muñeco o lámina con una figura humana, partes del cuerpo tales como: rodilla, pierna, estómago, pecho, espalda, hombro, cuello…", imageSrc: fotoProvisional("child-body-parts-doll") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "frases-tres-palabras",
+          title: "Construcción de frases de 3 palabras",
+          content: [
+            {
+              title: "Construcción de frases de 3 palabras",
+              items: [
+                { text: "Cuando el niño quiera algo utilizar frases de 3 palabras. Un ejemplo, si desea agua, hacer que diga: “mamá dame agua”. Si no lo hace, decírselo primero y hacer que después lo repita él. Hacerlo siempre utilizando la palabra que ya conoce. Reforzar sus intentos.", imageSrc: fotoProvisional("child-three-word-sentences") }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     [AreaType.SOCIAL]: {
       title: "Área Social",
       subSections: [
