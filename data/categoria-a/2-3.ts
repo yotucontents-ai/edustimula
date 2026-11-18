@@ -122,6 +122,52 @@ export const edad2a3: AgeGroup = {
         }
       ]
     },
+    [AreaType.FINE_MOTOR]: {
+      title: "Motricidad Fina",
+      subSections: [
+        {
+          id: "imitar-trazos",
+          title: "Imitar trazos",
+          content: [
+            {
+              title: "a) Imitar trazos circulares",
+              items: [
+                { text: "Poner al niño frente a una pizarra vertical. Trazar un círculo y animarle a que realice trazos circulares. Al principio ayudarle guiándole la mano.", imageSrc: fotoProvisional("child-circle-strokes-blackboard") },
+                { text: "Hacer lo mismo sobre una cartulina o papel encima de una mesa con ceras de colores.", imageSrc: fotoProvisional("child-circle-strokes-crayons") }
+              ]
+            },
+            {
+              title: "b) Imitar trazos en cruz",
+              items: [
+                { text: "Poner al niño frente a una pizarra vertical. Trazar una cruz y animarle a que la imite. Al principio ayudarle.", imageSrc: fotoProvisional("child-cross-strokes-blackboard") },
+                { text: "Hacer lo mismo sobre una mesa en papel o cartulina con ceras de colores.", imageSrc: fotoProvisional("child-cross-strokes-crayons") }
+              ]
+            },
+            {
+              title: "c) Imitar trazos de líneas en forma de uve",
+              items: [
+                { text: "Poner al niño frente a una pizarra vertical. Trazar líneas en forma de uve y animarle a que lo realice.", imageSrc: fotoProvisional("child-v-strokes-blackboard") },
+                { text: "Hacer lo mismo sobre una mesa con ceras de colores.", imageSrc: fotoProvisional("child-v-strokes-crayons") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "enhebrar-cordon",
+          title: "Enhebrar un cordón",
+          content: [
+            {
+              title: "Enhebrar un cordón",
+              items: [
+                { text: "Enseñarle a enhebrar bolas grandes con un cordón. Primero empezar con un cordón semirrígido y cuando lo haga con este, ir dándole otro cada vez más flexible, hasta que lo haga con uno de algodón.", imageSrc: fotoProvisional("child-threading-large-beads") },
+                { text: "Cuando enhebre sin problema las bolas grandes, ir disminuyendo su tamaño… hasta que lo haga con formas pequeñas.", imageSrc: fotoProvisional("child-threading-small-beads") },
+                { text: "Hacer que enhebre también otras formas geométricas: cilindros, cubos…", imageSrc: fotoProvisional("child-threading-geometric-shapes") }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     [AreaType.SOCIAL]: {
       title: "Área Social",
       subSections: [
