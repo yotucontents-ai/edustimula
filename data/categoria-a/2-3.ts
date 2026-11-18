@@ -165,6 +165,58 @@ export const edad2a3: AgeGroup = {
               ]
             }
           ]
+        },
+        {
+          id: "puente-tres-cubos",
+          title: "Imitar la construcción de un puente con 3 cubos",
+          content: [
+            {
+              title: "Imitar la construcción de un puente con 3 cubos",
+              items: [
+                { text: "Construir ante su vista un puente con tres cubos y animarle a imitarlo.", imageSrc: fotoProvisional("child-block-bridge-demo") },
+                { text: "Al principio colocar los dos cubos de la base y que él termine de colocar el de arriba.", imageSrc: fotoProvisional("child-block-bridge-top-block") },
+                { text: "Cuando lo realice sin dificultad, animarle a que lo haga solo desde el principio. Reforzar.", imageSrc: fotoProvisional("child-block-bridge-alone") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "llenar-vaciar-recipientes",
+          title: "Llenar y vaciar recipientes",
+          content: [
+            {
+              title: "Llenar y vaciar recipientes",
+              items: [
+                { text: "Jugar con el niño a vaciar y llenar recipientes con arena, así como a pasar la arena de uno a otro.", imageSrc: fotoProvisional("child-filling-containers-sand") },
+                { text: "Hacer lo mismo, pero con el agua.", imageSrc: fotoProvisional("child-filling-containers-water") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "desenvolver-paquetes",
+          title: "Desenvolver paquetes",
+          content: [
+            {
+              title: "Desenvolver paquetes",
+              items: [
+                { text: "Darle paquetes de tamaño regular medio desenvueltos para que él termine de quitarle el papel. Poco a poco ir dándoselo cada vez más envuelto.", imageSrc: fotoProvisional("child-unwrapping-package-partly") },
+                { text: "Presentarle el paquete totalmente envuelto para que él solo lo desenvuelva.", imageSrc: fotoProvisional("child-unwrapping-package-fully") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "torres-diez-cubos",
+          title: "Construcción de torres de hasta 10 cubos",
+          content: [
+            {
+              title: "Construcción de torres de hasta 10 cubos",
+              items: [
+                { text: "Enseñarle a hacer torres de ocho cubos. A continuación de nueve y por último de diez.", imageSrc: fotoProvisional("child-block-tower-ten") }
+              ]
+            }
+          ]
         }
       ]
     },
