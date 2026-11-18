@@ -269,6 +269,145 @@ export const edad3a4: AgeGroup = {
         }
       ]
     },
-    [AreaType.PERCEPTION]:     { title: "Percepción y Cognición", subSections: [] },
+    [AreaType.PERCEPTION]: {
+      title: "Percepción y Cognición",
+      subSections: [
+        {
+          id: "imitacion-trazos",
+          title: "Imitación de trazos",
+          content: [
+            {
+              title: "Imitación de trazos",
+              items: [
+                { text: "Ante una pizarra colocada en vertical, intentar que el niño haga por imitación trazos en forma de cruz.", imageSrc: fotoProvisional("child-cross-strokes-vertical-board") },
+                { text: "Ante una pizarra colocada en vertical, intentar que el niño haga por imitación trazos en forma de uve. Guiar la mano del niño al principio.", imageSrc: fotoProvisional("child-v-strokes-vertical-board") },
+                { text: "Realizar los ejercicios anteriores con papel y lápiz.", imageSrc: fotoProvisional("child-strokes-paper-pencil") },
+                { text: "Puntear una línea vertical en un papel. El niño debe repasarla siguiendo los puntos.", imageSrc: fotoProvisional("child-tracing-dotted-vertical-line") },
+                { text: "Puntear en un papel líneas horizontales. Repasarlas siguiendo los puntos.", imageSrc: fotoProvisional("child-tracing-dotted-horizontal-lines") },
+                { text: "Puntear y repasar círculos, cruces y trazos en forma de uve.", imageSrc: fotoProvisional("child-tracing-dotted-shapes") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "empareja-colores",
+          title: "Empareja colores de 4 en 4",
+          content: [
+            {
+              title: "Empareja colores de 4 en 4",
+              items: [
+                { text: "Poner ante su vista 4 objetos de colores diferentes. A continuación, decirle: “pon el… con el…”, al tiempo que se le da el objeto para que lo coloque encima o al lado del que es igual. Cambiar el orden de los colores. Hacerlo con los colores: rojo, azul, amarillo, verde, negro, blanco y naranja.", imageSrc: fotoProvisional("child-matching-four-colors") },
+                { text: "Hacer lo mismo, pero empleando objetos diferentes. Reforzar.", imageSrc: fotoProvisional("child-matching-colors-other-objects") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "selecciona-colores",
+          title: "Selecciona colores",
+          content: [
+            {
+              title: "Selecciona colores",
+              items: [
+                { text: "Poner ante su vista dos objetos iguales de colores diferentes (rojo, azul, verde, amarillo) y decirle “¿Dónde está el…?” para que lo señale. Variar el orden de colocación de los colores.", imageSrc: fotoProvisional("child-selecting-colors") },
+                { text: "Hacer lo mismo con objetos diferentes.", imageSrc: fotoProvisional("child-selecting-colors-other-objects") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "selecciona-numeros",
+          title: "Selecciona números",
+          content: [
+            {
+              title: "Selecciona números",
+              items: [
+                { text: "Poner números en un papel, pintarlos y recortarlos (del 1 al 9). Poner ante la vista del niño de dos en dos y decirle “dame el…” para que lo coja y nos lo dé.", imageSrc: fotoProvisional("child-selecting-numbers-two") },
+                { text: "Poner los números de tres en tres, luego de cuatro en cuatro…", imageSrc: fotoProvisional("child-selecting-numbers-more") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "apareja-numeros",
+          title: "Apareja números",
+          content: [
+            {
+              title: "Apareja números",
+              items: [
+                { text: "Dibujar en un papel números repetidos en dos filas y en desorden para que el niño una el número de una fila con el que es igual en la otra fila. Reforzar. Hacerlo del 1 al 9.", imageSrc: fotoProvisional("child-matching-numbers-two-rows") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "formas-geometricas-fundamentales",
+          title: "Reconoce las formas geométricas fundamentales",
+          content: [
+            {
+              title: "Reconoce las formas geométricas fundamentales",
+              items: [
+                { text: "Colocar ante su vista dos piezas geométricas, por ejemplo, círculo y cuadrado. Decirle: “¿Dónde está el círculo?” para que nos dé la pieza correspondiente, al tiempo que nos dice su nombre.", imageSrc: fotoProvisional("child-circle-square-pieces") },
+                { text: "Cuando reconozca estas dos piezas, quitar una de ellas y poner en su lugar un triángulo y preguntarle: “¿Dónde está el triángulo?”", imageSrc: fotoProvisional("child-triangle-piece") },
+                { text: "Mostrarle las 3 piezas a la vez y repetir las mismas preguntas.", imageSrc: fotoProvisional("child-three-geometric-pieces") },
+                { text: "Decirle: “busca una cosa que tenga la misma forma que el círculo”. Hacer que el objeto esté en la habitación. Hacer lo mismo con el cuadrado. Reforzar.", imageSrc: fotoProvisional("child-finding-round-object-room") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "torre-cubos-decrecientes",
+          title: "Colocar cubos en tamaño decreciente para hacer una torre",
+          content: [
+            {
+              title: "Colocar cubos en tamaño decreciente para hacer una torre",
+              items: [
+                { text: "Darle un juego de cubos de tamaños decrecientes y enseñarle a colocarlos de mayor a menor para hacer una torre. Al principio empezar con 2 cubiletes y a medida que lo vaya consiguiendo, ir aumentando el número de cubos.", imageSrc: fotoProvisional("child-nesting-cubes-tower") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "conjunto-doce-piezas",
+          title: "Conjunto de hasta 12 piezas",
+          content: [
+            {
+              title: "Conjunto de hasta 12 piezas",
+              items: [
+                { text: "Presentarle una lámina donde estén representadas desde un mínimo de 6 figuras hasta un máximo de 12. Ir presentándoselas de forma gradual en cuanto al número de figuras.", imageSrc: fotoProvisional("child-picture-sheet-twelve-figures") },
+                { text: "Una vez puesta la lámina ante su vista, nombrarle las figuras representadas y decirle: “pon la… con la…”. Reforzar.", imageSrc: fotoProvisional("child-matching-picture-sheet") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "discriminacion-figuras-formas-tamanos",
+          title: "Discriminación de figuras, formas y tamaños variados",
+          content: [
+            {
+              title: "En cajas de madera",
+              items: [
+                { text: "Darle encajes de formas variadas y enseñarle a colocar las piezas correctamente.", imageSrc: fotoProvisional("child-wooden-shape-inset") },
+                { text: "Darle encajes de madera con piezas de tamaño decreciente y enseñarle a encajarlas correctamente.", imageSrc: fotoProvisional("child-wooden-size-inset") },
+                { text: "Darle un tablero de madera con figuras para encajar y enseñarle a colocarlas correctamente. Empezar con pocas piezas e ir aumentando el número de ellas a medida que las vaya haciendo bien.", imageSrc: fotoProvisional("child-wooden-board-figures") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "transportar-objetos-fragiles",
+          title: "Transportar objetos frágiles",
+          content: [
+            {
+              title: "Transportar objetos frágiles",
+              items: [
+                { text: "Dar al niño vasos llenos de alimentos sólidos, como por ejemplo garbanzos… y hacer que los lleve de un sitio a otro en trayectos cortos.", imageSrc: fotoProvisional("child-carrying-cup-chickpeas") },
+                { text: "Conforme vaya realizando bien el ejercicio anterior, poner en el vaso agua, empezando por la mitad y llenando posteriormente el vaso hacia arriba a medida que puede dar unos pasos con él sin derramar agua. Se da por conseguido cuando sea capaz de transportar un vaso lleno de agua 2 metros.", imageSrc: fotoProvisional("child-carrying-cup-water") }
+              ]
+            }
+          ]
+        }
+      ]
+    },
   }
 };
