@@ -6,7 +6,137 @@ export const edad3a4: AgeGroup = {
   label: "3 – 4 años",
   introText: [],
   areas: {
-    [AreaType.GROSS_MOTOR]:    { title: "Motricidad Gruesa",      subSections: [] },
+    [AreaType.GROSS_MOTOR]: {
+      title: "Motricidad Gruesa",
+      subSections: [
+        {
+          id: "alterna-pies-bajar-escaleras",
+          title: "Alterna los pies al bajar escaleras",
+          content: [
+            {
+              title: "Alterna los pies al bajar escaleras",
+              items: [
+                { text: "Cuando el niño vaya a bajar las escaleras, hacer que se agarre a la barandilla. Insistir en que vaya colocando un pie en cada peldaño. Al principio, si es necesario, ayudarle.", imageSrc: fotoProvisional("child-going-down-stairs-handrail") },
+                { text: "Hacer lo mismo, pero sin agarrarse a la barandilla.", imageSrc: fotoProvisional("child-going-down-stairs-alone") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "saltos-grandes-60cm",
+          title: "Da saltos grandes desde 60 cm",
+          content: [
+            {
+              title: "Da saltos grandes desde 60 cm",
+              items: [
+                { text: "Ir aumentando progresivamente la altura del objeto desde donde ha de saltar, hasta que sea capaz de hacerlo desde una altura de 60 cm aproximadamente. Reforzar sus intentos.", imageSrc: fotoProvisional("child-big-jump-from-height") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "pie-dominante-5-segundos",
+          title: "Se mantiene sobre el pie dominante 5”",
+          content: [
+            {
+              title: "Se mantiene sobre el pie dominante 5”",
+              items: [
+                { text: "Se ponen frente a frente adulto y niño. Le animamos a que se ponga a la pata coja. Nosotros lo hacemos y le animamos a que nos imite.", imageSrc: fotoProvisional("child-one-leg-imitating-adult") },
+                { text: "Conseguir que sea capaz de permanecer en esta posición 5”.", imageSrc: fotoProvisional("child-one-leg-five-seconds") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "salta-sobre-un-pie",
+          title: "Salta sobre un pie",
+          content: [
+            {
+              title: "Salta sobre un pie",
+              items: [
+                { text: "Después que sea capaz de mantenerse a la pata coja 5”, enseñarle a saltar sobre un solo pie. Reforzar sus intentos. Si no lo hace, ayudarle cogiéndole de las manos. Ir retirando la ayuda poco a poco hasta que lo haga solo.", imageSrc: fotoProvisional("child-hopping-one-foot") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "salta-cuerda-5cm",
+          title: "Salta sobre una cuerda a 5 cm de altura",
+          content: [
+            {
+              title: "Salta sobre una cuerda a 5 cm de altura",
+              items: [
+                { text: "Colocar una cuerda atada a dos muebles y a ras del suelo. Enseñarle a saltar sobre ella con los pies juntos. Cuando lo haga bien ir elevando poco a poco la altura hasta 5 cm aproximadamente.", imageSrc: fotoProvisional("child-jumping-over-rope") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "anda-puntillas-talones",
+          title: "Anda de puntillas y talones",
+          content: [
+            {
+              title: "Anda de puntillas y talones",
+              items: [
+                { text: "Enseñarle a mantenerse de pie apoyado sobre los talones / puntillas. Reforzar sus intentos.", imageSrc: fotoProvisional("child-standing-on-tiptoes-heels") },
+                { text: "Enseñarle a andar sobre los talones o puntillas hasta una distancia de 1,30 metros aproximadamente. Reforzar.", imageSrc: fotoProvisional("child-walking-on-tiptoes-heels") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "anda-entre-dos-lineas",
+          title: "Anda entre dos líneas paralelas separadas entre sí 15 cm",
+          content: [
+            {
+              title: "Anda entre dos líneas paralelas separadas entre sí 15 cm",
+              items: [
+                { text: "Trazar en el suelo dos líneas paralelas de 2 metros aproximadamente. Animar al niño a andar sobre ese caminito sin salirse ni pisar las líneas. Al principio si es necesario, ayudarle llevándole de la mano. Insistir en que ponga un pie delante de otro. Poco a poco ir retirando la ayuda.", imageSrc: fotoProvisional("child-walking-between-two-lines") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "camina-sobre-una-linea",
+          title: "Camina sobre una línea",
+          content: [
+            {
+              title: "Camina sobre una línea",
+              items: [
+                { text: "Ir estrechando el caminito hasta que quede únicamente una línea gruesa.", imageSrc: fotoProvisional("child-walking-on-single-line") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "bota-pelota-recoge",
+          title: "Bota una pelota en el suelo y la recoge",
+          content: [
+            {
+              title: "Bota una pelota en el suelo y la recoge",
+              items: [
+                { text: "Darle al niño una pelota mediana y enseñarle a tirarla al suelo y a recogerla con ambas manos. Al principio si es necesario ayudarle colocándonos detrás del niño y guiándole los brazos en los movimientos de soltar y atrapar.", imageSrc: fotoProvisional("child-bouncing-ball-two-hands") },
+                { text: "Ir retirando la ayuda poco a poco hasta que lo haga solo.", imageSrc: fotoProvisional("child-bouncing-ball-alone") },
+                { text: "Enseñarle a botarla con una sola mano. Al principio ayudarle si es necesario.", imageSrc: fotoProvisional("child-bouncing-ball-one-hand") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "sube-tacos-salta",
+          title: "Se sube sobre tacos de madera apilados y salta sobre ellos",
+          content: [
+            {
+              title: "Se sube sobre tacos de madera apilados y salta sobre ellos",
+              items: [
+                { text: "Colocar 2 tacos de 15 cm de altura aproximadamente, apilados, animar al niño a subir a ellos. Al principio si es necesario, ofrecerle apoyo en una mano y decirle “salta”, dándole ayuda si la necesitara. Luego tendrá que hacer solo todo el ejercicio.", imageSrc: fotoProvisional("child-climbing-stacked-blocks") },
+                { text: "Hacer lo mismo con 3 tacos.", imageSrc: fotoProvisional("child-jumping-three-stacked-blocks") }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     [AreaType.FINE_MOTOR]:     { title: "Motricidad Fina",        subSections: [] },
     [AreaType.ORAL_LANGUAGE]: {
       title: "Lenguaje Oral",
