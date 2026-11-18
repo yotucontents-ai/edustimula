@@ -384,7 +384,115 @@ export const edad2a3: AgeGroup = {
     },
     [AreaType.PERCEPTION]: {
       title: "Percepción y Cognición",
-      subSections: []
+      subSections: [
+        {
+          id: "subir-bajar-braguitas",
+          title: "Subirse y bajarse las braguitas y pantalones",
+          content: [
+            {
+              title: "Subirse y bajarse las braguitas y pantalones",
+              items: [
+                { text: "Cuando el niño vaya a utilizar el wáter, animarlo a que sea él quien se baje las braguitas y se las suba. Para ello, decirle “bájate las braguitas” al tiempo que se le ayuda si es necesario, dirigiéndole el movimiento.", imageSrc: fotoProvisional("child-pulling-down-pants") },
+                { text: "Cuando se las tenga que subir, decirle “sube las braguitas”, igualmente ayudarle si lo necesita. Ir retirando la ayuda.", imageSrc: fotoProvisional("child-pulling-up-pants") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "no-pis-noche",
+          title: "No se hace pis durante la noche, normalmente",
+          content: [
+            {
+              title: "No se hace pis durante la noche, normalmente",
+              items: [
+                { text: "Antes de irse a la cama, hacer que haga pis. Si por la mañana amanece seco, reforzar alabándolo por ello.", imageSrc: fotoProvisional("child-bedtime-toilet-routine") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "quitarse-abrigo-chaqueta",
+          title: "Se quita el abrigo y la chaqueta",
+          content: [
+            {
+              title: "Se quita el abrigo y la chaqueta",
+              items: [
+                { text: "Cuando se vaya a sacar el abrigo o la chaqueta, dejar la última manga y decirle “quítate el abrigo”, para que termine de hacerlo. Cuando lo haga bien, hacer que se lo quite desde el comienzo. Ayudarle en los movimientos a realizar. Reforzar sus intentos.", imageSrc: fotoProvisional("child-taking-off-coat") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "sorber-pajita",
+          title: "Sorbe líquidos en pajita",
+          content: [
+            {
+              title: "Sorbe líquidos en pajita",
+              items: [
+                { text: "Cuando se le dé agua u otra bebida refrescante, enseñarle a tomarla sorbiendo por una pajita. Mejora la respiración.", imageSrc: fotoProvisional("child-drinking-with-straw") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "ponerse-zapatos",
+          title: "Ponerse los zapatos",
+          content: [
+            {
+              title: "Ponerse los zapatos",
+              items: [
+                { text: "Cuando se le vaya a poner los zapatos, dárselos desabrochados y decirle “ponte los zapatos”. Si tiene dificultad ayudarle. Poco a poco ir retirando la ayuda hasta que lo haga solo.", imageSrc: fotoProvisional("child-putting-on-shoes") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "lotes-seis-dibujos",
+          title: "Lotes de hasta 6 dibujos",
+          content: [
+            {
+              title: "Lotes de hasta 6 dibujos",
+              items: [
+                { text: "Poner un cartón con dos imágenes sencillas y claras ante su vista. Nombrarle las figuras representadas. Darle a continuación un cartón pequeño conteniendo una de las figuras anteriores y decirle: “pon la… con la…” es decir, con la que sea igual.", imageSrc: fotoProvisional("child-matching-two-pictures") },
+                { text: "Si no lo hace ayudarle. Cuando lo haga solo sin problema, darle tres, luego cuatro…", imageSrc: fotoProvisional("child-matching-three-four-pictures") },
+                { text: "Lo mismo pero con un lote de seis figuras.", imageSrc: fotoProvisional("child-matching-six-pictures") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "discriminar-formas",
+          title: "Discriminar formas geométricas y figuras",
+          content: [
+            {
+              title: "Con círculo, triángulo y cuadrado",
+              items: [
+                { text: "Darle un tablero conteniendo las tres formas básicas y enseñarle a encajarlas correctamente. Reforzar.", imageSrc: fotoProvisional("child-shape-sorter-three-shapes") }
+              ]
+            },
+            {
+              title: "Con formas geométricas variadas",
+              items: [
+                { text: "Presentar al niño formas geométricas variadas. Ir aumentando progresivamente el número de formas geométricas a encajar. Ayudarle si es necesario.", imageSrc: fotoProvisional("child-shape-sorter-varied-shapes") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "puzles-tres-piezas",
+          title: "Construcción de puzles de hasta 3 piezas",
+          content: [
+            {
+              title: "Construcción de puzles de hasta 3 piezas",
+              items: [
+                { text: "Proporcionar al niño un puzzle de dos piezas que represente una figura conocida por él. Entregarle el puzzle hecho, después separar unos centímetros las dos piezas y decir “ahora arréglalo tú”. Ayudarle a unir las piezas e ir suprimiendo esta ayuda progresivamente.", imageSrc: fotoProvisional("child-two-piece-puzzle") },
+                { text: "Darle otros puzles distintos del anterior de dos piezas.", imageSrc: fotoProvisional("child-other-two-piece-puzzles") },
+                { text: "Pasar a hacer lo mismo con tres piezas, que sea capaz de unir las tres piezas correctamente.", imageSrc: fotoProvisional("child-three-piece-puzzle") }
+              ]
+            }
+          ]
+        }
+      ]
     }
   }
 };
