@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# EduStimula
 
-# Run and deploy your AI Studio app
+Aplicación web interactiva de estimulación temprana y educación infantil (0–12 años), con actividades por edad y área de desarrollo: motricidad gruesa y fina, lenguaje, área social, percepción y cognición, además de juegos interactivos.
 
-This contains everything you need to run your app locally.
+## Tecnologías
 
-View your app in AI Studio: https://ai.studio/apps/drive/1uchzPMu91QcRJWeDTzsILn1jUwhux1HQ
+React 18 · TypeScript · Vite · Tailwind CSS · Lucide
 
-## Run Locally
+## Ejecutar en local
 
-**Prerequisites:**  Node.js
+**Requisitos:** Node.js 20 o superior
 
-
-1. Install dependencies:
+1. Instala las dependencias:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. Arranca el servidor de desarrollo:
    `npm run dev`
+3. Genera la versión de producción:
+   `npm run build`
+
+## Despliegue
+
+- **GitHub Pages:** automático al hacer push a `master` (`.github/workflows/deploy.yml`).
+- **Netlify:** configurado en `netlify.toml`.
+
+## Estructura
+
+- `App.tsx`: interfaz y navegación.
+- `data.ts`: contenido pedagógico (categorías, edades, áreas, actividades y juegos).
+- `types.ts`: tipos de datos.
+- `public/images`: imágenes de las actividades.
