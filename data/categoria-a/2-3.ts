@@ -331,15 +331,51 @@ export const edad2a3: AgeGroup = {
       title: "Área Social",
       subSections: [
         {
-          id: "emotions",
-          title: "Identificar emociones",
+          id: "jugar-turnos",
+          title: "Jugar con sus compañeros y seguir su turno",
           content: [
             {
-              title: "Juego de caras",
+              title: "Jugar con sus compañeros y seguir su turno",
               items: [
-                { text: "Muéstrale una cara feliz y otra triste.", imageSrc: fotoProvisional("child-happy-sad-face") },
-                { text: "Pídele que imite la cara que pones tú.", imageSrc: fotoProvisional("child-imitate-expression") },
-                { text: "Nombra la emoción: 'Estoy alegre', 'Estoy enfadado'.", imageSrc: fotoProvisional("child-emotions-naming") },
+                { text: "Reunir a dos o tres niños y organizar actividades para realizarlas juntos. Por ejemplo, hacer una torre de 9 cubos. Para ello, repartir los cubos entre los niños. A continuación decirle que cada uno ponga uno, por turno y hacer que esperen su vez, dándoles la entrada cada vez que les toque. Reforzar cuando esperen su turno para colocar el cubo.", imageSrc: fotoProvisional("children-taking-turns-blocks") },
+                { text: "Variar el tipo de actividad a realizar.", imageSrc: fotoProvisional("children-playing-together-activities") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "nombrarse-espejo-foto",
+          title: "Se llama ante el espejo y delante de una foto",
+          content: [
+            {
+              title: "Se llama ante el espejo y delante de una foto",
+              items: [
+                { text: "Poner al niño delante de un espejo y preguntarle “¿Quién es ese niño?”, señalándole. Si no contesta decirle “di… (su nombre)”. Reforzar la respuesta. Ir retirando la ayuda.", imageSrc: fotoProvisional("child-names-self-mirror") },
+                { text: "Hacer lo mismo ante una foto del niño.", imageSrc: fotoProvisional("child-names-self-photo") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "desabrochar-botones",
+          title: "Desabrocha botones",
+          content: [
+            {
+              title: "Desabrocha botones",
+              items: [
+                { text: "Enseñarle a desabrochar botones en un tablero o en otra persona. Empezar a colocar el botón a mitad de ojal, para que él termine de sacarlo. Después hacer que lo desabroche solo desde el principio. Ayudarle si es necesario e ir retirando paulatinamente la ayuda.", imageSrc: fotoProvisional("child-unbuttoning-board") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "lavar-secar-manos",
+          title: "Lavarse las manos y secárselas con ayuda",
+          content: [
+            {
+              title: "Lavarse las manos y secárselas con ayuda",
+              items: [
+                { text: "Cuando vaya a lavar las manos decirle “lávate las manos”. Hacer que vaya al baño, abra el grifo, se moje las manos, las enjabone y se seque. Finalmente ha de colgar la toalla en su sitio.", imageSrc: fotoProvisional("child-washing-drying-hands") }
               ]
             }
           ]
