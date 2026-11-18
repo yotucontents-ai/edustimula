@@ -6,7 +6,8 @@ export const edad3a4: AgeGroup = {
   label: "3 – 4 años",
   introText: [],
   areas: {
-    [AreaType.BASIC_CONCEPTS]: { title: "Conceptos Básicos",      subSections: [] },
+    [AreaType.GROSS_MOTOR]:    { title: "Motricidad Gruesa",      subSections: [] },
+    [AreaType.FINE_MOTOR]:     { title: "Motricidad Fina",        subSections: [] },
     [AreaType.ORAL_LANGUAGE]: {
       title: "Lenguaje Oral",
       subSections: [
