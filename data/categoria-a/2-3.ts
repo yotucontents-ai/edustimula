@@ -64,6 +64,61 @@ export const edad2a3: AgeGroup = {
               ]
             }
           ]
+        },
+        {
+          id: "salto",
+          title: "Salto",
+          content: [
+            {
+              title: "Salto",
+              items: [
+                { text: "Colocarlo de pie encima de una cama o colchoneta, cogiéndole de las manos, animarle a saltar. Para ello debe doblar ligeramente las rodillas, al tiempo que se le da ligeramente impulso y se le dice “salta”.", imageSrc: fotoProvisional("child-jumping-on-mattress") },
+                { text: "De pie en el suelo, se le coge de las manos y se le da la misma orden y procedimiento. Retirando poco a poco el apoyo y que el niño salte solo con los dos pies juntos.", imageSrc: fotoProvisional("child-jumping-on-floor") },
+                { text: "Colocarlo sobre un escalón. Cogerle de las manos que doble ligeramente las rodillas y se le dice “salta”, a la vez que se le da impulso para la ejecución del movimiento. Poco a poco se retira la ayuda hasta que el niño salte solo a pies juntillas.", imageSrc: fotoProvisional("child-jumping-from-step") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "triciclo-pedalear",
+          title: "Manejar triciclo. Pedalear",
+          content: [
+            {
+              title: "Manejar triciclo. Pedalear",
+              items: [
+                { text: "Enseñar al niño a subirse y bajarse del triciclo. Hacer que se siente, atarle los pies a los pedales con cintas y enseñarle a pedalear. Reforzar sus intentos.", imageSrc: fotoProvisional("child-tricycle-feet-tied") },
+                { text: "Cuando sepa llevar el triciclo con los dos pies atados a los pedales, desatarle uno y animarle a seguir pedaleando.", imageSrc: fotoProvisional("child-tricycle-one-foot-free") },
+                { text: "Desatarle también el otro pie para que pedalee normalmente.", imageSrc: fotoProvisional("child-tricycle-pedaling-free") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "sostenerse-un-pie",
+          title: "Intentar sostenerse sobre un solo pie",
+          content: [
+            {
+              title: "Intentar sostenerse sobre un solo pie",
+              items: [
+                { text: "Ponerlo delante de un espejo grande, cogerle de la mano y decirle “levanta el pie”, al tiempo que lo hace el adulto. Reforzar la imitación. Intentar que sea capaz de estar en esta posición al menos 3”. Luego se le puede acercar una silla para que se agarre a ella.", imageSrc: fotoProvisional("child-one-foot-mirror") },
+                { text: "Cuando el niño sea capaz de hacerlo con el apoyo de una mano, intentar que lo haga sin ninguna ayuda solo, ante el modelo del adulto, sin espejo.", imageSrc: fotoProvisional("child-one-foot-alone") }
+              ]
+            }
+          ]
+        },
+        {
+          id: "jugar-en-cuclillas",
+          title: "Jugar en cuclillas",
+          content: [
+            {
+              title: "Jugar en cuclillas",
+              items: [
+                { text: "Poner al niño en cuclillas en el suelo, agarrado de ambas manos. Reforzar a mantener esta posición.", imageSrc: fotoProvisional("child-squatting-holding-hands") },
+                { text: "Estando el niño en cuclillas, soltarle una mano y ofrecerle un juguete para que lo coja con esa mano.", imageSrc: fotoProvisional("child-squatting-reaching-toy") },
+                { text: "Soltarle las manos para que se mantenga en esa posición sin ayuda.", imageSrc: fotoProvisional("child-squatting-no-help") }
+              ]
+            }
+          ]
         }
       ]
     },
